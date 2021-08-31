@@ -6,6 +6,7 @@
 namespace TMS\Theme\Filharmonia;
 
 use TMS\Theme\Base\Interfaces;
+use TMS\Theme\Muumimuseo\RolesController;
 
 /**
  * ThemeController
@@ -25,6 +26,7 @@ class ThemeController extends \TMS\Theme\Base\ThemeController {
             TaxonomyController::class,
             FormatterController::class,
             ThemeSupports::class,
+            RolesController::class,
         ];
 
         array_walk( $classes, function ( $class ) {
