@@ -168,7 +168,7 @@ class Artist implements PostType {
                 'icon'      => '',
             ],
             [
-                'title'     => _x( 'Artists', 'Breadcrumb text', 'tms-theme-base' ),
+                'title'     => _x( 'Orchestra', 'Breadcrumb text', 'tms-theme-base' ),
                 'permalink' => get_post_type_archive_link( self::SLUG ),
                 'icon'      => false,
             ],

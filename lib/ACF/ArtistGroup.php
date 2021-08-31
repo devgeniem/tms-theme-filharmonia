@@ -85,6 +85,10 @@ class ArtistGroup {
                 'title'        => 'Sukunimi',
                 'instructions' => '',
             ],
+            'title'                  => [
+                'title'        => 'Titteli',
+                'instructions' => '',
+            ],
             'description'            => [
                 'title'        => 'Kuvaus',
                 'instructions' => '',
@@ -134,6 +138,12 @@ class ArtistGroup {
             ->redipress_include_search()
             ->set_wrapper_width( 50 )
             ->set_instructions( $strings['last_name']['instructions'] );
+
+        $title_field = ( new Field\Text( $strings['title']['title'] ) )
+            ->set_key( "${key}_title" )
+            ->set_name( 'title' )
+            ->redipress_include_search()
+            ->set_instructions( $strings['title']['instructions'] );
 
         $description_field = ( new TextEditor( $strings['description']['title'] ) )
             ->set_key( "${key}_description" )
@@ -186,6 +196,7 @@ class ArtistGroup {
         $tab->add_fields( [
             $first_name_field,
             $last_name_field,
+            $title_field,
             $description_field,
             $additional_info_repeater,
             $is_concertmaster_field,

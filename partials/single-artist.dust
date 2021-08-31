@@ -1,0 +1,43 @@
+{>"shared/base" /}
+
+{<content}
+    <main class="main-content" id="main-content">
+        {#SingleArtist}
+            <section class="section pb-12">
+                <div class="container">
+                    <article class="columns is-multiline">
+                        <div class="column is-12-tablet is-5-desktop is-offset-1-desktop">
+                            <h1 class="mt-0 mb-6">
+                                {@title /}
+                            </h1>
+
+                            {?content.fields.title}
+                                <div>
+                                    {content.fields.title|s}
+                                </div>
+                            {/content.fields.title}
+
+                            {content.fields.description|s}
+
+                            {?content.fields.additional_information}
+                                {>"shared/additional-info-list" data=content.fields.additional_information /}
+                            {/content.fields.additional_information}
+                        </div>
+
+                        {?content.image}
+                            <div class="column is-12-tablet is-5-desktop is-offset-1-desktop">
+                                {@image id=content.image.id size="large" /}
+                            </div>
+                        {/content.image}
+                    </article>
+
+                    <div class="columns">
+                        <div class="column is-12-tablet is-5-desktop is-offset-7-desktop mt-8 mt-12-desktop">
+                            {>"ui/share-links" li_class="mr-4" /}
+                        </div>
+                    </div>
+                </div>
+            </section>
+        {/SingleArtist}
+    </main>
+{/content}
