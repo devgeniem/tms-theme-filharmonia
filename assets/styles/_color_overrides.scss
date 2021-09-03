@@ -28,3 +28,21 @@ $sibling-navigation-item-background-color: $primary-light-invert;
 $sibling-navigation-item-border-color: $sibling-navigation-item-background-color;
 $sibling-navigation-item-active-color: $primary-light-invert;
 $sibling-navigation-item-active-background-color: $secondary-invert;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/_pill.scss
+--------------------------------------------------------------*/
+$pill-background-color: $secondary;
+$pill-color: $primary;
+$pill-color-active: $secondary-invert;
+$pill-color-hover: $secondary-invert;
+
+$pill-outlined-color: $primary;
+$pill-outlined-color-hover: $primary;
+$pill-border-color: $primary;
+$pill-hover-border-color: $primary;
+$pill-border-radius: 0;
+
+$pill-background-active-focus: $primary-light-invert;
+$pill-border-color-hover: $primary-light-invert;
+$pill-border-color-focus: $primary-light-invert;
