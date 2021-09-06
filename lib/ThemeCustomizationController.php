@@ -38,9 +38,9 @@ class ThemeCustomizationController implements Controller {
     /**
      * Customize header colors.
      *
-     * @param array $colors Header color classes.
+     * @param array $colors Color classes.
      *
-     * @return array
+     * @return array Array of customized colors.
      */
     public function header_colors( $colors ) : array {
         $colors['search_button']             = 'is-secondary-invert is-outlined';
@@ -57,9 +57,9 @@ class ThemeCustomizationController implements Controller {
     /**
      * Customize footer colors.
      *
-     * @param array $colors Header color classes.
+     * @param array $colors Color classes.
      *
-     * @return array
+     * @return array Array of customized colors.
      */
     public function footer_colors( $colors ) : array {
         $colors['container']   = 'has-background-secondary has-text-secondary-invert';
