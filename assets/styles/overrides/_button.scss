@@ -1,0 +1,55 @@
+$button-font-weight: $weight-bold;
+
+.button {
+    &.is-primary,
+    &.is-secondary {
+        &.is-outlined {
+            &.is-hovered,
+            &:hover {
+                color: $primary !important;
+                background-color: $primary-invert !important;
+                border-color: $primary-invert !important;
+
+                .icon {
+                    fill: $primary !important;
+                }
+            }
+
+            &.is-active,
+            &:active,
+            &.is-focused,
+            &:focus {
+                color: $secondary-invert !important;
+                background-color: $primary-invert !important;
+                border-color: $primary-invert !important;
+
+                .icon {
+                    fill: $secondary-invert !important;
+                }
+            }
+        }
+    }
+
+    &.is-secondary-invert {
+        &.is-outlined {
+            color: $secondary-invert !important;
+            border-color: $secondary-invert !important;
+
+            .icon {
+                fill: $secondary-invert !important;
+            }
+
+
+            &.is-hovered,
+            &:hover {
+                color: $secondary-invert !important;
+                background-color: $primary-invert !important;
+                border-color: $primary-invert !important;
+
+                .icon {
+                    fill: $secondary-invert !important;
+                }
+            }
+        }
+    }
+}
