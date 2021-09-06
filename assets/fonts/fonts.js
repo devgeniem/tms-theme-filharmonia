@@ -6,7 +6,7 @@ WebFont.load( {
     },
     google: {
         families: [
-q            'Arvo:ital,wght@0,400;0,600;1,400;1,600',
+            'Arvo:ital,wght@0,400;0,600;1,400;1,600',
         ],
     },
 } );
