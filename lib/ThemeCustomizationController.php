@@ -26,6 +26,13 @@ class ThemeCustomizationController implements Controller {
             10,
             1
         );
+
+        add_filter(
+            'tms/theme/footer/colors',
+            \Closure::fromCallable( [ $this, 'footer_colors' ] ),
+            10,
+            1
+        );
     }
 
     /**
@@ -43,6 +50,22 @@ class ThemeCustomizationController implements Controller {
         $colors['lang_nav']['link']          = 'has-border-radius-50';
         $colors['lang_nav']['link__default'] = 'has-text-secondary-invert';
         $colors['lang_nav']['link__active']  = 'has-background-secondary-invert has-text-primary-invert';
+
+        return $colors;
+    }
+
+    /**
+     * Customize footer colors.
+     *
+     * @param array $colors Header color classes.
+     *
+     * @return array
+     */
+    public function footer_colors( $colors ) : array {
+        $colors['container']   = 'has-background-secondary has-text-secondary-invert';
+        $colors['back_to_top'] = 'is-secondary-invert is-outlined';
+        $colors['link']        = 'has-text-secondary-invert';
+        $colors['link_icon']   = 'is-black';
 
         return $colors;
     }
