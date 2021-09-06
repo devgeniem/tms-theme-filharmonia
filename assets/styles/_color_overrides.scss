@@ -48,3 +48,35 @@ $pill-outlined-background-color-hover: $primary-invert;
 $pill-outlined-border-color: $secondary-invert;
 $pill-outlined-border-color-hover: $primary-invert;
 $pill-outlined-background-color-focus: $pill-outlined-border-color-hover;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/header/_primary-nav.scss
+--------------------------------------------------------------*/
+$navbar-item-navbar-link-color: $secondary-invert;
+$navbar-item-grid-item-border-color: $secondary-dark;
+$navbar-item-has-dropdown-active: $primary-dark;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/header/_secondary-nav.scss
+--------------------------------------------------------------*/
+$secondary-navbar-item-font-weight: 400;
+
+/*--------------------------------------------------------------
+assets/styles/partials/ui/menu/_language-nav.scss
+--------------------------------------------------------------*/
+$lang-nav-link-border: $secondary-invert;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/header/_fly-out-nav.scss
+--------------------------------------------------------------*/
+$fly-out-nav-trigger-icon: $secondary-invert;
+$fly-out-nav-trigger-icon-hover: $primary-dark;
+$fly-out-nav-primary-link: $secondary-invert;
+$fly-out-nav-primary-link-hover: $primary-dark;
+$fly-out-nav-primary-dropdown-active-background: $primary;
+$fly-out-nav-secondary-border-color: $secondary-dark;
+$fly-out-nav-secondary-link: $secondary-invert;
+$fly-out-nav-secondary-link-hover: $primary-dark;
+$fly-out-nav-search-input-border: $secondary-invert;
+$fly-out-nav-search-button-icon: $secondary-invert;
+$fly-out-nav-search-input-background-color: $secondary;

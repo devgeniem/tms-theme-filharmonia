@@ -29,4 +29,27 @@ $button-font-weight: $weight-bold;
             }
         }
     }
+
+    &.is-secondary-invert {
+        &.is-outlined {
+            color: $secondary-invert !important;
+            border-color: $secondary-invert !important;
+
+            .icon {
+                fill: $secondary-invert !important;
+            }
+
+
+            &.is-hovered,
+            &:hover {
+                color: $secondary-invert !important;
+                background-color: $primary-invert !important;
+                border-color: $primary-invert !important;
+
+                .icon {
+                    fill: $secondary-invert !important;
+                }
+            }
+        }
+    }
 }
