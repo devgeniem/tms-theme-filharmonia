@@ -1,0 +1,17 @@
+.site-footer {
+    position: relative;
+
+    &::before {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        left: 0;
+        width: calc(100% - #{$gap * 2});
+        max-width: 1664px;
+        height: 1px;
+        margin-right: auto;
+        margin-left: auto;
+        background-color: $black;
+    }
+}
