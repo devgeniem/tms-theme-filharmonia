@@ -33,6 +33,16 @@ class ThemeCustomizationController implements Controller {
             10,
             1
         );
+
+        add_filter(
+            'tms/theme/share_links/link_class',
+            fn() => 'has-background-primary-invert'
+        );
+
+        add_filter(
+            'tms/theme/share_links/icon_class',
+            fn() => 'is-black'
+        );
     }
 
     /**
