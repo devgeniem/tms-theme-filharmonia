@@ -7,7 +7,7 @@
                 <div class="container">
                     <article class="columns is-multiline">
                         <div class="column is-12-tablet is-5-desktop is-offset-1-desktop">
-                            <h1 class="mt-0 mb-6">
+                            <h1 class="mt-0 mb-6 is-uppercase">
                                 {@title /}
                             </h1>
 
