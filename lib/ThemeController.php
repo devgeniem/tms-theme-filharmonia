@@ -6,7 +6,6 @@
 namespace TMS\Theme\Filharmonia;
 
 use TMS\Theme\Base\Interfaces;
-use TMS\Theme\Muumimuseo\RolesController;
 
 /**
  * ThemeController
