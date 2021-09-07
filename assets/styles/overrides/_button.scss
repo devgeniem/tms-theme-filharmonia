@@ -52,4 +52,12 @@ $button-font-weight: $weight-bold;
             }
         }
     }
+
+    &.is-small {
+        &.button--icon {
+            .icon {
+                display: block;
+            }
+        }
+    }
 }
