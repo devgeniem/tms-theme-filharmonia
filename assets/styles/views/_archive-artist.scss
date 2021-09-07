@@ -1,0 +1,14 @@
+.post-type-archive-artist {
+    .artist-list {
+        &__image {
+            img {
+                width: auto;
+                max-height: 710px;
+            }
+        }
+
+        &__title {
+            letter-spacing: .1rem;
+        }
+    }
+}
