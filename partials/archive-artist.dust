@@ -17,35 +17,35 @@
                             {/image}
 
                             {?fields.is_concertmaster}
-                                <div>
+                                <div class="has-text-primary is-family-tertiary is-uppercase has-text-large">
                                     {strings.is_soundmaster|s}
                                 </div>
                             {/fields.is_concertmaster}
 
                             {?fields.is_principal}
-                                <div>
+                                <div class="has-text-primary is-family-tertiary is-uppercase has-text-large">
                                     {strings.is_principal|s}
                                 </div>
                             {/fields.is_principal}
 
-                            <h2 class="h3 mt-4 mb-4 has-line-height-tight">
+                            <h2 class="h5 mt-1 mb-4 has-text-secondary-invert has-line-height-tight">
                                 {fields.first_name|s}
                                 {fields.last_name|s}
                             </h2>
 
                             {?fields.title}
-                                <div>
+                                <div class="artist-list__title has-text-secondary-invert is-family-secondary is-uppercase has-text-small">
                                     {fields.title|s}
                                 </div>
                             {/fields.title}
 
                             {?fields.description}
-                                <div class="mt-4 mb-4 is-family-secondary">
+                                <div class="mt-4 has-text-small">
                                     {fields.description|s}
                                 </div>
                             {/fields.description}
 
-                            {>"ui/button-link" classes="is-primary-invert is-outlined mt-4" icon=link.icon icon_classes=link.icon_classes /}
+                            {>"ui/button-link" classes="is-secondary-invert is-outlined mt-5" icon=link.icon icon_classes=link.icon_classes /}
                         </div>
                     {:else}
                         <div class="column pt-8 pb-8 is-text-centered is-size-5">
