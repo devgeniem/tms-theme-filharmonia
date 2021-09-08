@@ -1,0 +1,8 @@
+.sibling-navigation {
+    &__item {
+        &:hover,
+        &:focus {
+            text-decoration: none;
+        }
+    }
+}

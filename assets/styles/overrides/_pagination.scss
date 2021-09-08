@@ -1,0 +1,31 @@
+.pagination {
+    .pagination-item {
+        &__link {
+            &:not(.hellip) {
+                border: 1px solid $primary;
+            }
+
+            &:focus,
+            &:hover {
+                text-decoration: none;
+            }
+        }
+
+        &.is-current {
+            .pagination-item__link {
+                border-color: $secondary-invert;
+            }
+        }
+    }
+
+    .unavailable {
+        display: flex;
+        align-items: flex-end;
+    }
+
+    .arrow {
+        .icon {
+            fill: $secondary-invert;
+        }
+    }
+}

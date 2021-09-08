@@ -9,12 +9,13 @@ $base-sizes: (
     "desktop": ("base_size": 17px, "scale_value": 1.165, "break_point": $desktop)
 ) !default;
 
-$family-sans-serif: "Montserrat", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-sans-serif: "moret", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
-$family-primary: "Open Sans", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-$family-secondary: $family-sans-serif;
+$family-primary: "Arvo", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-secondary: "gopher", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubu1ntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-tertiary: $family-sans-serif;
 
-$font-family-header: $family-secondary;
+$font-family-header: $family-sans-serif;
 $font-family-text: $family-primary;
 
 $sizes-desktop: map-get($base-sizes, "desktop");
@@ -70,8 +71,8 @@ html {
 
     h1,
     .h1 {
-        font-size: map-get($calculated_sizes, "h1") !important;
         font-family: $font-family-header;
+        font-size: map-get($calculated_sizes, "h1") !important;
         font-weight: 800;
         line-height: 1.22;
         hyphens: auto;
@@ -79,8 +80,8 @@ html {
 
     h2,
     .h2 {
-        font-size: map-get($calculated_sizes, "h2") !important;
         font-family: $font-family-header;
+        font-size: map-get($calculated_sizes, "h2") !important;
         font-weight: 800;
         line-height: 1.2;
         hyphens: auto;
@@ -88,36 +89,36 @@ html {
 
     h3,
     .h3 {
+        font-family: $family-secondary;
         font-size: map-get($calculated_sizes, "h3") !important;
-        font-family: $font-family-header;
-        font-weight: 800;
+        font-weight: $weight-bold;
         line-height: 1.22;
         hyphens: auto;
     }
 
     h4,
     .h4 {
+        font-family: $family-secondary;
         font-size: map-get($calculated_sizes, "h4") !important;
-        font-family: $font-family-header;
-        font-weight: 800;
+        font-weight: $weight-bold;
         line-height: 1.22;
         hyphens: auto;
     }
 
     h5,
     .h5 {
+        font-family: $family-secondary;
         font-size: map-get($calculated_sizes, "h5") !important;
-        font-family: $font-family-header;
-        font-weight: $weight-semibold;
+        font-weight: $weight-bold;
         line-height: 1.22;
         hyphens: auto;
     }
 
     h6,
     .h6 {
+        font-family: $family-secondary;
         font-size: map-get($calculated_sizes, "h6") !important;
-        font-family: $font-family-header;
-        font-weight: $weight-semibold;
+        font-weight: $weight-bold;
         line-height: 1.22;
         hyphens: auto;
     }
