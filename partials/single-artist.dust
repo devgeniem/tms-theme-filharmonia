@@ -6,7 +6,7 @@
             <section class="section pb-12">
                 <div class="container">
                     <article class="columns is-multiline">
-                        <div class="column is-12-tablet is-5-desktop is-offset-1-desktop">
+                        <div class="column is-12-tablet is-6-desktop is-offset-1-desktop pr-10-desktop">
                             <h1 class="mt-0 mb-6 is-uppercase">
                                 {@title /}
                             </h1>
@@ -25,7 +25,7 @@
                         </div>
 
                         {?content.image}
-                            <div class="column is-12-tablet is-5-desktop is-offset-1-desktop">
+                            <div class="column is-12-tablet is-5-desktop pl-10-desktop">
                                 {@image id=content.image.id size="large" /}
                             </div>
                         {/content.image}
