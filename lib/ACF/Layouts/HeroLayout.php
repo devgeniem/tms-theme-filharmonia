@@ -135,7 +135,6 @@ class HeroLayout extends Layout {
             ->set_name( 'overlay' )
             ->set_wrapper_width( 30 )
             ->use_ui()
-            ->set_required()
             ->set_instructions( $strings['image']['instructions'] );
 
         $title_field = ( new Field\Text( $strings['title']['label'] ) )
