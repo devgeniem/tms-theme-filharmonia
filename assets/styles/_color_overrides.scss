@@ -1,0 +1,87 @@
+/*--------------------------------------------------------------
+# Overrides - Define parent theme variable overrides here.
+--------------------------------------------------------------*/
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/_pagination.scss
+--------------------------------------------------------------*/
+$pagination-item-background-color: $secondary;
+$pagination-item-background-color-hover: $primary-light-invert; // TODO: Hover-tilalle varjo
+$pagination-item-background-color-focus: $primary-light-invert;
+$pagination-item-color-current: $primary-light-invert;
+$pagination-item-color-hover: $primary;
+$pagination-item-color-focus: $primary;
+$pagination-item-background-color-current: $secondary-invert;
+$pagination-item-background-color-current-hover: $secondary-invert !default;
+$pagination-item-background-color-current-focus: $secondary-invert !default;
+$pagination-item-border-radius: 50%;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/_sibling-navigation.scss
+--------------------------------------------------------------*/
+$sibling-navigation-item-background-color: $primary-light-invert;
+$sibling-navigation-item-border-color: $sibling-navigation-item-background-color;
+$sibling-navigation-item-active-color: $primary-light-invert;
+$sibling-navigation-item-active-background-color: $secondary-invert;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/_pill.scss
+--------------------------------------------------------------*/
+$pill-background-color: $secondary;
+$pill-color: $primary;
+$pill-color-active: $secondary-invert;
+$pill-color-hover: $secondary-invert;
+
+$pill-outlined-color: $primary;
+$pill-outlined-color-hover: $primary;
+$pill-border-color: $primary;
+$pill-hover-border-color: $primary;
+$pill-border-radius: 0;
+
+$pill-background-active-focus: $primary-light-invert;
+$pill-border-color-hover: $primary-light-invert;
+$pill-border-color-focus: $primary-light-invert;
+
+$pill-outlined-color: $secondary-invert;
+$pill-outlined-color-hover: $secondary-invert;
+$pill-outlined-background-color-hover: $primary-invert;
+$pill-outlined-border-color: $secondary-invert;
+$pill-outlined-border-color-hover: $primary-invert;
+$pill-outlined-background-color-focus: $pill-outlined-border-color-hover;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/header/_primary-nav.scss
+--------------------------------------------------------------*/
+$navbar-item-navbar-link-color: $secondary-invert;
+$navbar-item-grid-item-border-color: $secondary-dark;
+$navbar-item-has-dropdown-active: $primary-dark;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/header/_secondary-nav.scss
+--------------------------------------------------------------*/
+$secondary-navbar-item-font-weight: 400;
+
+/*--------------------------------------------------------------
+assets/styles/partials/ui/menu/_language-nav.scss
+--------------------------------------------------------------*/
+$lang-nav-link-border: $secondary-invert;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/header/_fly-out-nav.scss
+--------------------------------------------------------------*/
+$fly-out-nav-trigger-icon: $secondary-invert;
+$fly-out-nav-trigger-icon-hover: $primary-dark;
+$fly-out-nav-primary-link: $secondary-invert;
+$fly-out-nav-primary-link-hover: $primary-dark;
+$fly-out-nav-primary-dropdown-active-background: $primary;
+$fly-out-nav-secondary-border-color: $secondary-dark;
+$fly-out-nav-secondary-link: $secondary-invert;
+$fly-out-nav-secondary-link-hover: $primary-dark;
+$fly-out-nav-search-input-border: $secondary-invert;
+$fly-out-nav-search-button-icon: $secondary-invert;
+$fly-out-nav-search-input-background-color: $secondary;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/_footer.scss
+--------------------------------------------------------------*/
+$footer-copy-link-border-color: $secondary-invert;

@@ -52,7 +52,7 @@ class Artist implements PostType {
      * Constructor
      */
     public function __construct() {
-        $this->url_slug    = _x( 'artist', 'theme CPT slugs', 'tms-theme-base' );
+        $this->url_slug    = 'artist';
         $this->description = _x( 'Artists', 'theme CPT', 'tms-theme-base' );
     }
 
@@ -189,11 +189,6 @@ class Artist implements PostType {
      * @return string
      */
     public function get_artist_name( $post_id ) {
-        $fields = [
-            get_field( 'first_name', $post_id ),
-            get_field( 'last_name', $post_id ),
-        ];
-
-        return implode( ' ', array_filter( $fields, fn( $field ) => ! empty( $field ) ) );
+        return trim( get_field( 'first_name', $post_id ) . ' ' . get_field( 'last_name', $post_id ) );
     }
 }
