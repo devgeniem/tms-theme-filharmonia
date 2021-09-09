@@ -38,8 +38,8 @@ $colors: (
 );
 
 $button-colors: (
-    "primary": ($primary, $color-white, $primary, $color-white),
-    "secondary": ($primary, $color-white, $primary, $color-white),
+    "primary": ($primary, $color-white, $primary, $secondary-invert),
+    "secondary": ($primary, $color-white, $primary, $secondary-invert),
 );
 
 $color-background-primary-light--opaque-light: $secondary;

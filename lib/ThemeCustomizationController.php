@@ -43,6 +43,11 @@ class ThemeCustomizationController implements Controller {
             'tms/theme/share_links/icon_class',
             fn() => 'is-black'
         );
+
+        add_filter(
+            'tms/theme/accent_colors',
+            [ $this, 'get_theme_accent_colors' ]
+        );
     }
 
     /**
@@ -78,5 +83,39 @@ class ThemeCustomizationController implements Controller {
         $colors['link_icon']   = 'is-black';
 
         return $colors;
+    }
+
+    /**
+     * Set grid item color scheme.
+     *
+     * @return string
+     */
+    public function set_grid_item_color() {
+        return 'secondary';
+    }
+
+    /**
+     * Theme accent colors for layouts
+     *
+     * @return string[]
+     */
+    public function get_theme_accent_colors() : array {
+        return [
+            'has-colors-primary'          => 'Punaoranssi (valkoinen teksti)',
+            'has-colors-accent-secondary' => 'Harmaa (musta teksti)',
+        ];
+    }
+
+    /**
+     * Get theme accent color by key
+     *
+     * @param string $key Accent color key.
+     *
+     * @return string|null
+     */
+    public function get_theme_accent_color_by_key( string $key ) : ?string {
+        $map = $this->get_theme_accent_colors();
+
+        return $map[ $key ] ?? null;
     }
 }
