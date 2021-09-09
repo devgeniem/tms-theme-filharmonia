@@ -1,0 +1,13 @@
+.has-colors-primary {
+    h1,
+    h2 {
+        color: $primary-invert;
+    }
+}
+
+.has-colors-accent-secondary {
+    h1,
+    h2 {
+        color: $secondary-invert;
+    }
+}
