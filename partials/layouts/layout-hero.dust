@@ -1,0 +1,56 @@
+<section {?anchor}id="{anchor|s}"{/anchor}
+         class="filharmonia-hero has-background-secondary-dark-invert">
+    <div class="filharmonia-hero__background-container is-relative is-align-items-flex-end is-flex is-justify-content-center has-width-100 {container_class|s}">
+        <div class="filharmonia-hero__background is-absolute has-top-0 has-bottom-0 has-right-0 has-left-0 has-background-cover" {@inlinebg id=image size="fullhd" /}></div>
+
+        {?overlay}
+            <div class="overlay overlay--dark-50"></div>
+        {/overlay}
+
+        <div class="filharmonia-hero__text">
+            <div class="container is-flex is-flex-direction-column mt-8 mb-8 mt-12-desktop mb-12-desktop {text_align|s}">
+                {?title}
+                    <h1 class="filharmonia-hero__title h1 mt-0 mr-4 mb-5 ml-4 mr-8-desktop ml-8-desktop is-uppercase no-hyphens has-text-primary-invert">
+                        <span class="pr-4 pl-4">{title|s}</span>
+                    </h1>
+                {/title}
+
+                {?description}
+                    <div class="filharmonia-hero__description mr-4 ml-4 mr-6-desktop ml-6-desktop pr-3 pl-3 has-text-large is-inline-block has-text-primary-invert keep-vertical-spacing">
+                        <span>{description|s}</span>
+                    </div>
+                {/description}
+            </div>
+        </div>
+    </div>
+
+    <div class="filharmonia-hero__inner">
+        <div class="container">
+            <div class="columns is-centered is-multiline pt-8 pr-6 pl-6 pr-9-desktop pl-9-desktop">
+                {#columns}
+                    <div class="column is-6 is-4-desktop has-text-centered">
+                        <div class="is-flex is-flex-direction-column has-height-100 p-3 p-6-desktop">
+                            <h3 class="mt-0 mb-3">
+                                {title|s}
+                            </h3>
+
+                            <div class="mt-0 mb-0 keep-vertical-spacing">{text|s}</div>
+
+                            {?logo}
+                                <div class="image-container">
+                                    {@image id=logo size="thumbnail" /}
+                                </div>
+                            {/logo}
+
+                            {?link}
+                                <div class="button-container mt-auto">
+                                    {>"ui/button-link" link=link classes="mt-4 is-secondary-invert is-outlined" icon="chevron-right" icon_classes="icon--medium" /}
+                                </div>
+                            {/link}
+                        </div>
+                    </div>
+                {/columns}
+            </div>
+        </div>
+    </div>
+</section>
