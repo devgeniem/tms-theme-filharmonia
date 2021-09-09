@@ -1,16 +1,18 @@
 .h1,
 h1 {
+    color: $primary;
+
     @include from($desktop) {
         font-size: 4.588rem !important;
-        color: $primary;
     }
 }
 
 .h2,
 h2 {
+    color: $primary;
+
     @include from($desktop) {
         font-size: 3.388rem !important;
-        color: $primary;
     }
 }
 
