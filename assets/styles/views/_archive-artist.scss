@@ -1,0 +1,39 @@
+.post-type-archive-artist {
+    .artist-list {
+        &__text-grid {
+            display: grid;
+            grid-template-rows: 2rem 1fr;
+        }
+
+        &__name {
+            grid-row: 2;
+        }
+
+        &__title {
+            grid-row: 3;
+        }
+
+        &__image-container {
+            width: auto;
+            height: 21.176rem;
+
+            @include from($desktop) {
+                height: 28.235rem;
+            }
+
+            @include from($fullhd) {
+                height: 41.765rem;
+            }
+        }
+
+        &__image {
+            background-repeat: no-repeat;
+            background-position: center;
+            background-size: contain;
+        }
+
+        &__title {
+            letter-spacing: .1rem;
+        }
+    }
+}

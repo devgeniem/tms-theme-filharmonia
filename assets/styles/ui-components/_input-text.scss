@@ -1,0 +1,10 @@
+.input-text {
+    &::placeholder {
+        color: $color-black;
+        opacity: 1;
+    }
+
+    &:focus-visible {
+        outline-color: $primary;
+    }
+}

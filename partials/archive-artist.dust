@@ -1,0 +1,65 @@
+{>"shared/base" /}
+
+{<content}
+    {#ArchiveArtist}
+        <main class="main-content section" id="main-content">
+            <div class="container">
+                {>"shared/archive-view-title" /}
+                {>"shared/archive-filters" /}
+
+                <div class="columns is-multiline artist-list">
+                    {#results}
+                        <div class="column is-6-tablet is-3-desktop mb-6-desktop is-relative has-text-centered">
+                            {?image}
+                                <div class="artist-list__image-container image is-3by1 has-width-100 pr-6 pl-6 mb-4">
+                                    <div
+                                        class="artist-list__image is-absolute has-top-0 has-bottom-0 has-right-0 has-left-0" {@inlinebg id=image size="large" /}></div>
+                                </div>
+                            {/image}
+
+                            <div class="artist-list__text-grid">
+                                {@isset key1=fields.is_concertmaster key2=fields.is_principal method="OR" }
+                                    <div class="artist-list__grid-row">
+                                        <p class="m-0 has-text-primary is-family-tertiary is-uppercase has-text-large">
+                                            {?fields.is_concertmaster}
+                                                {strings.is_soundmaster|s}
+                                            {:else}
+                                                {strings.is_principal|s}
+                                            {/fields.is_concertmaster}
+                                        </p>
+                                    </div>
+                                {/isset}
+
+                                <h2 class="artist-list__name h5 mt-1 mb-4 has-text-secondary-invert has-line-height-tight">
+                                    {fields.first_name|s}
+                                    {fields.last_name|s}
+                                </h2>
+
+                                {?fields.title}
+                                    <p
+                                        class="artist-list__title mt-0 mb-0 has-text-secondary-invert is-family-secondary is-uppercase has-text-small">
+                                        {fields.title|s}
+                                    </p>
+                                {/fields.title}
+                            </div>
+
+                            {?fields.description}
+                                <div class="mt-4 has-text-small">
+                                    {fields.description|s}
+                                </div>
+                            {/fields.description}
+
+                            {>"ui/button-link" classes="is-secondary-invert is-outlined mt-5" icon=link.icon icon_classes=link.icon_classes /}
+                        </div>
+                    {:else}
+                        <div class="column pt-8 pb-8 is-text-centered is-size-5">
+                            {Strings.s.home.no_results|s}
+                        </div>
+                    {/results}
+                </div>
+
+                {>"shared/archive-pagination" /}
+            </div>
+        </main>
+    {/ArchiveArtist}
+{/content}
