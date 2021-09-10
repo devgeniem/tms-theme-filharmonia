@@ -1,10 +1,31 @@
 .post-type-archive-artist {
     .artist-list {
-        &__image {
-            img {
-                width: auto;
-                max-height: 710px;
+        &__text-grid {
+            display: grid;
+            grid-template-rows: 34px 1fr;
+        }
+
+        &__name {
+            grid-row: 2;
+        }
+
+        &__image-container {
+            width: auto;
+            height: 360px;
+
+            @include from($desktop) {
+                height: 480px;
             }
+
+            @include from($fullhd) {
+                height: 710px;
+            }
+        }
+
+        &__image {
+            background-repeat: no-repeat;
+            background-position: center center;
+            background-size: contain;
         }
 
         &__title {
