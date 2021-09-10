@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.1.0]
+
 - TMS-148: Hero #10
 - TMS-146: Artist archive #9
 - TMS-147: Layout accent colors #12
