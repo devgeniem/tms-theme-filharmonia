@@ -3,6 +3,27 @@
     h2 {
         color: $primary-invert;
     }
+
+    a {
+        &.button.is-primary {
+            color: $secondary-invert !important;
+
+            .icon {
+                fill: $secondary-invert !important;
+            }
+
+            &.is-hovered,
+            &:hover,
+            &.is-focused,
+            &:focus {
+                color: $primary !important;
+
+                .icon {
+                    fill: $primary !important;
+                }
+            }
+        }
+    }
 }
 
 .has-colors-accent-secondary {

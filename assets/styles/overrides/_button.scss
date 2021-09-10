@@ -1,6 +1,16 @@
 $button-font-weight: $weight-bold;
 
 .button {
+    &.is-primary {
+        &.is-inverted {
+            color: $secondary-invert !important;
+
+            .icon {
+                fill: $secondary-invert !important;
+            }
+        }
+    }
+
     &.is-primary,
     &.is-secondary {
         &.is-outlined {
