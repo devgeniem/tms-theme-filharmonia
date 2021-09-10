@@ -1,0 +1,35 @@
+.has-colors-primary {
+    h1,
+    h2 {
+        color: $primary-invert;
+    }
+
+    a {
+        &.button.is-primary {
+            color: $secondary-invert !important;
+
+            .icon {
+                fill: $secondary-invert !important;
+            }
+
+            &.is-hovered,
+            &:hover,
+            &.is-focused,
+            &:focus {
+                color: $primary !important;
+                border-color: $secondary-invert !important;
+
+                .icon {
+                    fill: $primary !important;
+                }
+            }
+        }
+    }
+}
+
+.has-colors-accent-secondary {
+    h1,
+    h2 {
+        color: $secondary-invert;
+    }
+}
