@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 - TMS-148: Hero #10
+- TMS-146: Artist archive #9
 
 ## [1.0.0]
 
