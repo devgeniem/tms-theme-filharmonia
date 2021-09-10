@@ -22,7 +22,7 @@
             }
         }
 
-        &.grid__item--featured {
+        &--featured {
             a {
                 &.button {
                     color: $primary-invert !important;
