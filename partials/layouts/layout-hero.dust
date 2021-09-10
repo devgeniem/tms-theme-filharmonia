@@ -25,9 +25,9 @@
         </div>
     </div>
 
-    <div class="filharmonia-hero__inner">
+    <div class="filharmonia-hero__inner pt-8 pr-6 pl-6 pr-9-desktop pl-9-desktop">
         <div class="container">
-            <div class="columns is-centered is-multiline pt-8 pr-6 pl-6 pr-9-desktop pl-9-desktop">
+            <div class="columns is-centered is-multiline">
                 {#columns}
                     <div class="column is-6 is-4-desktop has-text-centered">
                         <div class="is-flex is-flex-direction-column has-height-100 p-3 p-6-desktop">
