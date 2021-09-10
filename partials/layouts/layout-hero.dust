@@ -11,22 +11,23 @@
             <div class="container is-flex is-flex-direction-column mt-8 mb-8 mt-12-desktop mb-12-desktop {text_align|s}">
                 {?title}
                     <h1 class="filharmonia-hero__title h1 mt-0 mr-4 mb-5 ml-4 mr-8-desktop ml-8-desktop is-uppercase no-hyphens has-text-primary-invert">
-                        <span class="pr-4 pl-4">{title|s}</span>
+                        <span class="pr-{heading_padding_size|s} pl-{heading_padding_size|s}">{title|s}</span>
                     </h1>
                 {/title}
 
                 {?description}
-                    <div class="filharmonia-hero__description mr-4 ml-4 mr-6-desktop ml-6-desktop pr-3 pl-3 has-text-large is-inline-block has-text-primary-invert keep-vertical-spacing">
-                        <span>{description|s}</span>
+                    <div
+                        class="filharmonia-hero__description mr-4 ml-4 mr-8-desktop ml-8-desktop has-text-large is-inline-block has-text-primary-invert keep-vertical-spacing">
+                        <span class="pr-2 pl-2">{description|s}</span>
                     </div>
                 {/description}
             </div>
         </div>
     </div>
 
-    <div class="filharmonia-hero__inner">
+    <div class="filharmonia-hero__inner pt-8 pr-6 pl-6 pr-9-desktop pl-9-desktop">
         <div class="container">
-            <div class="columns is-centered is-multiline pt-8 pr-6 pl-6 pr-9-desktop pl-9-desktop">
+            <div class="columns is-centered is-multiline">
                 {#columns}
                     <div class="column is-6 is-4-desktop has-text-centered">
                         <div class="is-flex is-flex-direction-column has-height-100 p-3 p-6-desktop">
