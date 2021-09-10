@@ -17,6 +17,7 @@
             &.is-focused,
             &:focus {
                 color: $primary !important;
+                border-color: $secondary-invert !important;
 
                 .icon {
                     fill: $primary !important;
