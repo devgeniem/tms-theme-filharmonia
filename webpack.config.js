@@ -215,6 +215,7 @@ module.exports = [
             alias: {
                 scripts: path.resolve( __dirname, 'assets', 'scripts' ),
                 styles: path.resolve( __dirname, 'assets', 'styles' ),
+                images: path.resolve( __dirname, 'assets', 'images' ),
             },
         },
 

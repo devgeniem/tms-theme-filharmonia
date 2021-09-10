@@ -1,0 +1,77 @@
+.filharmonia-hero {
+    h1 {
+        @include from($tablet) {
+            font-size: 3.765rem !important;
+        }
+
+        @include from($desktop) {
+            font-size: 4.706rem !important;
+        }
+
+        @include from($fullhd) {
+            font-size: 5.882rem !important;
+        }
+    }
+
+    &__title,
+    &__description {
+        span {
+            background-color: $primary;
+            box-decoration-break: clone;
+        }
+    }
+
+    &__description {
+        > * {
+            padding: .25rem .5rem;
+        }
+    }
+
+    &__background-container {
+        min-height: 75vw !important; // sass-lint:disable-line no-important
+
+        @include from($tablet) {
+            min-height: 50vw !important; // sass-lint:disable-line no-important
+        }
+
+        @include from($desktop) {
+            min-height: 36.198vw !important; // sass-lint:disable-line no-important
+
+            &::before,
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                z-index: 1;
+                width: 40px;
+                height: 100%;
+                background-repeat: no-repeat;
+                background-position-y: center;
+                background-size: contain;
+            }
+
+            &::before {
+                top: 7.5%;
+                bottom: 7.5%;
+                left: 0;
+                height: 85%;
+                background-image: url('images/tampere-pysty.svg');
+                background-position-x: 0;
+            }
+
+            &::after {
+                right: 0;
+                background-image: url('images/tampere-filharmonia-pysty.svg');
+                background-position-x: 100%;
+            }
+        }
+
+        @include from(1600px) {
+            &::before,
+            &::after {
+                width: 66px;
+            }
+        }
+    }
+}
