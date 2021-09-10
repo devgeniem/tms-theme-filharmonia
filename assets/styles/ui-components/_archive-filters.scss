@@ -4,4 +4,14 @@
             letter-spacing: .08rem;
         }
     }
+
+    .search-submit {
+        vertical-align: middle;
+    }
+
+    .input-text {
+        @include from($desktop) {
+            min-width: 315px;
+        }
+    }
 }
