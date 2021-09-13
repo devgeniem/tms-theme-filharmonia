@@ -2,7 +2,7 @@
     .artist-list {
         &__text-grid {
             display: grid;
-            grid-template-rows: 34px 1fr;
+            grid-template-rows: 2rem 1fr;
         }
 
         &__name {
@@ -15,20 +15,20 @@
 
         &__image-container {
             width: auto;
-            height: 360px;
+            height: 21.176rem;
 
             @include from($desktop) {
-                height: 480px;
+                height: 28.235rem;
             }
 
             @include from($fullhd) {
-                height: 710px;
+                height: 41.765rem;
             }
         }
 
         &__image {
             background-repeat: no-repeat;
-            background-position: center center;
+            background-position: center;
             background-size: contain;
         }
 

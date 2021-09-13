@@ -21,7 +21,7 @@
                                 {@isset key1=fields.is_concertmaster key2=fields.is_principal method="OR" }
                                     <div class="artist-list__grid-row">
                                         <p class="m-0 has-text-primary is-family-tertiary is-uppercase has-text-large">
-                                            {#fields.is_concertmaster}
+                                            {?fields.is_concertmaster}
                                                 {strings.is_soundmaster|s}
                                             {:else}
                                                 {strings.is_principal|s}
