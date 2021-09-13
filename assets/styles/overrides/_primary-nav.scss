@@ -1,0 +1,12 @@
+.primary-nav {
+    .navbar-item > .navbar-dropdown-control > a,
+    .navbar-item > a,
+    .navbar-dropdown__parent-link {
+        font-family: $family-tertiary;
+
+        @include from($desktop) {
+            font-size: 1.235rem;
+            letter-spacing: .05em;
+        }
+    }
+}
