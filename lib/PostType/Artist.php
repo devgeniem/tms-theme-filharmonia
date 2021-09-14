@@ -53,7 +53,7 @@ class Artist implements PostType {
      */
     public function __construct() {
         $this->url_slug    = 'artist';
-        $this->description = _x( 'Artists', 'theme CPT', 'tms-theme-base' );
+        $this->description = _x( 'Artists', 'theme CPT', 'tms-theme-filharmonia' );
     }
 
     /**

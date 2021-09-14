@@ -69,7 +69,7 @@ class ArchiveArtist extends BaseModel {
      * @return string
      */
     public function page_title() : string {
-        return post_type_archive_title( '', false );
+        return _x( 'Orchestra', 'Archive Title', 'tms-theme-filharmonia' );
     }
 
     /**
@@ -178,7 +178,7 @@ class ArchiveArtist extends BaseModel {
         array_unshift(
             $categories,
             [
-                'name'      => __( 'All', 'tms-theme-base' ),
+                'name'      => __( 'All', 'tms-theme-filharmonia' ),
                 'url'       => $base_url,
                 'is_active' => null === self::get_filter_query_var(),
             ]
@@ -222,7 +222,7 @@ class ArchiveArtist extends BaseModel {
 
             $item->link = [
                 'url'          => $item->permalink,
-                'title'        => __( 'View', 'tms-theme-base' ),
+                'title'        => __( 'View', 'tms-theme-filharmonia' ),
                 'icon'         => 'chevron-right',
                 'icon_classes' => 'icon--medium',
             ];
