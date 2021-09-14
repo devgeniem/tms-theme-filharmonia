@@ -6,6 +6,8 @@
 namespace TMS\Theme\Filharmonia;
 
 use TMS\Theme\Filharmonia\Taxonomy\ArtistCategory;
+use function load_child_theme_textdomain;
+use function load_theme_textdomain;
 
 /**
  * Class Localization
@@ -13,6 +15,21 @@ use TMS\Theme\Filharmonia\Taxonomy\ArtistCategory;
  * @package TMS\Theme\Filharmonia
  */
 class Localization extends \TMS\Theme\Base\Localization implements \TMS\Theme\Base\Interfaces\Controller {
+
+    /**
+     * Load theme translations.
+     */
+    public function load_theme_textdomains() {
+        load_theme_textdomain(
+            'tms-theme-base',
+            get_template_directory() . '/lang'
+        );
+
+        load_child_theme_textdomain(
+            'tms-theme-filharmonia',
+            get_stylesheet_directory() . '/lang'
+        );
+    }
 
     /**
      * This adds the CPTs that are not public to Polylang translation.
