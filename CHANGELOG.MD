@@ -7,6 +7,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.2.0]
+
+### Added
+
+- Localize artists #13
+
+### Fixed
+
+- Primary navigation typography #14
+
 ## [1.1.0]
 
 ### Added
