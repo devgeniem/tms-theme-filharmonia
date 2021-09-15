@@ -20,7 +20,7 @@
                             {content.fields.description|s}
 
                             {?content.fields.additional_information}
-                                {>"shared/additional-info-list" data=content.fields.additional_information /}
+                                {>"shared/additional-info-list" data=content.fields.additional_information list_class="mt-6" /}
                             {/content.fields.additional_information}
                         </div>
 
