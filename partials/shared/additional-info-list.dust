@@ -1,8 +1,8 @@
-<div class="additional-information-list mt-6 has-text-small">
+<div class="additional-information-list {list_class|s}">
     {#data}
         <div class="columns is-gapless mb-3">
             <div class="column">
-                {>"shared/additional-info-row" title=additional_information_group.additional_information_title text=additional_information_group.additional_information_text /}
+                {>"shared/additional-info-row" title=additional_information_title text=additional_information_text /}
             </div>
         </div>
     {/data}
