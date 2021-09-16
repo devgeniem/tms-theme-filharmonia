@@ -3,7 +3,7 @@ msgid ""
 msgstr ""
 "Plural-Forms: nplurals=INTEGER; plural=EXPRESSION;\n"
 "Project-Id-Version: TMS Theme Filharmonia\n"
-"POT-Creation-Date: 2021-09-14 13:11+0300\n"
+"POT-Creation-Date: 2021-09-16 14:40+0300\n"
 "PO-Revision-Date: 2021-09-14 13:10+0300\n"
 "Last-Translator: \n"
 "Language-Team: \n"
@@ -16,8 +16,8 @@ msgstr ""
 "X-Poedit-WPHeader: style.css\n"
 "X-Poedit-SourceCharset: UTF-8\n"
 "X-Poedit-KeywordsList: __;_e;_n:1,2;_x:1,2c;_ex:1,2c;_nx:4c,1,2;esc_attr__;"
-"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;_n_noop:1,2;"
-"_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
+"esc_attr_e;esc_attr_x:1,2c;esc_html__;esc_html_e;esc_html_x:1,2c;"
+"_n_noop:1,2;_nx_noop:3c,1,2;__ngettext_noop:1,2\n"
 "X-Poedit-SearchPath-0: .\n"
 "X-Poedit-SearchPathExcluded-0: *.min.js\n"
 "X-Poedit-SearchPathExcluded-1: vendor\n"
@@ -28,18 +28,23 @@ msgctxt "text direction"
 msgid "ltr"
 msgstr ""
 
-#: lib/PostType/Artist.php:56
+#: lib/PostType/Artist.php:57
 msgctxt "theme CPT"
-msgid "Artists"
+msgid "Musicians"
 msgstr ""
 
-#: lib/PostType/Artist.php:166
+#: lib/PostType/Artist.php:165
 msgctxt "Breadcrumbs"
 msgid "Home"
 msgstr ""
 
-#: lib/PostType/Artist.php:171
+#: lib/PostType/Artist.php:170
 msgctxt "Breadcrumb text"
+msgid "Orchestra"
+msgstr ""
+
+#: models/archive-artist.php:72
+msgctxt "Archive Title"
 msgid "Orchestra"
 msgstr ""
 

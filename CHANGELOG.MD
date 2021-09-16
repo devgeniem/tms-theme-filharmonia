@@ -12,6 +12,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - TMS-221: Theme translations #15
 - TMS-216: Pre fill artist additional information from settings #16
 
+### Changed
+
+- TMS-221-1: Update term #17
+    - Change cpt term Artist into Musician
+
 ## [1.2.0]
 
 ### Added

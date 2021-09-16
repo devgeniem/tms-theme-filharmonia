@@ -43,7 +43,7 @@ class ArtistGroup {
      */
     protected function register_fields() : void {
         try {
-            $field_group = ( new Group( 'Taiteilijan lisätiedot' ) )
+            $field_group = ( new Group( 'Muusikon lisätiedot' ) )
                 ->set_key( 'fg_artist_fields' );
 
             $rule_group = ( new RuleGroup() )
