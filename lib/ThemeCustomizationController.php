@@ -48,6 +48,11 @@ class ThemeCustomizationController implements Controller {
             'tms/theme/accent_colors',
             [ $this, 'get_theme_accent_colors' ]
         );
+
+        add_filter(
+            'tms/theme/search/search_item',
+            [ $this, 'search_classes' ]
+        );
     }
 
     /**
@@ -104,6 +109,19 @@ class ThemeCustomizationController implements Controller {
             'has-colors-primary'          => 'Punaoranssi (valkoinen teksti)',
             'has-colors-accent-secondary' => 'Harmaa (musta teksti)',
         ];
+    }
+
+    /**
+     * Search classes.
+     *
+     * @param array $classes Search view classes.
+     *
+     * @return array
+     */
+    public function search_classes( $classes ) : array {
+        $classes['search_item'] = 'has-background-primary-invert';
+
+        return $classes;
     }
 
     /**
