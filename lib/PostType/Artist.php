@@ -54,7 +54,7 @@ class Artist implements PostType {
      */
     public function __construct() {
         $this->url_slug    = 'artist';
-        $this->description = _x( 'Artists', 'theme CPT', 'tms-theme-filharmonia' );
+        $this->description = _x( 'Musicians', 'theme CPT', 'tms-theme-filharmonia' );
     }
 
     /**
@@ -92,10 +92,10 @@ class Artist implements PostType {
      */
     private function register() {
         $labels = [
-            'name'                  => 'Taiteilijat',
-            'singular_name'         => 'Taiteilija',
-            'menu_name'             => 'Taiteilijat',
-            'name_admin_bar'        => 'Taiteilijat',
+            'name'                  => 'Muusikko',
+            'singular_name'         => 'Muusikko',
+            'menu_name'             => 'Muusikot',
+            'name_admin_bar'        => 'Muusikot',
             'archives'              => 'Arkistot',
             'attributes'            => 'Ominaisuudet',
             'parent_item_colon'     => 'Vanhempi:',
