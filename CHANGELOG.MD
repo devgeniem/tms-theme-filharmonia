@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- TMS-227: Changed Typekit id #20
+
 ## [1.4.0] - 2021-09-23
 
 - TMS-213: Setup search results theme colors #18
