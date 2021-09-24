@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-## [1.3.0]
+## [1.4.0] - 2021-09-23
+
+- TMS-213: Setup search results theme colors #18
+
+## [1.3.0] - 2021-09-16
 
 ### Added
 
@@ -19,7 +23,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - TMS-221-1: Update term #17
     - Change cpt term Artist into Musician
 
-## [1.2.0]
+## [1.2.0] - 2021-09-13
 
 ### Added
 
@@ -29,7 +33,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - Primary navigation typography #14
 
-## [1.1.0]
+## [1.1.0] - 2021-09-10
 
 ### Added
 
@@ -37,7 +41,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - TMS-146: Artist archive #9
 - TMS-147: Layout accent colors #12
 
-## [1.0.0]
+## [1.0.0] - 2021-09-08
 
 ### Added
 
