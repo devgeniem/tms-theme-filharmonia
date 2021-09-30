@@ -6,6 +6,7 @@
 namespace TMS\Theme\Filharmonia;
 
 use TMS\Theme\Base\Interfaces\Controller;
+use WP_post;
 
 /**
  * Class ThemeCustomizationController
@@ -52,6 +53,11 @@ class ThemeCustomizationController implements Controller {
         add_filter(
             'tms/theme/search/search_item',
             [ $this, 'search_classes' ]
+        );
+
+        add_filter(
+            'tms/theme/base/search_result_item',
+            [ $this, 'alter_search_result_item' ]
         );
     }
 
@@ -119,7 +125,9 @@ class ThemeCustomizationController implements Controller {
      * @return array
      */
     public function search_classes( $classes ) : array {
-        $classes['search_item'] = 'has-background-primary-invert';
+        $classes['search_item']          = 'has-border-1 has-border-primary';
+        $classes['search_form_button']   = 'is-secondary-invert is-outlined';
+        $classes['event_search_section'] = 'has-border-bottom-1 has-border-top-1 has-border-divider-invert';
 
         return $classes;
     }
@@ -135,5 +143,18 @@ class ThemeCustomizationController implements Controller {
         $map = $this->get_theme_accent_colors();
 
         return $map[ $key ] ?? null;
+    }
+
+    /**
+     * Alter search result item
+     *
+     * @param WP_Post $post_item Instance of \WP_Post.
+     *
+     * @return WP_post
+     */
+    public function alter_search_result_item( $post_item ) {
+        $post_item->content_type = false;
+
+        return $post_item;
     }
 }
