@@ -20,7 +20,7 @@ jobs:
 
             -   name: eslint
                 run: |
-                    eslint assets/scripts --format checkstyle
+                    npm run lint -- --format checkstyle
 
             -   name: build assets to see if everything still builds
                 run: |
