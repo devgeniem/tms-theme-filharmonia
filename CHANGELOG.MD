@@ -10,12 +10,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Added
 
 - TMS-212: Search view #22
+- TMS-214: Installed Duet Date Picker JS library
 
 ## [1.6.0] - 2021-10-06
 
 ### Added
 
-- TMS-214: Installed Duet Date Picker JS library
 - TMS-263: Filtered `tms/theme/admin_js_path` #23
 
 ## [1.5.0] - 2021-09-27
