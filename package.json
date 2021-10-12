@@ -53,6 +53,9 @@
     "webpack-cli": "^4.7.2"
   },
   "scripts": {
+    "lint": "eslint assets/scripts",
+    "lint-fix": "eslint assets/scripts --fix",
+    "lint-ci": "eslint assets/scripts --format checkstyle",
     "watch": "cross-env webpack --progress --watch --mode development",
     "dev": "cross-env webpack --progress --mode development",
     "build": "cross-env NODE_ENV=production webpack --progress --mode production"
