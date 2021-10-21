@@ -3,7 +3,6 @@
  *  Copyright (c) 2021. Geniem Oy
  */
 
-use TMS\Theme\Base\Traits\Pagination;
 use TMS\Theme\Filharmonia\PostType\Artist;
 use TMS\Theme\Filharmonia\Taxonomy\ArtistCategory;
 
