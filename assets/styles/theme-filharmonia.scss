@@ -18,6 +18,9 @@ $secondary-light-invert: $color-black;
 $secondary-dark: bulmaDarken($secondary, 10);
 $secondary-dark-invert: $color-black;
 
+$tertiary: $color-white;
+$tertiary-invert: $color-black;
+
 $light: $primary-light;
 $light-invert: $primary-light-invert;
 $dark: $primary-dark;
@@ -31,10 +34,12 @@ $link: $primary;
 
 $colors-palette-primary: ($primary, $primary-invert, $primary-dark, $primary-light);
 $colors-palette-secondary: ($secondary, $secondary-invert, $secondary-dark, $secondary-light);
+$colors-palette-tertiary: ($tertiary, $tertiary-invert);
 
 $colors: (
     "primary": $colors-palette-primary,
     "secondary": $colors-palette-secondary,
+    "tertiary": $colors-palette-tertiary,
     "white": ($color-white, $color-black),
     "black": ($color-black, $color-white),
     "accent": $colors-palette-primary,
