@@ -59,6 +59,20 @@ class ThemeCustomizationController implements Controller {
             'tms/theme/base/search_result_item',
             [ $this, 'alter_search_result_item' ]
         );
+
+        add_filter(
+            'tms/theme/event/hero_info_classes',
+            fn() => 'has-colors-tertiary'
+        );
+
+        add_filter( 'tms/theme/event/group_title', function () {
+            return [
+                'title' => 'has-background-tertiary',
+                'icon'  => 'is-accent',
+            ];
+        } );
+
+        add_filter( 'tms/theme/event/info_group_classes', fn() => '' );
     }
 
     /**
