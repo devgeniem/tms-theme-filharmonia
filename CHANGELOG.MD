@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - TMS-346: Fix principal and concertmaster mix up
 - TMS-349: Fix event view styles
+- TMS-348: Make post type url slugs translatable with Polylang
 
 ## [1.7.0] - 2021-10-14
 
