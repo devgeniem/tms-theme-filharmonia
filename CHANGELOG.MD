@@ -11,7 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- TMS-347: Remove pagination from artist archive
+- TMS-347: Remove pagination from artist archive #28
 
 ### Added
 
