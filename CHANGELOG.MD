@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [1.7.0] - 2021-10-14
 
+### Changed
+
+- TMS-347: Remove pagination from artist archive
+
 ### Added
 
 - TMS-212: Search view #22
