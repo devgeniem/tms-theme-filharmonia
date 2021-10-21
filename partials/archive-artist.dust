@@ -59,8 +59,6 @@
                         </div>
                     {/results}
                 </div>
-
-                {>"shared/archive-pagination" /}
             </div>
         </main>
     {/ArchiveArtist}
