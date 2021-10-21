@@ -79,18 +79,18 @@ class ArchiveArtist extends BaseModel {
      */
     public function strings() : array {
         return [
-            'search'         => [
+            'search'           => [
                 'label'             => __( 'Search for artist', 'tms-theme-filharmonia' ),
                 'submit_value'      => __( 'Search', 'tms-theme-filharmonia' ),
                 'input_placeholder' => __( 'Search query', 'tms-theme-filharmonia' ),
             ],
-            'terms'          => [
+            'terms'            => [
                 'show_all' => __( 'Show All', 'tms-theme-filharmonia' ),
             ],
-            'no_results'     => __( 'No results', 'tms-theme-filharmonia' ),
-            'filter'         => __( 'Filter', 'tms-theme-filharmonia' ),
-            'is_principal'   => __( 'Principal', 'tms-theme-filharmonia' ),
-            'is_soundmaster' => __( 'Soundmaster', 'tms-theme-filharmonia' ),
+            'no_results'       => __( 'No results', 'tms-theme-filharmonia' ),
+            'filter'           => __( 'Filter', 'tms-theme-filharmonia' ),
+            'is_concertmaster' => __( 'Principal', 'tms-theme-filharmonia' ),
+            'is_principal'     => __( 'Soundmaster', 'tms-theme-filharmonia' ),
         ];
     }
 
