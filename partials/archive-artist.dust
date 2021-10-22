@@ -22,10 +22,12 @@
                                     <div class="artist-list__grid-row">
                                         <p class="m-0 has-text-primary is-family-tertiary is-uppercase has-text-large">
                                             {?fields.is_concertmaster}
-                                                {strings.is_soundmaster|s}
-                                            {:else}
-                                                {strings.is_principal|s}
+                                                {strings.is_concertmaster|s}
                                             {/fields.is_concertmaster}
+
+                                            {?fields.is_principal}
+                                                {strings.is_principal|s}
+                                            {/fields.is_principal}
                                         </p>
                                     </div>
                                 {/isset}
@@ -57,8 +59,6 @@
                         </div>
                     {/results}
                 </div>
-
-                {>"shared/archive-pagination" /}
             </div>
         </main>
     {/ArchiveArtist}
