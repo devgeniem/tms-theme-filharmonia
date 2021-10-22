@@ -3,7 +3,6 @@
  *  Copyright (c) 2021. Geniem Oy
  */
 
-use TMS\Theme\Base\Traits\Pagination;
 use TMS\Theme\Filharmonia\PostType\Artist;
 use TMS\Theme\Filharmonia\Taxonomy\ArtistCategory;
 
@@ -11,8 +10,6 @@ use TMS\Theme\Filharmonia\Taxonomy\ArtistCategory;
  * Archive for Artist CPT
  */
 class ArchiveArtist extends BaseModel {
-
-    use Pagination;
 
     /**
      * Search input name.
@@ -23,13 +20,6 @@ class ArchiveArtist extends BaseModel {
      * Artist category filter name.
      */
     const FILTER_QUERY_VAR = 'artist-filter';
-
-    /**
-     * Pagination data.
-     *
-     * @var object
-     */
-    protected object $pagination;
 
     /**
      * Hooks
@@ -106,6 +96,7 @@ class ArchiveArtist extends BaseModel {
             return;
         }
 
+        $wp_query->set( 'posts_per_page', - 1 );
         $wp_query->set( 'orderby', [ 'last_name' => 'ASC' ] );
         $wp_query->set( 'meta_key', 'last_name' );
 
@@ -195,8 +186,6 @@ class ArchiveArtist extends BaseModel {
     public function results() {
         global $wp_query;
 
-        $this->set_pagination_data( $wp_query );
-
         return $this->format_posts( $wp_query->posts );
     }
 
@@ -229,23 +218,5 @@ class ArchiveArtist extends BaseModel {
 
             return $item;
         }, $posts );
-    }
-
-    /**
-     * Set pagination data
-     *
-     * @param WP_Query $wp_query Instance of WP_Query.
-     *
-     * @return void
-     */
-    protected function set_pagination_data( $wp_query ) : void {
-        $per_page = get_option( 'posts_per_page' );
-        $paged    = ( get_query_var( 'paged' ) ) ? get_query_var( 'paged' ) : 1;
-
-        $this->pagination           = new stdClass();
-        $this->pagination->page     = $paged;
-        $this->pagination->per_page = $per_page;
-        $this->pagination->items    = $wp_query->found_posts;
-        $this->pagination->max_page = (int) ceil( $wp_query->found_posts / $per_page );
     }
 }
