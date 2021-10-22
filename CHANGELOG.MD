@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
+- TMS-348: Make post type url slugs translatable with Polylang #30
 - TMS-346: Fix principal and concertmaster mix up #27
 
 ## [1.7.0] - 2021-10-14
