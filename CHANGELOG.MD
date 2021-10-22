@@ -10,8 +10,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ### Changed
 
 - TMS-349: Fix event view styles
+- TMS-346: Fix principal and concertmaster mix up #27
 
 ## [1.7.0] - 2021-10-14
+
+### Changed
+
+- TMS-347: Remove pagination from artist archive #28
 
 ### Added
 
