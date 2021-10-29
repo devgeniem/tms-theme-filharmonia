@@ -16,8 +16,13 @@
                                     {content.fields.title|s}
                                 </div>
                             {/content.fields.title}
+                            {?content.fields.short_description}
+                            <p>
+                                {content.fields.short_description|s}
+                            </p>
+                            {/content.fields.short_description}
 
-                            {content.fields.description|s}
+                
 
                             {?content.fields.additional_information}
                                 {>"shared/additional-info-list" data=content.fields.additional_information list_class="mt-6" /}
@@ -29,6 +34,13 @@
                                 {@image id=content.image.id size="large" /}
                             </div>
                         {/content.image}
+
+                        {?content.fields.description}
+                            <div class="column is-12-desktop is-offset-1-desktop entry__content keep-vertical-spacing">
+                                {content.fields.description|s}
+                            </div>
+                        {/content.fields.description}
+
                     </article>
 
                     <div class="columns">

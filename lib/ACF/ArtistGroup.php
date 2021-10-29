@@ -97,6 +97,10 @@ class ArtistGroup {
                 'title'        => 'Titteli',
                 'instructions' => '',
             ],
+            'short_description'      => [
+                'title'        => 'Lyhyt kuvaus',
+                'instructions' => '',
+            ],
             'description'            => [
                 'title'        => 'Kuvaus',
                 'instructions' => '',
@@ -149,6 +153,14 @@ class ArtistGroup {
             ->redipress_include_search()
             ->set_instructions( $strings['title']['instructions'] );
 
+        $short_description_field = ( new Field\Textarea( $strings['short_description']['title'] ) )
+            ->set_key( "${key}_short_description" )
+            ->set_name( 'short_description' )
+            ->redipress_include_search()
+            ->set_wrapper_width( 50 )
+            ->set_instructions( $strings['short_description']['instructions'] );
+    
+
         $description_field = ( new TextEditor( $strings['description']['title'] ) )
             ->set_key( "${key}_description" )
             ->set_name( 'description' )
@@ -198,6 +210,7 @@ class ArtistGroup {
             $first_name_field,
             $last_name_field,
             $title_field,
+            $short_description_field,
             $description_field,
             $additional_info_repeater,
             $is_concertmaster_field,
