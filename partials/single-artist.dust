@@ -34,7 +34,7 @@
                         {/content.image}
 
                         {?content.fields.description}
-                            <div class="column is-12-desktop is-offset-1-desktop entry__content keep-vertical-spacing">
+                            <div class="column is-10-desktop is-offset-1-desktop entry__content keep-vertical-spacing">
                                 {content.fields.description|s}
                             </div>
                         {/content.fields.description}
