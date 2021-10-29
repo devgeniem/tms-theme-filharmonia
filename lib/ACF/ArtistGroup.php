@@ -159,7 +159,6 @@ class ArtistGroup {
             ->redipress_include_search()
             ->set_wrapper_width( 50 )
             ->set_instructions( $strings['short_description']['instructions'] );
-    
 
         $description_field = ( new TextEditor( $strings['description']['title'] ) )
             ->set_key( "${key}_description" )
