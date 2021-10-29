@@ -7,8 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+- TMS-357 Single Artist: New ACF field fort short desc.
+
+## [1.8.0] - 2021-10-25
+
 ### Changed
 
+- TMS-357 Single Artist: Layout changes.
 - TMS-346: Fix principal and concertmaster mix up
 - TMS-349: Fix event view styles
 - TMS-348: Make post type url slugs translatable with Polylang
@@ -17,7 +23,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- TMS-347: Remove pagination from artist archive
+- TMS-347: Remove pagination from artist archive #28
 
 ### Added
 
