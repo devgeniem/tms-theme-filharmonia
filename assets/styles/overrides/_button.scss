@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-no-important */
 $button-font-weight: $weight-bold;
 
 .button {
@@ -16,9 +17,9 @@ $button-font-weight: $weight-bold;
         &.is-outlined {
             &.is-hovered,
             &:hover {
-                color: $primary !important;
-                background-color: $primary-invert !important;
                 border-color: $primary-invert !important;
+                background-color: $primary-invert !important;
+                color: $primary !important;
 
                 .icon {
                     fill: $primary !important;
@@ -29,9 +30,9 @@ $button-font-weight: $weight-bold;
             &:active,
             &.is-focused,
             &:focus {
-                color: $secondary-invert !important;
-                background-color: $primary-invert !important;
                 border-color: $primary-invert !important;
+                background-color: $primary-invert !important;
+                color: $secondary-invert !important;
 
                 .icon {
                     fill: $secondary-invert !important;
@@ -42,19 +43,20 @@ $button-font-weight: $weight-bold;
 
     &.is-secondary-invert {
         &.is-outlined {
-            color: $secondary-invert !important;
             border-color: $secondary-invert !important;
+            color: $secondary-invert !important;
 
             .icon {
                 fill: $secondary-invert !important;
             }
 
-
             &.is-hovered,
-            &:hover {
-                color: $secondary-invert !important;
-                background-color: $primary-invert !important;
+            &:hover,
+            &.is-focused,
+            &:focus {
                 border-color: $primary-invert !important;
+                background-color: $primary-invert !important;
+                color: $secondary-invert !important;
 
                 .icon {
                     fill: $secondary-invert !important;

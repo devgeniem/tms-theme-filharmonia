@@ -1,7 +1,7 @@
 .input-text {
     &::placeholder {
-        color: $color-black;
         opacity: 1;
+        color: $color-black;
     }
 
     &:focus-visible {
