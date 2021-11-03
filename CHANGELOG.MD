@@ -7,12 +7,19 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- TMS-358 Single Artist: Table's fonts fixed.
+- TMS-357 Single Artist: Layout changes.
+
 ### Added
-- TMS-357: Single Artist: New ACF field fort short desc.
+
+- TMS-357 Single Artist: New ACF field fort short desc.
+
+## [1.8.0] - 2021-10-25
 
 ### Changed
-- TMS-358: Single Artist: Table's fonts fixed.
-- TMS-357: Single Artist: Layout changes.
+
 - TMS-349: Fix event view styles #29
 - TMS-348: Make post type url slugs translatable with Polylang #30
 - TMS-346: Fix principal and concertmaster mix up #27
