@@ -7,11 +7,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Added
+
+- TMS-370: Check that single artist's additional info has title and text.
+
 ## [1.9.1] - 2021-11-26
 
 ### Changed
 
 - TMS-413: Tampere logo focus styles
+
 
 ## [1.9.0] - 2021-11-04
 
