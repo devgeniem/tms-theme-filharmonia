@@ -14,4 +14,10 @@
         margin-left: auto;
         background-color: $black;
     }
+
+    &__tampere-vaakuna {
+        &:focus {
+            outline-color: $black;
+        }
+    }
 }
