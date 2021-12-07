@@ -1,41 +1,42 @@
-/*!*
+/**
  * Copyright (c) 2021. Geniem Oy
  */
+/* stylelint-disable declaration-no-important */
 
 .grid {
     &__item {
-        color: $secondary-invert !important;
         background-color: $secondary !important;
+        color: $secondary-invert !important;
 
         .button {
-            color: $secondary-invert !important;
-            background-color: $primary !important;
             border-color: $primary !important;
+            background-color: $primary !important;
+            color: $secondary-invert !important;
 
             &.is-hovered,
             &:hover,
             &.is-focused,
             &:focus {
-                color: $primary !important;
-                background-color: $primary-invert !important;
                 border-color: $primary !important;
+                background-color: $primary-invert !important;
+                color: $primary !important;
             }
         }
 
         &--featured {
             a {
                 &.button {
-                    color: $primary-invert !important;
-                    background-color: transparent !important;
                     border-color: $primary-invert !important;
+                    background-color: transparent !important;
+                    color: $primary-invert !important;
 
                     &.is-hovered,
                     &:hover,
                     &.is-focused,
                     &:focus {
-                        color: $primary !important;
-                        background-color: $primary-invert !important;
                         border-color: $primary !important;
+                        background-color: $primary-invert !important;
+                        color: $primary !important;
                     }
                 }
             }

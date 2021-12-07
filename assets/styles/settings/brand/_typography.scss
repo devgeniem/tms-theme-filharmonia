@@ -1,6 +1,7 @@
 /**
  * Typography
  */
+/* stylelint-disable declaration-no-important */
 @import "functions";
 
 $base-sizes: (
@@ -9,10 +10,10 @@ $base-sizes: (
     "desktop": ("base_size": 17px, "scale_value": 1.165, "break_point": $desktop)
 ) !default;
 
-$family-sans-serif: "moret", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-sans-serif: "moret", blinkmacsystemfont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
-$family-primary: "Arvo", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-$family-secondary: "gopher", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubu1ntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-primary: "Arvo", blinkmacsystemfont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-secondary: "gopher", blinkmacsystemfont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubu1ntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 $family-tertiary: $family-sans-serif;
 
 $font-family-header: $family-sans-serif;
@@ -51,10 +52,10 @@ html {
     }
 
     .has-text-lead {
-        font-size: map-get($calculated_sizes, "h6") !important;
-        line-height: 1.62;
         font-family: $family-sans-serif;
+        font-size: map-get($calculated_sizes, "h6") !important;
         font-weight: 600;
+        line-height: 1.62;
     }
 
     .has-text-large {
@@ -131,7 +132,9 @@ html {
 
     @if ($base-size-breakpoint == "mobile") {
         @include breakpoint_typography($calc-base_size, $calculated_sizes);
-    } @else {
+    }
+
+    @else {
         $breakpoint: map-get($base-size-values, "break_point");
 
         @include from($breakpoint) {

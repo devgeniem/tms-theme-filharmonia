@@ -1,3 +1,4 @@
+/* stylelint-disable declaration-no-important */
 .filharmonia-hero {
     h1 {
         @include from($tablet) {
@@ -28,27 +29,27 @@
     }
 
     &__background-container {
-        min-height: 75vw !important; // sass-lint:disable-line no-important
+        min-height: 75vw !important;
 
         @include from($tablet) {
-            min-height: 50vw !important; // sass-lint:disable-line no-important
+            min-height: 50vw !important;
         }
 
         @include from($desktop) {
-            min-height: 36.198vw !important; // sass-lint:disable-line no-important
+            min-height: 36.198vw !important;
 
             &::before,
             &::after {
                 content: '';
                 position: absolute;
+                z-index: 1;
                 top: 0;
                 bottom: 0;
-                z-index: 1;
                 width: 40px;
                 height: 100%;
                 background-repeat: no-repeat;
-                background-position-y: center;
                 background-size: contain;
+                background-position-y: center;
             }
 
             &::before {
