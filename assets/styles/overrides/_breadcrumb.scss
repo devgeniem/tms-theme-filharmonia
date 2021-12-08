@@ -1,0 +1,11 @@
+.breadcrumb{
+
+    &.has-succeeds-separator li + li::before {
+        content:none;
+    }
+
+    a{
+        padding-left:0;
+        padding-right:0;
+    }
+}

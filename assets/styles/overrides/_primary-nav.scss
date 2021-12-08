@@ -1,7 +1,7 @@
 .primary-nav {
     flex-wrap: wrap;
-    .navbar-item > .navbar-dropdown-control > a,
-    .navbar-item > a,
+    // .navbar-item > .navbar-dropdown-control > a,
+    // .navbar-item > a,
     .navbar-dropdown__parent-link {
         font-family: $family-tertiary;
         color: $black !important;
@@ -11,14 +11,13 @@
         }
     }
 
-    >.has-dropdown {
-        &.is-active,
-        &:hover,
-        &:focus {
-            > div > .navbar-link {
-                color:inherit !important
+    .navbar-item,
+    .navbar-dropdown__parent-link {
+        &:hover{
+            > a, & { 
+                color:$navbar-item-dropdown-accent-color !important;
             }
-        }
+        } 
     }
 
 
@@ -29,11 +28,10 @@
 
         .navbar-grid {
             overflow: hidden;
+            padding:0.2rem;
+            .navbar-item.current-menu-item {
+                padding-left:1.5rem;
+            }
         }
     }
 }
-
-
-// > .has-dropdown.is-active > div > .navbar-link,
-// > .has-dropdown:hover > div > .navbar-link,
-//  > .has-dropdown:focus > div > .navbar-link

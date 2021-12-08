@@ -1,0 +1,29 @@
+{?breadcrumbs}
+<nav class="breadcrumb has-succeeds-separator" aria-label="breadcrumbs">
+    <ul class="breadcrumbs__nav is-relative is-flex m-0 p-0 is-family-primary">
+        {#breadcrumbs}
+            <li class="{?is_active}is-active{/is_active} {?class}{class}{/class}">
+                {?permalink}
+                    <a href="{permalink}" {?is_active}aria-current="page"{/is_active}>
+                       
+                        {?title}
+                            {title|s}
+                        {/title}
+
+                        {>"ui/icon" icon="chevron-right" class="icon--small ml-2" /}
+
+                    </a>
+                {:else}
+                    <span {?is_active}aria-current="page"{/is_active}>
+                        
+                        {?title}
+                            {title|s}
+                        {/title}
+
+                    </span>
+                {/permalink}
+            </li>
+        {/breadcrumbs}
+    </ul>
+</nav>
+{/breadcrumbs}
