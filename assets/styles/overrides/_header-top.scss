@@ -1,0 +1,21 @@
+.site-header {
+
+    &__logo-image {
+        @include from($tablet) {
+            min-width: 10rem;
+            max-width: 16rem;
+            margin-right:2rem;
+        }
+    }
+
+    &__brand {
+        display:flex;
+        align-items:center;
+    }
+
+    #js-search-toggle {
+        font-weight: 700;
+    }
+
+}
+
