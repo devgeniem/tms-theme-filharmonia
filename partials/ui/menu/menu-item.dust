@@ -20,7 +20,7 @@
 
         <div class="navbar-dropdown is-hidden-touch" id="js-navbar-menu-item-{$idx}">
             {#sub_menu}
-                {>"ui/menu/menu-item-simple" /}
+                {>"ui/menu/menu-item-simple" icon="chevron-right" /}
             {/sub_menu}
         </div>
     </li>

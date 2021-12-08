@@ -7,10 +7,6 @@
     .navbar-item{
         padding: 0.75rem;
         min-height: 68px;
-        // &.has-dropdown{
-        //     padding-top:0;
-        //     padding-bottom:0;
-        // }
     }
 
     .navbar-link {
@@ -21,8 +17,8 @@
 
         .navbar-item {
             position: relative;
-            padding: 1rem;
-           
+            padding: 1.5rem 1rem;
+            min-height: auto;
             &::after{
                 content: "";
                 position: absolute;
@@ -31,9 +27,12 @@
                 left: 1rem;
                 display: block;
                 height: 1px;
-                background-color: #e14e32;
+                background-color: $navbar-item-dropdown-accent-color;
             }
 
+        }
+        .icon{
+            fill:$navbar-item-dropdown-accent-color;
         }
 
     }

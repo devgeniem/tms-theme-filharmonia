@@ -17,5 +17,35 @@
         font-weight: 700;
     }
 
+    .language-nav {
+
+        .dropdown .dropdown-trigger .button {
+            border-radius: 0.25rem !important;
+            padding-right: 1rem;
+            padding-left: 1rem;
+            border-color: $black !important;
+            color: $black !important;
+    
+            .icon {
+                fill: $black !important;
+            }
+        }
+
+        .dropdown-menu {
+            min-width: auto;
+            width: 100%;
+            border: 0.15rem solid $black;
+            border-top: 0;
+            padding-top: 0;
+            border-bottom-right-radius: 0.25rem;
+            border-bottom-left-radius: 0.25rem;
+            .dropdown-content{
+                background-color: $secondary;
+            }
+           
+        }
+
+    }
+
 }
 
