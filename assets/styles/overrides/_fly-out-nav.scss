@@ -1,0 +1,49 @@
+.fly-out-nav {
+
+    .has-dropdown.is-active::after{
+        content:none;
+    }
+
+    .navbar-item{
+        padding: 0.75rem;
+        min-height: 68px;
+        // &.has-dropdown{
+        //     padding-top:0;
+        //     padding-bottom:0;
+        // }
+    }
+
+    .navbar-link {
+        padding: 0;
+    }
+
+    .navbar-dropdown {
+
+        .navbar-item {
+            position: relative;
+            padding: 1rem;
+           
+            &::after{
+                content: "";
+                position: absolute;
+                right: 1rem;
+                bottom: 0;
+                left: 1rem;
+                display: block;
+                height: 1px;
+                background-color: #e14e32;
+            }
+
+        }
+
+    }
+
+    .secondary-menu {
+        border-color: $black;
+
+        .menu-item-secondary{
+            margin-bottom: 1.5rem;
+        }
+    }
+
+}

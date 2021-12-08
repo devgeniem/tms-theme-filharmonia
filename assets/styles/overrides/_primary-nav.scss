@@ -11,7 +11,29 @@
         }
     }
 
-    &--dropdown .navbar-dropdown {
-        padding-bottom: 3rem;
+    >.has-dropdown {
+        &.is-active,
+        &:hover,
+        &:focus {
+            > div > .navbar-link {
+                color:inherit !important
+            }
+        }
+    }
+
+
+    &--dropdown {
+        .navbar-dropdown {
+            padding-bottom: 3rem;
+        }
+
+        .navbar-grid {
+            overflow: hidden;
+        }
     }
 }
+
+
+// > .has-dropdown.is-active > div > .navbar-link,
+// > .has-dropdown:hover > div > .navbar-link,
+//  > .has-dropdown:focus > div > .navbar-link
