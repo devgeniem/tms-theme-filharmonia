@@ -36,6 +36,13 @@ class ThemeCustomizationController implements Controller {
         );
 
         add_filter(
+            'tms/theme/footer/typgraphy',
+            \Closure::fromCallable( [ $this, 'footer_typography' ] ),
+            10,
+            1
+        );
+
+        add_filter(
             'tms/theme/share_links/link_class',
             fn() => 'has-background-primary-invert'
         );
@@ -112,6 +119,18 @@ class ThemeCustomizationController implements Controller {
         $colors['link_icon']   = 'is-black';
 
         return $colors;
+    }
+
+     /**
+     * Customize footer typogrphy.
+     *
+     * @param array $typography Typography classes.
+     *
+     * @return array Array of customized typography classes.
+     */
+    public function footer_typography( $colors ) : array {
+        $typography['column']   = 'has-text-weight-normal is-family-secondary has-text-small';
+        return $typography;
     }
 
     /**
