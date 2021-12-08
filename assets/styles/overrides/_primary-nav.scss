@@ -1,8 +1,7 @@
 .primary-nav {
     flex-wrap: wrap;
-    // .navbar-item > .navbar-dropdown-control > a,
-    // .navbar-item > a,
-    .navbar-dropdown__parent-link {
+    .navbar-item > .navbar-dropdown-control > a,
+    .navbar-item > a {
         font-family: $family-tertiary;
         color: $black !important;
         @include from($desktop) {
@@ -11,11 +10,22 @@
         }
     }
 
+    >.has-dropdown {
+        &.is-active,
+        &:focus,
+        &:hover {
+            > div > .navbar-link {
+                color:$primary !important;
+            }
+        }
+    }
+
     .navbar-item,
     .navbar-dropdown__parent-link {
+        color: $black !important;
         &:hover{
             > a, & { 
-                color:$navbar-item-dropdown-accent-color !important;
+                color:$primary !important;
             }
         } 
     }
@@ -24,13 +34,19 @@
     &--dropdown {
         .navbar-dropdown {
             padding-bottom: 3rem;
+            .icon{
+                fill:$primary;
+            }
         }
 
         .navbar-grid {
             overflow: hidden;
             padding:0.2rem;
-            .navbar-item.current-menu-item {
-                padding-left:1.5rem;
+            .navbar-item {
+                &.current-menu-item,
+                &.current-menu-parent {
+                    padding-left:1.5rem;
+                }
             }
         }
     }
