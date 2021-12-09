@@ -16,6 +16,10 @@
                 </a>
             </h3>
 
+            {?short_description}
+            <p>{short_description|s}</p>
+            {/short_description}
+
             {?primary_keyword}
                 <span class="is-sr-only">{primary_keyword|s}</span>
             {/primary_keyword}
