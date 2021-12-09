@@ -3,7 +3,7 @@
     &__logo-image {
         @include from($tablet) {
             min-width: 10rem;
-            max-width: 16rem;
+            max-width: 15rem;
             margin-right:2rem;
         }
     }
@@ -15,6 +15,10 @@
 
     #js-search-toggle {
         font-weight: 700;
+    }
+
+    #js-search-toggle-target{
+        box-shadow: 0 .0588rem .5rem rgba($black, .1);
     }
 
     .language-nav {
