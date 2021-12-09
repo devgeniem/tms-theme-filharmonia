@@ -79,6 +79,22 @@ class ThemeCustomizationController implements Controller {
             ];
         } );
 
+        add_filter( 'tms/acf/block/material/data', function ( $data ) {
+            $data['button_classes'] = 'is-primary';
+
+            return $data;
+        } );
+
+        add_filter(
+            'tms/plugin-materials/page_materials/material_page_item_button_classes',
+            fn() => 'is-primary'
+        );
+
+        add_filter(
+            'tms/plugin-materials/page_materials/material_page_item_classes',
+            fn() => ''
+        );
+
         add_filter( 'tms/theme/event/info_group_classes', fn() => '' );
     }
 
