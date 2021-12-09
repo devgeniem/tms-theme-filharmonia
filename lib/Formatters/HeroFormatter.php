@@ -77,7 +77,7 @@ class HeroFormatter implements \TMS\Theme\Base\Interfaces\Formatter {
                 'link'  => $layout['find_us']['find_us_button'] ?? false,
             ],
         ];
-
+        
         return $layout;
     }
 }
