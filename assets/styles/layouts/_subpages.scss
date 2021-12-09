@@ -1,6 +1,19 @@
 .subpages {
-    .post-link:not(.has-background-black) {
+    .post-link {
         border: 1px solid $primary;
+
+        &.has-background-black {
+            border: 1px solid $black;
+        }
+
+        &:not(.has-background-image) {
+            &:hover,
+            &:focus {
+                background-color: $primary-invert !important;
+                color: $color-black !important;
+                border-color: $primary !important;
+            }
+        }
 
         &.has-background-image {
             border: none !important;

@@ -118,16 +118,16 @@ class ThemeCustomizationController implements Controller {
      * @return array Array of customized colors.
      */
     public function header_colors( $colors ) : array {
-        $colors['search_button']             = 'is-secondary-invert is-outlined';
-        $colors['nav']['container']          = 'has-background-secondary';
-        $colors['fly_out_nav']['inner']      = 'has-background-secondary has-text-secondary-invert';
-        $colors['fly_out_nav']['close_menu'] = 'is-black';
-        $colors['fly_out_nav']['search_title'] = 'is-black';
-        $colors['fly_out_nav']['search_button'] = 'is-secondary-invert is-outlined';
+        $colors['search_button']                   = 'is-secondary-invert is-outlined';
+        $colors['nav']['container']                = 'has-background-secondary';
+        $colors['fly_out_nav']['inner']            = 'has-background-secondary has-text-secondary-invert';
+        $colors['fly_out_nav']['close_menu']       = 'is-black';
+        $colors['fly_out_nav']['search_title']     = 'is-black';
+        $colors['fly_out_nav']['search_button']    = 'is-secondary-invert is-outlined';
         $colors['fly_out_nav']['brand_icon_color'] = 'is-black';
-        $colors['lang_nav']['link']          = 'has-border-radius-50';
-        $colors['lang_nav']['link__default'] = 'has-text-secondary-invert';
-        $colors['lang_nav']['link__active']  = 'has-background-secondary-invert has-text-primary-invert';
+        $colors['lang_nav']['link']                = 'has-border-radius-50';
+        $colors['lang_nav']['link__default']       = 'has-text-secondary-invert';
+        $colors['lang_nav']['link__active']        = 'has-background-secondary-invert has-text-primary-invert';
 
 
         return $colors;
@@ -149,7 +149,7 @@ class ThemeCustomizationController implements Controller {
         return $colors;
     }
 
-     /**
+    /**
      * Customize footer typogrphy.
      *
      * @param array $typography Typography classes.
@@ -157,7 +157,8 @@ class ThemeCustomizationController implements Controller {
      * @return array Array of customized typography classes.
      */
     public function footer_typography( $colors ) : array {
-        $typography['column']   = 'has-text-weight-normal is-family-secondary has-text-small';
+        $typography['column'] = 'has-text-weight-normal is-family-secondary has-text-small';
+
         return $typography;
     }
 
