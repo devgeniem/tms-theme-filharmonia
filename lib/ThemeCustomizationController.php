@@ -96,6 +96,11 @@ class ThemeCustomizationController implements Controller {
         );
 
         add_filter( 'tms/theme/event/info_group_classes', fn() => '' );
+
+        add_filter(
+            'tms/acf/block/quote/data',
+            [ $this, 'alter_quote_block_data' ]
+        );
     }
 
     /**
@@ -183,6 +188,31 @@ class ThemeCustomizationController implements Controller {
         $classes['event_search_section'] = 'has-border-bottom-1 has-border-top-1 has-border-divider-invert';
 
         return $classes;
+    }
+
+    /**
+     * Quote
+     *
+     * @param array $data Quote block data.
+     *
+     * @return array
+     */
+    public function alter_quote_block_data( $data ) : array {
+        $data['classes']['container'] = [
+            'mt-6',
+            'mb-6',
+            'pt-6',
+            'pb-6',
+        ];
+        $data['classes']['quote']     = [
+            'is-text-big',
+            'has-line-height-tight',
+            'is-family-tertiary',
+            'is-uppercase',
+            'has-text-centered',
+        ];
+
+        return $data;
     }
 
     /**

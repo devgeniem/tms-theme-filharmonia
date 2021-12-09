@@ -1,0 +1,16 @@
+.quote {
+    &__content {
+        color: $primary;
+
+        > p {
+            margin-top: $theme-spacing-three-quarters;
+            margin-bottom: $theme-spacing-three-quarters;
+        }
+    }
+
+    &__author {
+        letter-spacing: 0.05rem;
+        font-family: $family-secondary !important;
+        font-size: 1rem !important;
+    }
+}
