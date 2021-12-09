@@ -1,0 +1,12 @@
+.pill{
+
+    &.is-active:not(span){
+
+        &:hover,
+        &:focus {
+            color: $black !important;
+        }
+
+    }
+
+}
