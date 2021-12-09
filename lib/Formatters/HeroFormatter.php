@@ -36,8 +36,7 @@ class HeroFormatter implements \TMS\Theme\Base\Interfaces\Formatter {
      * @return array
      */
     public function format( array $layout ) : array {
-        // var_dump($layout);
-        // die();
+
         $layout['heading_padding_size'] = isset( $layout['align'] ) && $layout['align'] === 'center' ? '4' : '2';
         $layout['align'] = isset( $layout['align'] ) && $layout['align'] === 'center' ? 'centered' : $layout['align'];
 
