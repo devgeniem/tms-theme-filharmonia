@@ -1,0 +1,9 @@
+.subpages {
+    .post-link:not(.has-background-black) {
+        border: 1px solid $primary;
+
+        &.has-background-image {
+            border: none !important;
+        }
+    }
+}
