@@ -13,6 +13,14 @@
         margin-bottom: 0 !important;
     }
 
+    .highlight-article {
+        margin-top: 2rem !important;
+
+        .pill {
+            background-color: transparent;
+        }
+    }
+
     .entry {
         font-family: $family-secondary;
 
