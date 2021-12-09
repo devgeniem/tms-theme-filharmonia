@@ -39,12 +39,13 @@ class HeroFormatter implements \TMS\Theme\Base\Interfaces\Formatter {
 
         $layout['heading_padding_size'] = isset( $layout['align'] ) && $layout['align'] === 'center' ? '4' : '2';
 
-        // handle $layout['text_align'] OR $layout['align'] 
-        if(isset( $layout['text_align'] )){
+        // handle $layout['text_align'] OR $layout['align']
+        if ( isset( $layout['text_align'] ) ) {
 
             $layout['align'] = $layout['text_align'];
 
-        } else if( isset( $layout['align'] ) ){
+        }
+        elseif ( isset( $layout['align'] ) ) {
             switch ( $layout['align'] ) {
                 case 'right':
                     $layout['align'] = 'has-text-right';
@@ -55,9 +56,10 @@ class HeroFormatter implements \TMS\Theme\Base\Interfaces\Formatter {
                 default:
                     $layout['align'] = 'has-text-centered';
             }
-         } else{
+        }
+        else {
             $layout['align'] = 'has-text-centered';
-         }
+        }
 
         $layout['columns'] = [
             [
@@ -77,7 +79,7 @@ class HeroFormatter implements \TMS\Theme\Base\Interfaces\Formatter {
                 'link'  => $layout['find_us']['find_us_button'] ?? false,
             ],
         ];
-        
+
         return $layout;
     }
 }

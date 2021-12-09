@@ -102,7 +102,6 @@ class ThemeCustomizationController implements Controller {
             [ $this, 'alter_quote_block_data' ]
         );
 
-
         add_filter(
             'tms/acf/block/subpages/data',
             [ $this, 'alter_block_subpages_data' ],
@@ -128,7 +127,6 @@ class ThemeCustomizationController implements Controller {
         $colors['lang_nav']['link']                = 'has-border-radius-50';
         $colors['lang_nav']['link__default']       = 'has-text-secondary-invert';
         $colors['lang_nav']['link__active']        = 'has-background-secondary-invert has-text-primary-invert';
-
 
         return $colors;
     }
@@ -156,7 +154,7 @@ class ThemeCustomizationController implements Controller {
      *
      * @return array Array of customized typography classes.
      */
-    public function footer_typography( $colors ) : array {
+    public function footer_typography( $typography ) : array {
         $typography['column'] = 'has-text-weight-normal is-family-secondary has-text-small';
 
         return $typography;
