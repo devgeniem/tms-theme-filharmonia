@@ -79,7 +79,35 @@ class ThemeCustomizationController implements Controller {
             ];
         } );
 
+        add_filter( 'tms/acf/block/material/data', function ( $data ) {
+            $data['button_classes'] = 'is-primary';
+
+            return $data;
+        } );
+
+        add_filter(
+            'tms/plugin-materials/page_materials/material_page_item_button_classes',
+            fn() => 'is-primary'
+        );
+
+        add_filter(
+            'tms/plugin-materials/page_materials/material_page_item_classes',
+            fn() => ''
+        );
+
         add_filter( 'tms/theme/event/info_group_classes', fn() => '' );
+
+        add_filter(
+            'tms/acf/block/quote/data',
+            [ $this, 'alter_quote_block_data' ]
+        );
+
+
+        add_filter(
+            'tms/acf/block/subpages/data',
+            [ $this, 'alter_block_subpages_data' ],
+            30
+        );
     }
 
     /**
@@ -90,16 +118,16 @@ class ThemeCustomizationController implements Controller {
      * @return array Array of customized colors.
      */
     public function header_colors( $colors ) : array {
-        $colors['search_button']             = 'is-secondary-invert is-outlined';
-        $colors['nav']['container']          = 'has-background-secondary';
-        $colors['fly_out_nav']['inner']      = 'has-background-secondary has-text-secondary-invert';
-        $colors['fly_out_nav']['close_menu'] = 'is-black';
-        $colors['fly_out_nav']['search_title'] = 'is-black';
-        $colors['fly_out_nav']['search_button'] = 'is-secondary-invert is-outlined';
+        $colors['search_button']                   = 'is-secondary-invert is-outlined';
+        $colors['nav']['container']                = 'has-background-secondary';
+        $colors['fly_out_nav']['inner']            = 'has-background-secondary has-text-secondary-invert';
+        $colors['fly_out_nav']['close_menu']       = 'is-black';
+        $colors['fly_out_nav']['search_title']     = 'is-black';
+        $colors['fly_out_nav']['search_button']    = 'is-secondary-invert is-outlined';
         $colors['fly_out_nav']['brand_icon_color'] = 'is-black';
-        $colors['lang_nav']['link']          = 'has-border-radius-50';
-        $colors['lang_nav']['link__default'] = 'has-text-secondary-invert';
-        $colors['lang_nav']['link__active']  = 'has-background-secondary-invert has-text-primary-invert';
+        $colors['lang_nav']['link']                = 'has-border-radius-50';
+        $colors['lang_nav']['link__default']       = 'has-text-secondary-invert';
+        $colors['lang_nav']['link__active']        = 'has-background-secondary-invert has-text-primary-invert';
 
 
         return $colors;
@@ -121,7 +149,7 @@ class ThemeCustomizationController implements Controller {
         return $colors;
     }
 
-     /**
+    /**
      * Customize footer typogrphy.
      *
      * @param array $typography Typography classes.
@@ -129,7 +157,8 @@ class ThemeCustomizationController implements Controller {
      * @return array Array of customized typography classes.
      */
     public function footer_typography( $colors ) : array {
-        $typography['column']   = 'has-text-weight-normal is-family-secondary has-text-small';
+        $typography['column'] = 'has-text-weight-normal is-family-secondary has-text-small';
+
         return $typography;
     }
 
@@ -167,6 +196,57 @@ class ThemeCustomizationController implements Controller {
         $classes['event_search_section'] = 'has-border-bottom-1 has-border-top-1 has-border-divider-invert';
 
         return $classes;
+    }
+
+    /**
+     * Quote
+     *
+     * @param array $data Quote block data.
+     *
+     * @return array
+     */
+    public function alter_quote_block_data( $data ) : array {
+        $data['classes']['container'] = [
+            'mt-6',
+            'mb-6',
+            'pt-6',
+            'pb-6',
+        ];
+        $data['classes']['quote']     = [
+            'is-text-big',
+            'has-line-height-tight',
+            'is-family-tertiary',
+            'is-uppercase',
+            'has-text-centered',
+        ];
+
+        return $data;
+    }
+
+    /**
+     * Alter Subpages block data.
+     *
+     * @param array $data Block data.
+     *
+     * @return array
+     */
+    public function alter_block_subpages_data( $data ) {
+        if ( empty( $data['subpages'] ) ) {
+            return $data;
+        }
+
+        $icon_colors_map = [
+            'black'     => 'is-secondary-invert',
+            'white'     => 'is-primary',
+            'primary'   => 'is-black-invert',
+            'secondary' => 'is-secondary-invert',
+        ];
+
+        $icon_color_key = $data['background_color'] ?? 'black';
+
+        $data['icon_classes'] = $icon_colors_map[ $icon_color_key ];
+
+        return $data;
     }
 
     /**

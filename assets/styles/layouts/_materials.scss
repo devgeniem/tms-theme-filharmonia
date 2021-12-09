@@ -1,0 +1,13 @@
+.materials {
+    li {
+        border-radius: 0 !important;
+    }
+
+    .button.is-align-self-flex-start {
+        align-self: center !important;
+    }
+
+    a > .icon {
+        fill: $primary !important;
+    }
+}

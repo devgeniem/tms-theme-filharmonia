@@ -1,0 +1,11 @@
+.page-materials {
+    &__result-title {
+        flex-direction: row-reverse;
+
+        > .icon {
+            margin-right: $theme-spacing-three-quarters !important;
+            margin-left: 0 !important;
+            fill: $primary !important;
+        }
+    }
+}
