@@ -4,20 +4,20 @@
         @include from($tablet) {
             min-width: 10rem;
             max-width: 15rem;
-            margin-right:2rem;
+            margin-right: 2rem;
         }
     }
 
     &__brand {
-        display:flex;
-        align-items:center;
+        display: flex;
+        align-items: center;
     }
 
     #js-search-toggle {
         font-weight: 700;
     }
 
-    #js-search-toggle-target{
+    #js-search-toggle-target {
         box-shadow: 0 .0588rem .5rem rgba($black, .1);
     }
 
@@ -43,7 +43,8 @@
             padding-top: 0;
             border-bottom-right-radius: 0.25rem;
             border-bottom-left-radius: 0.25rem;
-            .dropdown-content{
+            
+            .dropdown-content {
                 background-color: $secondary;
             }
            
