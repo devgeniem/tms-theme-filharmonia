@@ -1,0 +1,25 @@
+/*!
+ *  Copyright (c) 2021. Geniem Oy
+ */
+
+.single-post {
+    .related-posts {
+        h2 {
+            text-transform: uppercase;
+        }
+
+        &__item {
+            > .button {
+                display: none;
+            }
+        }
+
+        &__excerpt {
+            font-size: 85%;
+
+            > span {
+                font-weight: 400 !important;
+            }
+        }
+    }
+}

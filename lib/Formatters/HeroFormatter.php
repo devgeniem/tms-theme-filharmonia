@@ -36,7 +36,9 @@ class HeroFormatter implements \TMS\Theme\Base\Interfaces\Formatter {
      * @return array
      */
     public function format( array $layout ) : array {
-        $layout['heading_padding_size'] = $layout['text_align'] === 'has-text-center' ? '4' : '2';
+        $layout['heading_padding_size'] = isset( $layout['text_align'] ) && $layout['text_align'] === 'has-text-center'
+            ? '4'
+            : '2';
 
         $layout['columns'] = [
             [
