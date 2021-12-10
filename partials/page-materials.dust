@@ -1,0 +1,70 @@
+{+header}
+    {>"shared/header" /}
+{/header}
+
+{#PageMaterials}
+    <main class="main-content" id="main-content">
+        <section class="section">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-6 is-offset-3">
+                        <div class="p-2 has-text-centered mb-6">
+                            <h1 class="entry__title mt-0">
+                                {@title /}
+                            </h1>
+
+                            {?description}
+                                <p>{description|s}</p>
+                            {/description}
+                        </div>
+                    </div>
+                </div>
+
+                {@password}
+                    <div class="columns">
+                        <div class="column is-6">
+                        <span class="is-block h6 mb-3">{Strings.s.search.filter_by_post_type}</span>
+                            <div class="is-flex is-align-items-center">{>"material-type-term-list" /}</div>
+                        </div>
+
+                        <div class="column is-6 is-offset-2-fullhd is-4-fullhd">
+                            <form class="p-2" action="{search.action|s}" method="get" role="search">
+                                {>"ui/input-text" label=strings.search.label name=search.input_search_name value=search.current_search placeholder=strings.search.input_placeholder /}
+                                {>"ui/button-search-submit" text=strings.search.submit_value class="{layout_classes.submit_classes} is-secondary-invert is-outlined" /}
+                            </form>
+                        </div>
+                    </div>
+
+                    <div class="page-materials__results columns">
+                        {?PageMaterials.results.summary}
+                            <p class="is-sr-only">{PageMaterials.results.summary|s}</p>
+                        {/PageMaterials.results.summary}
+
+                        <div class="column is-10-fullhd is-offset-1-fullhd">
+                            {?results.items}
+                                <ul class="columns is-unstyled is-multiline">
+                                    {#results.items}
+                                        {>"material-page-item" /}
+                                    {/results.items}
+                                </ul>
+
+                            {:else}
+                                <div class="has-text-centered h5 mt-7 mb-7 mt-12-desktop mb-12-desktop">
+                                    {strings.no_results|s}
+                                </div>
+                            {/results.items}
+                        </div>
+                    </div>
+
+                    {?pagination}
+                        {@pagination page=pagination.page per_page=pagination.per_page items=pagination.items page_var="paged" /}
+                    {/pagination}
+                {/password}
+            </div>
+        </section>
+    </main>
+{/PageMaterials}
+
+{+footer}
+    {>"shared/footer" /}
+{/footer}

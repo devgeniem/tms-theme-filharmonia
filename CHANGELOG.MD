@@ -7,6 +7,27 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+### Changed
+
+- TMS-421: Fixes before site's publishing
+    - Nav styles and classes
+    - Header styles
+    - Footer styles
+    - Breadcrumbs styles
+    - Colors
+    - Link and button styles
+    - Event highlights
+    - Single Article styles
+    - Materials styles
+    - Hero styles
+    - Accordion styles
+    - Quote styles
+    - Table styles
+    - Link list styles
+    - Subpages layout styles
+    - Contact styles
+    - Gallery styles
+
 ## [1.9.2] - 2021-11-30
 
 ### Added

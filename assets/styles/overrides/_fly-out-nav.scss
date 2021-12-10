@@ -1,0 +1,58 @@
+.fly-out-nav {
+
+    &__trigger:hover .icon { 
+        fill: $primary;
+    }
+
+    .has-dropdown.is-active::after {
+        content: none;
+    }
+
+    .navbar-item {
+        padding: 0.75rem;
+        min-height: 68px;
+    }
+
+    .navbar-link {
+        padding: 0;
+    }
+
+    .navbar-dropdown {
+
+        .navbar-item {
+            position: relative;
+            padding: 1.5rem 1rem;
+            min-height: auto;
+            &::after {
+                content: "";
+                position: absolute;
+                right: 1rem;
+                bottom: 0;
+                left: 1rem;
+                display: block;
+                height: 1px;
+                background-color: $primary;
+            }
+
+        }
+        .icon {
+            fill: $primary;
+        }
+
+    }
+    a {
+        &:hover,
+        &:focus {
+            color: $primary;
+        }
+    }
+
+    .secondary-menu {
+        border-color: $black;
+
+        .menu-item-secondary {
+            margin-bottom: 1.5rem;
+        }
+    }
+
+}

@@ -1,0 +1,17 @@
+.link-list {
+    padding-bottom: $theme-spacing-four !important;
+    border: 1px solid $primary;
+
+    &__title {
+        margin-bottom: $theme-spacing-oneandhalf !important;
+    }
+
+    &__description,
+    ul {
+        margin-top: $theme-spacing-oneandhalf !important;
+    }
+
+    li > a {
+        font-family: $family-secondary;
+    }
+}

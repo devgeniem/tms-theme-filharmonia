@@ -8,7 +8,7 @@
         {/overlay}
 
         <div class="filharmonia-hero__text">
-            <div class="container is-flex is-flex-direction-column mt-8 mb-8 mt-12-desktop mb-12-desktop {text_align|s}">
+            <div class="container is-flex is-flex-direction-column mb-10 {align|s}">
                 {?title}
                     <h1 class="filharmonia-hero__title h1 mt-0 mr-4 mb-5 ml-4 mr-8-desktop ml-8-desktop is-uppercase no-hyphens has-text-primary-invert">
                         <span class="pr-{heading_padding_size|s} pl-{heading_padding_size|s}">{title|s}</span>
@@ -18,7 +18,7 @@
                 {?description}
                     <div
                         class="filharmonia-hero__description mr-4 ml-4 mr-8-desktop ml-8-desktop has-text-large is-inline-block has-text-primary-invert keep-vertical-spacing">
-                        <span class="pr-2 pl-2">{description|s}</span>
+                        <span class="pr-2 pl-2 is-inline-block">{description|s}</span>
                     </div>
                 {/description}
             </div>

@@ -20,4 +20,11 @@
             outline-color: $black;
         }
     }
+    h2 {
+        color: $black;
+        text-transform: none;
+    }
+    a {
+        font-weight: inherit;
+    }
 }

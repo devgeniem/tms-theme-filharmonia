@@ -85,3 +85,12 @@ $fly-out-nav-search-input-background-color: $secondary;
 assets/styles/ui-components/_footer.scss
 --------------------------------------------------------------*/
 $footer-copy-link-border-color: $secondary-invert;
+
+/*--------------------------------------------------------------
+assets/styles/ui-components/_table.scss
+--------------------------------------------------------------*/
+$table-background-color: $secondary;
+$table-row-background-color-even: $color-white;
+$table-row-background-color-odd: $secondary;
+$table-row-background-color-even-hover: $color-vaalean-harmaa;
+$table-row-background-color-odd-hover: $secondary-dark;

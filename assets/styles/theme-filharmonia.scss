@@ -51,6 +51,7 @@ $button-colors: (
 );
 
 $color-background-primary-light--opaque-light: $secondary;
+$button-font-weight: $weight-bold;
 
 @import "color_overrides";
 @import "../../../tms-theme-base/assets/styles/main";

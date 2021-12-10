@@ -1,13 +1,22 @@
-$button-font-weight: $weight-bold;
-
 .button {
     &.is-primary {
+        color: $primary-invert !important;
+        
+        .icon {
+            fill: $primary-invert !important;
+        }
+
         &.is-inverted {
             color: $secondary-invert !important;
 
             .icon {
                 fill: $secondary-invert !important;
             }
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $primary-invert !important;
         }
     }
 
@@ -35,6 +44,17 @@ $button-font-weight: $weight-bold;
 
                 .icon {
                     fill: $secondary-invert !important;
+                }
+            }
+        }
+        &.is-inverted{
+            &:hover,
+            &:focus {
+                color: $primary-invert !important;
+                background-color: $primary !important;
+                border-color: $primary !important;
+                .icon {
+                    fill: $primary-invert !important;
                 }
             }
         }
