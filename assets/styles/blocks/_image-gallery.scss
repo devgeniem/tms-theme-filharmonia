@@ -1,0 +1,17 @@
+.image-carousel__inner {
+    .slick-arrow {
+        color: $primary !important;
+        background-color: unset !important;
+        border: unset !important;
+
+        &:hover,
+        &:focus {
+            background-color: unset !important;
+            box-shadow: unset !important;
+        }
+
+        .icon {
+            fill: currentColor !important;
+        }
+    }
+}

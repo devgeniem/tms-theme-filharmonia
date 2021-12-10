@@ -107,6 +107,8 @@ class ThemeCustomizationController implements Controller {
             [ $this, 'alter_block_subpages_data' ],
             30
         );
+
+        add_filter( 'tms/acf/block/carousel/title_class', fn() => 'h2' );
     }
 
     /**
