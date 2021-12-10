@@ -1,7 +1,7 @@
 .h1,
 h1 {
     color: $primary;
-    text-transform:uppercase;
+    text-transform: uppercase;
 
     @include from($desktop) {
         font-size: 4.588rem !important;
