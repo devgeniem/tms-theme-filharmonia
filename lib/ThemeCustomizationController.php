@@ -108,6 +108,11 @@ class ThemeCustomizationController implements Controller {
             30
         );
 
+        add_filter(
+            'tms/theme/layout_events/all_events_link',
+            fn() => 'is-size-7 has-text-decoration-underline'
+        );
+
         add_filter( 'tms/acf/block/carousel/title_class', fn() => 'h2' );
     }
 
