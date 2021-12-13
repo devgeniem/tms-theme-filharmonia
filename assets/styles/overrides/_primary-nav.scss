@@ -4,6 +4,7 @@
     .navbar-item > a {
         font-family: $family-tertiary;
         color: $black !important;
+        
         @include from($desktop) {
             font-size: 1.235rem;
             letter-spacing: .05em;
@@ -15,7 +16,7 @@
         &:focus,
         &:hover {
             > div > .navbar-link {
-                color:$primary !important;
+                color: $primary !important;
             }
         }
     }
@@ -23,9 +24,9 @@
     .navbar-item,
     .navbar-dropdown__parent-link {
         color: $black !important;
-        &:hover{
+        &:hover {
             > a, & { 
-                color:$primary !important;
+                color: $primary !important;
             }
         } 
     }
@@ -35,17 +36,17 @@
         .navbar-dropdown {
             padding-bottom: 3rem;
             .icon{
-                fill:$primary;
+                fill: $primary;
             }
         }
 
         .navbar-grid {
             overflow: hidden;
-            padding:0.2rem;
+            padding: 0.2rem;
             .navbar-item {
                 &.current-menu-item,
                 &.current-menu-parent {
-                    padding-left:1.5rem;
+                    padding-left: 1.5rem;
                 }
             }
         }
