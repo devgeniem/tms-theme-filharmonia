@@ -9,7 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
-- TMS-560: Hide event categories 
+- TMS-560: Hide event categories #490
+
 ## Added
 
 - Add favicon
