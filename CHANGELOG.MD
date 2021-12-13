@@ -9,6 +9,16 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - TMS-555: Change artist short description field to texteditor #47
 
+## [1.11.0] - 2021-12-13
+
+### Changed
+
+- TMS-560: Hide event categories #49
+
+## Added
+
+- Add favicon
+
 ## [1.10.0] - 2021-12-13
 
 ### Changed
