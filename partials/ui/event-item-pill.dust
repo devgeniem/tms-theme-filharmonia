@@ -1,5 +1,5 @@
-{?primary_keyword}
+{?primary_keyword.name}
     <span class="pill is-relative has-bottom-2 has-left-2 is-uppercase has-text-black has-background-white">
-        {primary_keyword|s}
+        {primary_keyword.name|s}
     </span>
-{/primary_keyword}
+{/primary_keyword.name}
