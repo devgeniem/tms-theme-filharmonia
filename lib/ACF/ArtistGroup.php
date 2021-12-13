@@ -153,7 +153,7 @@ class ArtistGroup {
             ->redipress_include_search()
             ->set_instructions( $strings['title']['instructions'] );
 
-        $short_description_field = ( new Field\Textarea( $strings['short_description']['title'] ) )
+        $short_description_field = ( new TextEditor( $strings['short_description']['title'] ) )
             ->set_key( "${key}_short_description" )
             ->set_name( 'short_description' )
             ->redipress_include_search()
