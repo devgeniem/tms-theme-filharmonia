@@ -9,8 +9,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ### Changed
 
+- TMS-421-viljami: Misc style fixes
 - TMS-421-2: Fix is_clickable setting in block-image-gallery partial
-
 - TMS-421: Fixes before site's publishing
     - Nav styles and classes
     - Header styles

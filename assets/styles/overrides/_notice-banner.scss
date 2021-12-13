@@ -1,7 +1,11 @@
 .notice-banner {
-    .has-background-primary {
+    &.has-background-primary {
         h2 {
             color: $primary-invert;
         }
+    }
+
+    &.has-background-secondary {
+        border: 1px solid $primary;
     }
 }
