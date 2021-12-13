@@ -3,7 +3,7 @@
         {?image}
             <div class="image is-16by9" aria-hidden="true">
                 <a href="{url}" aria-hidden="true" tabindex="-1">
-                    <img src="{image}" alt="" class="objectfit-image">
+                    <img src="{image}" loading="lazy" alt="" class="objectfit-image">
                 </a>
                 {>"ui/event-item-pill" /}
             </div>
