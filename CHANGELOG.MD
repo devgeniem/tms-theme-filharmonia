@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.11.1] - 2021-12-14
+
 - TMS-555: Change artist short description field to texteditor #47
 
 ## [1.11.0] - 2021-12-13
