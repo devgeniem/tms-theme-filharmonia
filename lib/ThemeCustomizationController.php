@@ -282,7 +282,7 @@ class ThemeCustomizationController implements Controller {
     }
 
     /**
-     * Alter search result item
+     * Alter carousel data.
      *
      * @param array $data Carousel data.
      *
