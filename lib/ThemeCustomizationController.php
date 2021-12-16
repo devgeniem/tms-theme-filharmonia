@@ -113,7 +113,8 @@ class ThemeCustomizationController implements Controller {
             fn() => 'is-size-7 has-text-decoration-underline'
         );
 
-        add_filter( 'tms/acf/block/carousel/title_class', fn() => 'h2' );
+        add_filter( 'tms/acf/layout/image_carousel/data', [ $this, 'alter_image_carousel_data' ], 20 );
+        add_filter( 'tms/acf/block/image_carousel/data', [ $this, 'alter_image_carousel_data' ], 20 );
     }
 
     /**
@@ -278,5 +279,19 @@ class ThemeCustomizationController implements Controller {
         $post_item->content_type = false;
 
         return $post_item;
+    }
+
+    /**
+     * Alter carousel data.
+     *
+     * @param array $data Carousel data.
+     *
+     * @return array
+     */
+    public function alter_image_carousel_data( $data ) {
+
+        $data['carousel_title_class'] = 'h2';
+
+        return $data;
     }
 }
