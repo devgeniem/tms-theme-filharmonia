@@ -1,7 +1,30 @@
 .notice-banner {
+    .notice-banner__content {
+        a {
+            font-weight: $weight-normal !important;
+        }
+    }
+
     &.has-background-primary {
+        background-color: $color-black !important;
+        color: $primary !important;
+
         h2 {
-            color: $primary-invert;
+            color: $primary;
+        }
+
+        .notice-banner__content {
+            > .icon {
+                fill: $primary !important;
+            }
+        }
+
+        a.notice-banner__link {
+            color: $primary !important;
+
+            > .icon {
+                color: $primary-invert !important;
+            }
         }
     }
 
