@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.11.3] – 2022-02-24
+
+- Replace node-sass with dart-sass
+
 ## [1.11.2]
 
 ### Changed
