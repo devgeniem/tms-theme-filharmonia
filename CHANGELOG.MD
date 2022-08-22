@@ -7,6 +7,14 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.11.4] – 2022-05-02
+
+- Image hotfix for contact.dust
+
+## [1.11.3] – 2022-02-24
+
+- Replace node-sass with dart-sass
+
 ## [1.11.2]
 
 ### Changed
