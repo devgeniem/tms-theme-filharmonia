@@ -196,7 +196,7 @@ class ArchiveArtist extends BaseModel {
      *
      * @return array
      */
-    protected function format_posts( array $posts ) : array {
+    public static function format_posts( array $posts ) : array {
         return array_map( function ( $item ) {
             if ( has_post_thumbnail( $item->ID ) ) {
                 $item->image = get_post_thumbnail_id( $item->ID );
