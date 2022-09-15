@@ -18,9 +18,7 @@
                                 <div class="container">
                                     {#.results}
                                         <h2 class="mb-3">
-                                            <a href="">
-                                                {.name|html}
-                                            </a>
+                                            {.name|html}
                                         </h2>
 
                                         {?.description}
