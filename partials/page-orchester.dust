@@ -1,0 +1,46 @@
+{>"shared/base" /}
+
+{<content}
+    <main class="main-content" id="main-content">
+        <section
+            class="section pt-0">
+            <div class="container">
+                <div class="columns">
+                    <div class="column is-12">
+                        <article class="entry">
+                            {>"ui/entry-title" class="mt-0 has-text-centered" /}
+
+                            <div class="entry__content is-content-grid keep-vertical-spacing">
+                                {@content /}
+                            </div>
+
+                            {#PageOrchester}
+                                <div class="container">
+                                    {#.results}
+                                        <h2 class="mb-3">
+                                            {.name|html}
+                                        </h2>
+
+                                        {?.description}
+                                            <p class="mt-3 mb-3">{.wdescription|html}</p>
+                                        {/.description}
+
+                                        {?.posts}
+                                            <div class="mt-3 artist-list columns is-multiline">
+                                                {#.posts}
+                                                    {>"ui/artist-item" artist=. /}
+                                                {/.posts}
+                                            </div>
+                                        {/.posts}
+                                    {/.results}
+                                </div>
+                            {/PageOrchester}
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        {>"ui/components" components=Page.components /}
+    </main>
+{/content}
