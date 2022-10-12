@@ -99,7 +99,7 @@ class ArchiveArtist extends BaseModel {
         $wp_query->set( 'posts_per_page', - 1 );
         $wp_query->set( 'orderby',
             [
-                'menu_order_clause' => 'DESC',
+                'menu_order_clause' => 'ASC',
                 'last_name_clause'  => 'ASC',
             ]
         );
