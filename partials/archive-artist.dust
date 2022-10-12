@@ -7,15 +7,35 @@
                 {>"shared/archive-view-title" /}
                 {>"shared/archive-filters" /}
 
-                <div class="columns is-multiline artist-list">
-                    {#results}
-                        {>"ui/artist-item" artist=. /}
-                    {:else}
-                        <div class="column pt-8 pb-8 is-text-centered is-size-5">
-                            {Strings.s.home.no_results|s}
-                        </div>
-                    {/results}
-                </div>
+                {^ArchiveArtist.is_filtered}
+                    {#.results}
+                        {?.posts}
+                            <h2 class="mb-3">
+                                {.name|html}
+                            </h2>
+
+                            <div class="mt-3 artist-list columns is-multiline">
+                                {#.posts}
+                                    {>"ui/artist-item" artist=. /}
+                                {/.posts}
+                            </div>
+                        {/.posts}
+                    {/.results}
+                {:else}
+                    <div class="mt-3 artist-list columns is-multiline">
+                        {#.results}
+                            {#.posts}
+                                {>"ui/artist-item" artist=. /}
+                            {/.posts}
+                        {/.results}
+                    </div>
+                {/ArchiveArtist.is_filtered}
+
+                {^ArchiveArtist.have_posts}
+                    <div class="column pt-8 pb-8 is-text-centered is-size-5">
+                        {Strings.s.home.no_results|s}
+                    </div>
+                {/ArchiveArtist.have_posts}
             </div>
         </main>
     {/ArchiveArtist}

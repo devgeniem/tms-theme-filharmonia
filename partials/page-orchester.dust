@@ -22,7 +22,7 @@
                                         </h2>
 
                                         {?.description}
-                                            <p class="mt-3 mb-3">{description|html}</p>
+                                            <p class="mt-3 mb-3">{.wdescription|html}</p>
                                         {/.description}
 
                                         {?.posts}

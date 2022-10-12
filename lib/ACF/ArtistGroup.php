@@ -128,6 +128,10 @@ class ArtistGroup {
                 'title'        => 'Äänenjohtaja',
                 'instructions' => '',
             ],
+            'menu_order'             => [
+                'title'        => 'Järjestysnumero',
+                'instructions' => 'Orkesterisivun tulokset järjestetään pienimmästä suurimpaan. Oletusarvo: 100.',
+            ],
         ];
 
         $tab = ( new Field\Tab( $strings['tab'] ) )
@@ -205,6 +209,13 @@ class ArtistGroup {
             ->set_wrapper_width( 50 )
             ->set_instructions( $strings['is_principal']['instructions'] );
 
+        $menu_order_field = ( new Field\Number( $strings['menu_order']['title'] ) )
+            ->set_key( "${key}_menu_order" )
+            ->set_name( 'menu_order' )
+            ->set_wrapper_width( 50 )
+            ->set_default_value( 100 )
+            ->set_instructions( $strings['menu_order']['instructions'] );
+
         $tab->add_fields( [
             $first_name_field,
             $last_name_field,
@@ -214,6 +225,7 @@ class ArtistGroup {
             $additional_info_repeater,
             $is_concertmaster_field,
             $is_principal_field,
+            $menu_order_field,
         ] );
 
         return $tab;
