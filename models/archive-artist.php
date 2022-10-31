@@ -168,6 +168,8 @@ class ArchiveArtist extends BaseModel {
             return [];
         }
 
+        $categories = $this->sort_terms( $categories );
+
         $base_url   = get_post_type_archive_link( Artist::SLUG );
         $categories = array_map( function ( $item ) use ( $base_url ) {
             return [
@@ -233,15 +235,7 @@ class ArchiveArtist extends BaseModel {
             }
         }
 
-        $results = array_map( function ( $term ) {
-            $term->menu_order = get_field( 'menu_order', $term );
-
-            return $term;
-        }, $results );
-
-        uasort( $results, fn( $a, $b ) => (int) $a->menu_order > (int) $b->menu_order );
-
-        return $results;
+        return $this->sort_terms( $results );
     }
 
     /**
@@ -294,5 +288,24 @@ class ArchiveArtist extends BaseModel {
 
             return $item;
         }, $posts );
+    }
+
+    /**
+     * Sort terms by menu_order.
+     *
+     * @param array $terms Array of WP_Terms.
+     *
+     * @return array
+     */
+    protected function sort_terms( $terms ) {
+        $terms = array_map( function ( $term ) {
+            $term->menu_order = \get_field( 'menu_order', $term );
+
+            return $term;
+        }, $terms );
+
+        uasort( $terms, fn( $a, $b ) => (int) $a->menu_order > (int) $b->menu_order );
+
+        return $terms;
     }
 }
