@@ -97,8 +97,24 @@ class ArchiveArtist extends BaseModel {
         }
 
         $wp_query->set( 'posts_per_page', - 1 );
-        $wp_query->set( 'orderby', [ 'last_name' => 'ASC' ] );
-        $wp_query->set( 'meta_key', 'last_name' );
+        $wp_query->set( 'orderby',
+            [
+                'menu_order_clause' => 'ASC',
+                'last_name_clause'  => 'ASC',
+            ]
+        );
+        $wp_query->set(
+            'meta_query',
+            [
+                'menu_order_clause' => [
+                    'key'  => 'menu_order',
+                    'type' => 'NUMERIC',
+                ],
+                'last_name_clause'  => [
+                    'key' => 'last_name',
+                ],
+            ]
+        );
 
         $artist_category = self::get_filter_query_var();
 
@@ -152,6 +168,8 @@ class ArchiveArtist extends BaseModel {
             return [];
         }
 
+        $categories = $this->sort_terms( $categories );
+
         $base_url   = get_post_type_archive_link( Artist::SLUG );
         $categories = array_map( function ( $item ) use ( $base_url ) {
             return [
@@ -186,7 +204,58 @@ class ArchiveArtist extends BaseModel {
     public function results() {
         global $wp_query;
 
-        return $this->format_posts( $wp_query->posts );
+        $posts = $this->format_posts( $wp_query->posts );
+
+        if ( $this->is_filtered() ) {
+            return [
+                [
+                    'posts' => $posts,
+                ],
+            ];
+        }
+
+        $results = [];
+
+        foreach ( $posts as $post_item ) {
+            if ( empty( $post_item->categories ) ) {
+                continue;
+            }
+
+            foreach ( $post_item->categories as $term ) {
+                if ( empty( $results[ $term->term_id ] ) ) {
+                    $results[ $term->term_id ] = $term;
+                }
+
+                if ( empty( $results[ $term->term_id ]->posts ) ) {
+                    $results[ $term->term_id ]->posts = [ $post_item ];
+                }
+                else {
+                    $results[ $term->term_id ]->posts[] = $post_item;
+                }
+            }
+        }
+
+        return $this->sort_terms( $results );
+    }
+
+    /**
+     * Do we have posts?
+     *
+     * @return bool
+     */
+    public function have_posts() {
+        global $wp_query;
+
+        return $wp_query->have_posts();
+    }
+
+    /**
+     * Is category filter active?
+     *
+     * @return bool
+     */
+    public function is_filtered() {
+        return ! empty( $this->get_filter_query_var() );
     }
 
     /**
@@ -202,8 +271,9 @@ class ArchiveArtist extends BaseModel {
                 $item->image = get_post_thumbnail_id( $item->ID );
             }
 
-            $item->permalink = get_the_permalink( $item->ID );
-            $item->fields    = get_fields( $item->ID );
+            $item->permalink  = get_the_permalink( $item->ID );
+            $item->fields     = get_fields( $item->ID );
+            $item->categories = wp_get_post_terms( $item->ID, ArtistCategory::SLUG );
 
             if ( ! empty( $item->fields['description'] ) ) {
                 $item->fields['description'] = wp_trim_words( $item->fields['description'], 18 );
@@ -218,5 +288,24 @@ class ArchiveArtist extends BaseModel {
 
             return $item;
         }, $posts );
+    }
+
+    /**
+     * Sort terms by menu_order.
+     *
+     * @param array $terms Array of WP_Terms.
+     *
+     * @return array
+     */
+    protected function sort_terms( $terms ) {
+        $terms = array_map( function ( $term ) {
+            $term->menu_order = \get_field( 'menu_order', $term );
+
+            return $term;
+        }, $terms );
+
+        uasort( $terms, fn( $a, $b ) => (int) $a->menu_order > (int) $b->menu_order );
+
+        return $terms;
     }
 }

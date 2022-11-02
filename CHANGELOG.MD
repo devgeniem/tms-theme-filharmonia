@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- TMS-911-2: Group artist archive results by category #76
+
 ### Added
 
 - TMS-911: Add page template Orchester
