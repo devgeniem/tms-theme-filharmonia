@@ -63,6 +63,10 @@ class HeroLayout extends Layout {
                 'label'        => 'Kuvaus',
                 'instructions' => '',
             ],
+            'description_link' => [
+                'label'        => 'Kuvauksen linkki',
+                'instructions' => '',
+            ],
             'link'          => [
                 'label'        => 'Painike',
                 'instructions' => '',
@@ -159,8 +163,14 @@ class HeroLayout extends Layout {
                 'has-text-centered' => 'Keskitetty',
             ] )
             ->set_default_value( 'has-text-centered' )
-            ->set_wrapper_width( 30 )
+            ->set_wrapper_width( 50 )
             ->set_instructions( $strings['text_align']['instructions'] );
+
+        $description_link_field = ( new Field\Link( $strings['description_link']['label'] ) )
+            ->set_key( "${key}_description_link" )
+            ->set_name( 'description_link' )
+            ->set_wrapper_width( 50 )
+            ->set_instructions( $strings['description_link']['instructions'] );
 
         $opening_times_tab = ( new Field\Group( $strings['opening_times']['label'] ) )
             ->set_key( "${key}_opening_times" )
@@ -196,6 +206,7 @@ class HeroLayout extends Layout {
                         $title_field,
                         $description_field,
                         $align_field,
+                        $description_link_field,
                         $opening_times_tab,
                         $ticket_tab,
                         $find_us_tab,
