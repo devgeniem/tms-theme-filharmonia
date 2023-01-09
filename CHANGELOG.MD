@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.11.6] – 2022-02-11
+
+### Changed
+
 - TMS-911-2: Group artist archive results by category #76
 
 ### Added
