@@ -7,6 +7,12 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.11.7] – 2023-01-09
+
+### Changed
+
+- TMS-922: Add option to display hero description as a link
+
 ## [1.11.6] – 2022-02-11
 
 ### Changed
