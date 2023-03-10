@@ -19,17 +19,17 @@
                     {?description}
                         <div
                             class="filharmonia-hero__description mr-4 ml-4 mr-8-desktop ml-8-desktop has-text-large is-inline-block has-text-primary-invert keep-vertical-spacing">
-                            <span class="pr-2 pl-2 is-inline-block">{description|s}</span>
+                            <span class="pr-2 pl-2 is-inline-block">{description|html}</span>
                         </div>
                     {/description}
                 {/description_link.url}
 
                 {?description_link.url}
                     {?description}
-                        <a href="{description_link.url}" {?description_link.target}target="{description_link.target}"{/description_link.target}
+                        <a href="{description_link.url|url}" {?description_link.target}target="{description_link.target|attr}"{/description_link.target}
                         class="filharmonia-hero__description mr-4 ml-4 mr-8-desktop ml-8-desktop has-text-large is-inline-block has-text-primary-invert keep-vertical-spacing">
                             <span class="pr-2 pl-2 is-inline-block">
-                                {description|s}
+                                {description|html}
                                 {>"ui/icon" icon="chevron-right" class="icon--medium" /}
                             </span>
                         </a>
