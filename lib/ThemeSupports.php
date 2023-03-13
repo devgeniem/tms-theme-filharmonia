@@ -24,7 +24,6 @@ class ThemeSupports implements \TMS\Theme\Base\Interfaces\Controller {
             \Closure::fromCallable( [ $this, 'query_vars' ] )
         );
 
-
         /**
          * Allow custom url links in menus
          */
