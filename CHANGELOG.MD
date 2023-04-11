@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- PIEN-8157: PHP 8.1
+
 ## [1.11.8] – 2023-03-13
 
 ### Changed

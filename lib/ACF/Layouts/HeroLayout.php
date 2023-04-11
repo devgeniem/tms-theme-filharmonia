@@ -47,19 +47,19 @@ class HeroLayout extends Layout {
         $key = $this->get_key();
 
         $strings = [
-            'image'         => [
+            'image' => [
                 'label'        => 'Kuva',
                 'instructions' => '',
             ],
-            'overlay'       => [
+            'overlay' => [
                 'label'        => 'Tummennus',
                 'instructions' => '',
             ],
-            'title'         => [
+            'title' => [
                 'label'        => 'Otsikko',
                 'instructions' => '',
             ],
-            'description'   => [
+            'description' => [
                 'label'        => 'Kuvaus',
                 'instructions' => '',
             ],
@@ -67,11 +67,11 @@ class HeroLayout extends Layout {
                 'label'        => 'Kuvauksen linkki',
                 'instructions' => '',
             ],
-            'link'          => [
+            'link' => [
                 'label'        => 'Painike',
                 'instructions' => '',
             ],
-            'text_align'    => [
+            'text_align' => [
                 'label'        => 'Tekstin tasaus',
                 'instructions' => '',
             ],
@@ -90,7 +90,7 @@ class HeroLayout extends Layout {
                     'instructions' => '',
                 ],
             ],
-            'tickets'       => [
+            'tickets' => [
                 'label'  => 'Liput',
                 'title'  => [
                     'label'        => 'Otsikko',
@@ -109,7 +109,7 @@ class HeroLayout extends Layout {
                     'instructions' => '',
                 ],
             ],
-            'find_us'       => [
+            'find_us' => [
                 'label'  => 'Löydä meille',
                 'title'  => [
                     'label'        => 'Otsikko',
