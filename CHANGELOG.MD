@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.12.1] – 2023-05-24
+
+### Changed
+
 - TMS-931: Navigation accessibility fixes
 
 ## [1.12.0] – 2023-04-11
