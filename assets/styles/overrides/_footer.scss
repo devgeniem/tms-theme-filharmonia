@@ -20,10 +20,16 @@
             outline-color: $black;
         }
     }
+
+    .icon.is-primary-invert {
+        fill: currentColor !important;
+    }
+
     h2 {
         color: $black;
         text-transform: none;
     }
+
     a {
         font-weight: inherit;
     }
