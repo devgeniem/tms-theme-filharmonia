@@ -1,0 +1,7 @@
+.layout-textblock {
+    &.has-background-primary {
+        h2 {
+            color: $primary-invert !important;
+        }
+    }
+}

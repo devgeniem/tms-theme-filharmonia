@@ -1,6 +1,7 @@
 .share-links {
     a {
         transition: box-shadow $easing $speed;
+        border: 1px solid $secondary-invert;
 
         &.is-hovered,
         &:hover {

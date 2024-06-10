@@ -4,6 +4,8 @@
 
 .events {
     &__item {
+        border: 1px solid $secondary-invert;
+
         .pill {
             display: none;
         }

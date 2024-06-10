@@ -38,35 +38,6 @@
 
         @include from($desktop) {
             min-height: 36.198vw !important; // sass-lint:disable-line no-important
-
-            &::before,
-            &::after {
-                content: '';
-                position: absolute;
-                top: 0;
-                bottom: 0;
-                z-index: 1;
-                width: 40px;
-                height: 100%;
-                background-repeat: no-repeat;
-                background-position-y: center;
-                background-size: contain;
-            }
-
-            &::before {
-                top: 7.5%;
-                bottom: 7.5%;
-                left: 0;
-                height: 85%;
-                background-image: url('images/tampere-pysty.svg');
-                background-position-x: 0;
-            }
-
-            &::after {
-                right: 0;
-                background-image: url('images/tampere-filharmonia-pysty.svg');
-                background-position-x: 100%;
-            }
         }
 
         @include from(1600px) {
