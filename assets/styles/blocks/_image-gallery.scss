@@ -13,5 +13,9 @@
         .icon {
             fill: currentColor !important;
         }
+
+        &.is-primary .icon {
+            fill: $primary !important;
+        }
     }
 }

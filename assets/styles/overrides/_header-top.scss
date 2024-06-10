@@ -1,5 +1,4 @@
 .site-header {
-
     &__logo-image {
         @include from($tablet) {
             min-width: 10rem;
@@ -29,7 +28,7 @@
             padding-left: 1rem;
             border-color: $black !important;
             color: $black !important;
-    
+
             .icon {
                 fill: $black !important;
             }
@@ -43,11 +42,11 @@
             padding-top: 0;
             border-bottom-right-radius: 0.25rem;
             border-bottom-left-radius: 0.25rem;
-            
+
             .dropdown-content {
                 background-color: $secondary;
             }
-           
+
         }
 
     }

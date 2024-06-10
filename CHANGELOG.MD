@@ -7,6 +7,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- TMS-1045: Style changes:
+    - Remove "Tampere Filharmonia" pseudo text-elements from hero
+    - Change hero CTA-button colors
+    - Change footer "Tampere"-logo color
+    - Change page background-color from grey to white
+    - Add borders to elements with a white background
+
+## [1.12.2] - 2024-05-20
+
 - TMS-1028: Fix footer social-media icon color
 
 ## [1.12.1] – 2023-05-24
