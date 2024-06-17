@@ -33,3 +33,11 @@
         color: $secondary-invert;
     }
 }
+
+main {
+    .has-colors-white,
+    .has-background-secondary,
+    .has-colors-secondary {
+        border: 1px solid $secondary-invert;
+    }
+}

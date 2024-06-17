@@ -5,7 +5,7 @@
 .grid {
     &__item {
         color: $secondary-invert !important;
-        background-color: $secondary !important;
+        border: 1px solid $secondary-invert;
 
         .button {
             color: $white !important;
@@ -19,6 +19,12 @@
                 color: $primary !important;
                 background-color: $primary-invert !important;
                 border-color: $primary !important;
+            }
+        }
+
+        &.has-colors-accent {
+            .button {
+                border-color: $white !important;
             }
         }
 

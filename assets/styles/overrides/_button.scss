@@ -1,7 +1,7 @@
 .button {
     &.is-primary {
         color: $primary-invert !important;
-        
+
         .icon {
             fill: $primary-invert !important;
         }
@@ -16,7 +16,7 @@
 
         &:hover,
         &:focus {
-            border-color: $primary-invert !important;
+            border-color: $primary !important;
         }
     }
 
@@ -27,7 +27,8 @@
             &:hover {
                 color: $primary !important;
                 background-color: $primary-invert !important;
-                border-color: $primary-invert !important;
+                border-color: $primary !important;
+                text-decoration: underline !important;
 
                 .icon {
                     fill: $primary !important;
@@ -39,8 +40,8 @@
             &.is-focused,
             &:focus {
                 color: $secondary-invert !important;
-                background-color: $primary-invert !important;
-                border-color: $primary-invert !important;
+                background-color: $tertiary !important;
+                border-color: $tertiary !important;
 
                 .icon {
                     fill: $secondary-invert !important;
@@ -73,8 +74,9 @@
             &.is-hovered,
             &:hover {
                 color: $secondary-invert !important;
-                background-color: $primary-invert !important;
-                border-color: $primary-invert !important;
+                background-color: $tertiary !important;
+                border-color: $secondary-invert !important;
+                text-decoration: underline !important;
 
                 .icon {
                     fill: $secondary-invert !important;
