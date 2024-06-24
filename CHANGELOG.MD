@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- TMS-1054: Remove hero overlay-toggle from single page editor
+
+## [1.13.0] - 2024-06-17
+
 - TMS-1045: Style changes:
     - Remove "Tampere Filharmonia" pseudo text-elements from hero
     - Change hero CTA-button colors
