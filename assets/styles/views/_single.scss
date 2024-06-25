@@ -3,6 +3,14 @@
  */
 
 .single-post {
+    h1.entry__title {
+        text-transform: none;
+
+        @include from($desktop) {
+            font-size: 4rem !important;
+        }
+    }
+
     .related-posts {
         h2 {
             text-transform: uppercase;
