@@ -7,8 +7,15 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-- TMS-1054: Remove hero overlay-toggle from single page editor
+- TMS-1067: Show price-info for event in listing if it's free
+
+## [1.15.0] - 2024-08-21
+
 - TMS-1058: Remove text-decoration & decrease font-size for single-post h1-heading
+
+## [1.14.0] - 2024-06-17
+
+- TMS-1054: Remove hero overlay-toggle from single page editor
 
 ## [1.13.0] - 2024-06-17
 
