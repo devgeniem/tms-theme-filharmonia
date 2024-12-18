@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- TMS-1092: Move page heading from over hero image to content area & remove hero overlay
+
+## [1.15.1] - 2024-09-25
+
 - TMS-1067: Show price-info for event in listing if it's free
 
 ## [1.15.0] - 2024-08-21
