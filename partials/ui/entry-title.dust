@@ -1,5 +1,3 @@
-{^hero_image}
-    <h1 class="entry__title {?class} {class}{/class}">
-        {@title /}
-    </h1>
-{/hero_image}
+<h1 class="entry__title {?class} {class}{/class}">
+    {@title /}
+</h1>
