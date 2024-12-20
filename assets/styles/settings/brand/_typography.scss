@@ -11,11 +11,11 @@ $base-sizes: (
 
 $family-sans-serif: "moret", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
 
-$family-primary: "Arvo", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
-$family-secondary: "gopher", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubu1ntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-primary: "Haas Grotesk Text", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+$family-secondary: "Publico Roman", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
 $family-tertiary: $family-sans-serif;
 
-$font-family-header: $family-sans-serif;
+$font-family-header: "Publico Headline", BlinkMacSystemFont, -apple-system, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", "Helvetica", "Arial", sans-serif;;
 $font-family-text: $family-primary;
 
 $sizes-desktop: map-get($base-sizes, "desktop");
@@ -53,7 +53,7 @@ html {
     .has-text-lead {
         font-size: map-get($calculated_sizes, "h6") !important;
         line-height: 1.62;
-        font-family: $family-sans-serif;
+        font-family: $family-primary;
         font-weight: 600;
     }
 
@@ -80,7 +80,7 @@ html {
 
     h2,
     .h2 {
-        font-family: $font-family-header;
+        font-family: $family-secondary;
         font-size: map-get($calculated_sizes, "h2") !important;
         font-weight: 800;
         line-height: 1.2;
