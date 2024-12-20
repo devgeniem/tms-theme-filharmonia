@@ -1,0 +1,7 @@
+.single-dynamic-event-cpt {
+    .entry {
+        &__hero-image {
+            @include hero-height-smaller;
+        }
+    }
+}

@@ -11,6 +11,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
     - Remove hyphens & uppercase from headings, change heading & link colors
     - Change quote-block styles, add "author_title" field
     - Add max-width for page-hero
+    - Decrease hero heights
 
 ## [1.15.1] - 2024-09-25
 
