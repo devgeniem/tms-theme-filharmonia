@@ -1,7 +1,6 @@
 .h1,
 h1 {
-    color: $primary;
-    text-transform: uppercase;
+    color: $heading;
 
     @include from($desktop) {
         font-size: 4.588rem !important;
@@ -10,8 +9,7 @@ h1 {
 
 .h2,
 h2 {
-    color: $primary;
-    text-transform: uppercase;
+    color: $heading;
 
     @include from($desktop) {
         font-size: 3.388rem !important;

@@ -12,10 +12,6 @@
     }
 
     .related-posts {
-        h2 {
-            text-transform: uppercase;
-        }
-
         &__item {
             > .button {
                 display: none;

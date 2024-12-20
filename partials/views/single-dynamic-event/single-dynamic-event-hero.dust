@@ -5,7 +5,7 @@
         <div class="container is-absolute has-bottom-2 has-right-0 has-left-0">
             <div class="columns">
                 <div class="column is-8 is-offset-2">
-                    <h1 class="filharmonia-hero__title h1 is-uppercase no-hyphens has-text-primary-invert">
+                    <h1 class="filharmonia-hero__title h1 no-hyphens has-text-primary-invert">
                         <span class="pr-2 pl-2">{@title /}</span>
                     </h1>
                 </div>
