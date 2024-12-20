@@ -183,8 +183,15 @@ class ThemeCustomizationController implements Controller {
      */
     public function get_theme_accent_colors() : array {
         return [
-            'has-colors-primary'          => 'Punaoranssi (valkoinen teksti)',
-            'has-colors-accent-secondary' => 'Harmaa (musta teksti)',
+            'has-colors-white'           => 'Valkoinen (musta teksti)',
+            'has-colors-primary'         => 'Punainen (musta teksti)',
+            'has-colors-red-light'       => 'Punainen, vaalennettu (musta teksti)',
+            'has-colors-darkblue'        => 'Tummansininen (valkoinen teksti)',
+            'has-colors-darkblue-light'  => 'Tummansininen, vaalennettu (musta teksti)',
+            'has-colors-beige'           => 'Beige (musta teksti)',
+            'has-colors-beige-light'     => 'Beige, vaalennettu (musta teksti)',
+            'has-colors-lightblue'       => 'Vaaleansininen (musta teksti)',
+            'has-colors-lightblue-light' => 'Vaaleansininen, vaalennettu (musta teksti)',
         ];
     }
 
@@ -218,12 +225,11 @@ class ThemeCustomizationController implements Controller {
             'pb-6',
         ];
         $data['classes']['quote']     = [
-            'is-text-big',
+            'is-size-5',
             'has-line-height-tight',
-            'is-family-tertiary',
         ];
         $data['classes']['author']     = [
-            'is-text-big',
+            'is-size-5',
             'has-text-weight-bold',
             'has-line-height-tight',
         ];

@@ -2,6 +2,7 @@
 
 use TMS\Theme\Base\Logger;
 use Geniem\ACF\Field;
+use TMS\Theme\Filharmonia\ACF\Field\AccentColorField;
 
 /**
  * Alter Quote Fields
@@ -43,8 +44,10 @@ class AlterQuoteFields {
                 ->set_key( "{$key}_author_title" )
                 ->set_name( 'author_title' )
                 ->set_instructions( $strings['author_title']['instructions'] );
+            array_push( $fields, $author_title_field );
 
-            $fields[] = $author_title_field;
+            $accent_color_field = AccentColorField::field( $key );
+            array_push( $fields, $accent_color_field );
 
         }
         catch ( Exception $e ) {

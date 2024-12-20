@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
     - Change quote-block styles, add "author_title" field
     - Add max-width for page-hero
     - Decrease hero heights
+    - Add new colors
 
 ## [1.15.1] - 2024-09-25
 

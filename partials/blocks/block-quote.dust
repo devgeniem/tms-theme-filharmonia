@@ -1,7 +1,7 @@
 {?quote}
     <div
         {?anchor}id="{anchor|attr}"{/anchor}
-        class="quote {#classes.container}{.}{@sep} {/sep}{/classes.container} pr-5 pl-5 pt-8 pb-8 pr-9-tablet pl-9-tablet pr-11-desktop pl-11-desktop">
+        class="quote {#classes.container}{.}{@sep} {/sep}{/classes.container} pr-5 pl-5 pt-8 pb-8 pr-9-tablet pl-9-tablet pr-11-desktop pl-11-desktop {accent_color|attr}">
         <blockquote class="quote__content p-0 m-0 {#classes.quote}{.}{@sep} {/sep}{/classes.quote}">
             {quote|kses}
         </blockquote>
