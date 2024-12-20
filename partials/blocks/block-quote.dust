@@ -1,0 +1,19 @@
+{?quote}
+    <div
+        {?anchor}id="{anchor|attr}"{/anchor}
+        class="quote {#classes.container}{.}{@sep} {/sep}{/classes.container} pr-5 pl-5 pt-8 pb-8 pr-9-tablet pl-9-tablet pr-11-desktop pl-11-desktop">
+        <blockquote class="quote__content p-0 m-0 {#classes.quote}{.}{@sep} {/sep}{/classes.quote}">
+            {quote|kses}
+        </blockquote>
+
+        {?author}
+            <div
+                class="quote__author mt-5">
+                <p class="{#classes.author}{.}{@sep} {/sep}{/classes.author} m-0">{author|kses}</p>
+                {?author_title}
+                    <p class="{#classes.author}{.}{@sep} {/sep}{/classes.author} m-0">{author_title|kses}</p>
+                {/author_title}
+            </div>
+        {/author}
+    </div>
+{/quote}

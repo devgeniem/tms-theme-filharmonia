@@ -1,10 +1,29 @@
 .quote {
     &__content {
-        color: $primary;
+        position: relative;
+        color: $heading;
+        text-transform: none !important;
 
         > p {
             margin-top: $theme-spacing-three-quarters;
             margin-bottom: $theme-spacing-three-quarters;
+        }
+
+        &::before {
+            content: '"';
+            display: block;
+            position: absolute;
+            font-size: 5rem;
+            font-family: $family-primary;
+            top: -3rem;
+            left: -1rem;
+            height: auto;
+            width: auto;
+
+            @include from($desktop) {
+                top: -3rem;
+                left: -3rem;
+            }
         }
     }
 

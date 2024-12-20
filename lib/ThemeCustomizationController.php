@@ -221,8 +221,11 @@ class ThemeCustomizationController implements Controller {
             'is-text-big',
             'has-line-height-tight',
             'is-family-tertiary',
-            'is-uppercase',
-            'has-text-centered',
+        ];
+        $data['classes']['author']     = [
+            'is-text-big',
+            'has-text-weight-bold',
+            'has-line-height-tight',
         ];
 
         return $data;
