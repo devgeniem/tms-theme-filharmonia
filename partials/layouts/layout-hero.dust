@@ -10,7 +10,7 @@
         <div class="filharmonia-hero__text">
             <div class="container is-flex is-flex-direction-column mb-10 {align|attr}">
                 {?title}
-                    <h1 class="filharmonia-hero__title h1 mt-0 mr-4 mb-5 ml-4 mr-8-desktop ml-8-desktop is-uppercase no-hyphens has-text-primary-invert">
+                    <h1 class="filharmonia-hero__title h1 mt-0 mr-4 mb-5 ml-4 mr-8-desktop ml-8-desktop no-hyphens has-text-primary-invert">
                         <span class="pr-{heading_padding_size|attr} pl-{heading_padding_size|attr}">{title|html}</span>
                     </h1>
                 {/title}

@@ -1,3 +1,9 @@
 a {
     font-weight: 700;
 }
+
+.page .entry__content a {
+    &:hover {
+        text-decoration: none !important;
+    }
+}

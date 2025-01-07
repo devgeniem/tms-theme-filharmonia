@@ -8,6 +8,13 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 - TMS-1092: Move page heading from over hero image to content area & remove hero overlay
+- TMS-1093:
+    - Remove hyphens & uppercase from headings, change heading & link colors
+    - Change quote-block styles, add "author_title" field
+    - Add max-width for page-hero
+    - Decrease hero heights
+    - Add new colors
+    - Add graphics for dynamic event main images
 
 ## [1.15.1] - 2024-09-25
 

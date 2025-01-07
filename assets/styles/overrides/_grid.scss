@@ -22,9 +22,31 @@
             }
         }
 
-        &.has-colors-accent {
+        &.has-colors-primary {
+            background-color: $white !important;
+
             .button {
                 border-color: $white !important;
+            }
+        }
+
+        &.has-colors-secondary {
+            background-color: $color-darkblue !important;
+
+            .button {
+                border-color: $white !important;
+            }
+        }
+
+        &:not(.grid__item--featured).has-colors-primary {
+            *:not(.button) {
+                color: $black !important;
+            }
+        }
+
+        &:not(.grid__item--featured).has-colors-secondary {
+            *:not(.button) {
+                color: $primary-invert !important;
             }
         }
 

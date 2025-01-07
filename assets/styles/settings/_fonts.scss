@@ -1,1 +1,48 @@
-// Put fonts here, please.
+@font-face {
+	font-family: 'Publico Headline';
+	src: url('../fonts/PublicoHeadline-Roman-Web.woff2') format('woff2'),
+		 url('../fonts/PublicoHeadline-Roman-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Publico Headline';
+	src: url('../fonts/PublicoHeadline-Medium-Web.woff2') format('woff2'),
+		 url('../fonts/PublicoHeadline-Medium-Web.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Publico Headline';
+	src: url('../fonts/PublicoText-Bold-Web.woff2') format('woff2'),
+		 url('../fonts/PublicoText-Bold-Web.woff') format('woff');
+	font-weight: 700;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Publico Roman';
+	src: url('../fonts/PublicoText-Roman-Web.woff2') format('woff2'),
+		 url('../fonts/PublicoText-Roman-Web.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Haas Grotesk Text';
+	src: url('../fonts/NeueHaasGroteskText-Roman.woff2') format('woff2'),
+		 url('../fonts/NeueHaasGroteskText-Roman.woff') format('woff');
+	font-weight: 400;
+	font-style: normal;
+}
+
+@font-face {
+	font-family: 'Haas Grotesk Text';
+	src: url('../fonts/NeueHaasGroteskText-Medium.woff2') format('woff2'),
+		 url('../fonts/NeueHaasGroteskText-Medium.woff') format('woff');
+	font-weight: 500;
+	font-style: normal;
+}
+
