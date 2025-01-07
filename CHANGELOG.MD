@@ -13,6 +13,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
     - Add max-width for page-hero
     - Decrease hero heights
     - Add new colors
+    - Add graphics for dynamic event main images
 
 ## [1.15.1] - 2024-09-25
 

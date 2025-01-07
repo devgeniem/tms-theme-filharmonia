@@ -1,5 +1,10 @@
 .single-dynamic-event-cpt {
     .entry {
+        &__hero {
+            max-width: 1344px;
+            margin: 0 auto;
+        }
+
         &__hero-image {
             @include hero-height-smaller;
         }
