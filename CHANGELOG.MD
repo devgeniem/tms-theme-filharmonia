@@ -15,6 +15,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
     - Decrease hero heights
     - Add new colors
     - Add graphics for dynamic event main images
+- TMS-1113: Remove top-padding for first component in page
+
+## [1.15.2] - 2025-02-24
+
 - TMS-1100: Show multiple locations for events if available
 
 ## [1.15.1] - 2024-09-25
