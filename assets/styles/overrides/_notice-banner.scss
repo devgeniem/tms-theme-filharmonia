@@ -20,7 +20,7 @@
         }
 
         a.notice-banner__link {
-            color: $primary !important;
+            color: $primary-invert !important;
 
             > .icon {
                 color: $primary-invert !important;
@@ -29,6 +29,6 @@
     }
 
     &.has-background-secondary {
-        border: 1px solid $primary;
+        border: 1px solid $color-darkblue;
     }
 }

@@ -10,7 +10,7 @@
             </div>
         {/image}
 
-        <div class="events__item-inner pt-5 pr-6 pb-6 pl-6">
+        <div class="events__item-inner pt-5 pr-5 pb-6 pl-5">
             <h3 class="h5 mt-0 mb-5">
                 <a href="{url|url}" class="has-text-black">
                     {name|html}

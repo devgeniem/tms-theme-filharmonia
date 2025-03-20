@@ -1,0 +1,22 @@
+.call-to-action {
+    .call-to-action__item {
+        a.button.is-primary {
+            &,
+            &:hover,
+            &:focus {
+                color: $black !important;
+                background-color: $white !important;
+                border-color: $white !important;
+
+                .icon {
+                    fill: $black !important;
+                }
+            }
+
+            &:focus,
+            &:hover {
+                text-decoration: underline !important;
+            }
+        }
+    }
+}

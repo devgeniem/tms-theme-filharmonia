@@ -11,7 +11,7 @@
                 class="quote__author mt-5">
                 <p class="{#classes.author}{.}{@sep} {/sep}{/classes.author} m-0">{author|kses}</p>
                 {?author_title}
-                    <p class="{#classes.author}{.}{@sep} {/sep}{/classes.author} m-0">{author_title|kses}</p>
+                    <p class="{#classes.author_title}{.}{@sep} {/sep}{/classes.author_title} m-0">{author_title|kses}</p>
                 {/author_title}
             </div>
         {/author}

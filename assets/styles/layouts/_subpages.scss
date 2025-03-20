@@ -6,6 +6,24 @@
             border: 1px solid $black;
         }
 
+        &.has-background-black,
+        &.has-background-primary {
+            h3 {
+                color: $white;
+            }
+
+            &:focus,
+            &:hover {
+                h3 {
+                    color: $heading;
+                }
+
+                svg.icon {
+                    fill: $heading !important;
+                }
+            }
+        }
+
         &:not(.has-background-image) {
             &:hover,
             &:focus {
