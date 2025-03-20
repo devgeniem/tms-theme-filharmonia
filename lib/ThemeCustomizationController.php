@@ -184,7 +184,7 @@ class ThemeCustomizationController implements Controller {
     public function get_theme_accent_colors() : array {
         return [
             'has-colors-white'           => 'Valkoinen (musta teksti)',
-            'has-colors-primary'         => 'Punainen (musta teksti)',
+            'has-colors-primary'         => 'Punainen (valkoinen teksti)',
             'has-colors-red-light'       => 'Punainen, vaalennettu (musta teksti)',
             'has-colors-darkblue'        => 'Tummansininen (valkoinen teksti)',
             'has-colors-darkblue-light'  => 'Tummansininen, vaalennettu (musta teksti)',
@@ -218,18 +218,23 @@ class ThemeCustomizationController implements Controller {
      * @return array
      */
     public function alter_quote_block_data( $data ) : array {
-        $data['classes']['container'] = [
+        $data['classes']['container']    = [
             'mt-6',
             'mb-6',
             'pt-6',
             'pb-6',
         ];
-        $data['classes']['quote']     = [
+        $data['classes']['quote']        = [
             'is-size-5',
             'has-line-height-tight',
         ];
-        $data['classes']['author']     = [
+        $data['classes']['author']       = [
             'is-size-5',
+            'has-text-weight-bold',
+            'has-line-height-tight',
+        ];
+        $data['classes']['author_title'] = [
+            'is-size-6',
             'has-text-weight-bold',
             'has-line-height-tight',
         ];

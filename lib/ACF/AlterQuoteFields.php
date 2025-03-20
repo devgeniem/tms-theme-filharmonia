@@ -36,6 +36,10 @@ class AlterQuoteFields {
                 'label'        => 'Sitaatin antajan titteli',
                 'instructions' => '',
             ],
+            'accent_color' => [
+                'label'        => 'Taustaväri',
+                'instructions' => '',
+            ],
         ];
 
         try {
@@ -46,7 +50,20 @@ class AlterQuoteFields {
                 ->set_instructions( $strings['author_title']['instructions'] );
             array_push( $fields, $author_title_field );
 
-            $accent_color_field = AccentColorField::field( $key );
+            $accent_color_field = ( new Field\Select( $strings['accent_color']['label'] ) )
+                ->set_key( "{$key}_accent_color" )
+                ->set_name( 'accent_color' )
+                ->use_ui()
+                ->set_choices( [
+                    'has-colors-white'           => 'Valkoinen (musta teksti)',
+                    'has-colors-primary'         => 'Punainen (valkoinen teksti)',
+                    'has-colors-red-light'       => 'Punainen, vaalennettu (musta teksti)',
+                    'has-colors-darkblue'        => 'Tummansininen (valkoinen teksti)',
+                    'has-colors-beige-light'     => 'Beige, vaalennettu (musta teksti)',
+                    'has-colors-lightblue-light' => 'Vaaleansininen, vaalennettu (musta teksti)',
+                ] )
+                ->set_wrapper_width( 50 )
+                ->set_instructions( $strings['accent_color']['instructions'] );
             array_push( $fields, $accent_color_field );
 
         }

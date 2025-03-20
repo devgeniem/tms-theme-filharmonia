@@ -7,3 +7,15 @@ a {
         text-decoration: none !important;
     }
 }
+
+.page,
+.single {
+    .entry__content p a {
+        text-decoration: underline !important;
+
+        &:hover,
+        &:focus {
+            text-decoration: none !important;
+        }
+    }
+}
