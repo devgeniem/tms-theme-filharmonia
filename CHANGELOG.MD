@@ -16,6 +16,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
     - Add new colors
     - Add graphics for dynamic event main images
 - TMS-1113: Remove top-padding for first component in page
+- TMS-1129: Remove menu dropdown parent link
 
 ## [1.15.2] - 2025-02-24
 
