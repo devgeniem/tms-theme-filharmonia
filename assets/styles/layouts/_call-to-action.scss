@@ -1,4 +1,4 @@
-.call-to-action {
+.call-to-action:not(.has-colors-white) {
     .call-to-action__item {
         a.button.is-primary {
             &,
