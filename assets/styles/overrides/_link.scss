@@ -10,12 +10,15 @@ a {
 
 .page,
 .single {
-    .entry__content p a {
-        text-decoration: underline !important;
+    .entry__content,
+    .layout-textblock {
+        a {
+            text-decoration: underline !important;
 
-        &:hover,
-        &:focus {
-            text-decoration: none !important;
+            &:hover,
+            &:focus {
+                text-decoration: none !important;
+            }
         }
     }
 }
