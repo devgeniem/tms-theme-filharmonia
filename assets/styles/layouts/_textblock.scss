@@ -1,7 +1,12 @@
 .layout-textblock {
-    &.has-background-primary {
-        h2 {
+    &.has-background-primary,
+    &.has-background-secondary {
+        *:not(.button, .button *) {
             color: $primary-invert !important;
         }
+    }
+
+    &.has-background-secondary {
+        background-color: $color-darkblue !important;
     }
 }

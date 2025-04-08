@@ -4,7 +4,7 @@
 
 @import "themes/includes";
 
-$primary: #e14e32;
+$primary: $color-red;
 $primary-invert: $color-white;
 $primary-light: bulmaLighten($primary, 15);
 $primary-light-invert: $color-white;
@@ -30,11 +30,19 @@ $divider: $color-vaalean-harmaa;
 $divider-invert: $color-tumma-harmaa;
 
 $text: $black;
-$link: $primary;
+$link: $color-darkblue;
+$heading: $color-darkblue;
 
 $colors-palette-primary: ($primary, $primary-invert, $primary-dark, $primary-light);
 $colors-palette-secondary: ($secondary, $secondary-invert, $secondary-dark, $secondary-light);
 $colors-palette-tertiary: ($tertiary, $tertiary-invert);
+$colors-palette-red-light: ($color-red-light, $secondary-invert);
+$colors-palette-darkblue: ($color-darkblue, $primary-invert);
+$colors-palette-darkblue-light: ($color-darkblue-light, $secondary-invert);
+$colors-palette-beige: ($color-beige, $secondary-invert);
+$colors-palette-beige-light: ($color-beige-light, $secondary-invert);
+$colors-palette-lightblue: ($color-lightblue, $secondary-invert);
+$colors-palette-lightblue-light: ($color-lightblue-light, $secondary-invert);
 
 $colors: (
     "primary": $colors-palette-primary,
@@ -43,6 +51,13 @@ $colors: (
     "white": ($color-white, $color-black),
     "black": ($color-black, $color-white),
     "accent": $colors-palette-primary,
+    "red-light": $colors-palette-red-light,
+    "darkblue": $colors-palette-darkblue,
+    "darkblue-light": $colors-palette-darkblue-light,
+    "beige": $colors-palette-beige,
+    "beige-light": $colors-palette-beige-light,
+    "lightblue": $colors-palette-lightblue,
+    "lightblue-light": $colors-palette-lightblue-light,
 );
 
 $button-colors: (

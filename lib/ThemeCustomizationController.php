@@ -183,8 +183,15 @@ class ThemeCustomizationController implements Controller {
      */
     public function get_theme_accent_colors() : array {
         return [
-            'has-colors-primary'          => 'Punaoranssi (valkoinen teksti)',
-            'has-colors-accent-secondary' => 'Harmaa (musta teksti)',
+            'has-colors-white'           => 'Valkoinen (musta teksti)',
+            'has-colors-primary'         => 'Punainen (valkoinen teksti)',
+            'has-colors-red-light'       => 'Punainen, vaalennettu (musta teksti)',
+            'has-colors-darkblue'        => 'Tummansininen (valkoinen teksti)',
+            'has-colors-darkblue-light'  => 'Tummansininen, vaalennettu (musta teksti)',
+            'has-colors-beige'           => 'Beige (musta teksti)',
+            'has-colors-beige-light'     => 'Beige, vaalennettu (musta teksti)',
+            'has-colors-lightblue'       => 'Vaaleansininen (musta teksti)',
+            'has-colors-lightblue-light' => 'Vaaleansininen, vaalennettu (musta teksti)',
         ];
     }
 
@@ -211,18 +218,25 @@ class ThemeCustomizationController implements Controller {
      * @return array
      */
     public function alter_quote_block_data( $data ) : array {
-        $data['classes']['container'] = [
+        $data['classes']['container']    = [
             'mt-6',
             'mb-6',
             'pt-6',
             'pb-6',
         ];
-        $data['classes']['quote']     = [
-            'is-text-big',
+        $data['classes']['quote']        = [
+            'is-size-5',
             'has-line-height-tight',
-            'is-family-tertiary',
-            'is-uppercase',
-            'has-text-centered',
+        ];
+        $data['classes']['author']       = [
+            'is-size-5',
+            'has-text-weight-bold',
+            'has-line-height-tight',
+        ];
+        $data['classes']['author_title'] = [
+            'is-size-6',
+            'has-text-weight-bold',
+            'has-line-height-tight',
         ];
 
         return $data;
