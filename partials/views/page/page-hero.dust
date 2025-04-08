@@ -1,15 +1,1 @@
-<section class="page__hero section is-relative pt-0 pb-0 has-background-cover" {@inlinebg id=Page.hero_image size="fullhd" /}>
-    {?Page.use_overlay}
-        <div class="overlay overlay--dark-50"></div>
-    {/Page.use_overlay}
-
-    <div class="is-absolute has-bottom-2 has-right-0 has-left-0 ">
-        <div class="container">
-            <div class="columns">
-                <div class="column is-8 is-offset-2">
-                    {>"ui/entry-title" class="mt-0 has-text-centered has-text-white mb-0 is-uppercase" /}
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<section class="page__hero section is-relative pt-0 pb-0 has-background-cover" {@inlinebg id=Page.hero_image size="fullhd" /}></section>

@@ -1,3 +1,24 @@
 a {
     font-weight: 700;
 }
+
+.page .entry__content a {
+    &:hover {
+        text-decoration: none !important;
+    }
+}
+
+.page,
+.single {
+    .entry__content,
+    .layout-textblock {
+        a {
+            text-decoration: underline !important;
+
+            &:hover,
+            &:focus {
+                text-decoration: none !important;
+            }
+        }
+    }
+}

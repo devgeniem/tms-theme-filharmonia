@@ -20,6 +20,10 @@
         }
     }
 
+    &.is-secondary {
+        color: $secondary !important;
+    }
+
     &.is-primary,
     &.is-secondary {
         &.is-outlined {

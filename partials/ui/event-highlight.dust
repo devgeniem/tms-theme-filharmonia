@@ -1,15 +1,16 @@
  <div class="column is-6 is-4-desktop mb-4 mb-0-desktop">
     <div class="events__item has-height-100 {classes.event_item_bg|attr}">
         {?image}
-            <div class="image is-16by9" aria-hidden="true">
+            <div class="image is-16by9 {?graphic_field}has-graphic{/graphic_field}" aria-hidden="true">
                 <a href="{url|url}" aria-hidden="true" tabindex="-1">
-                    <img src="{image|url}" loading="lazy" alt="" class="objectfit-image">
+                    <img src="{image|url}" loading="lazy" alt="" class="objectfit-image"
+                    {?graphic_field}style="mask-image: url('{graphic_field|url}');"{/graphic_field}>
                 </a>
                 {>"ui/event-item-pill" /}
             </div>
         {/image}
 
-        <div class="events__item-inner pt-5 pr-6 pb-6 pl-6">
+        <div class="events__item-inner pt-5 pr-5 pb-6 pl-5">
             <h3 class="h5 mt-0 mb-5">
                 <a href="{url|url}" class="has-text-black">
                     {name|html}

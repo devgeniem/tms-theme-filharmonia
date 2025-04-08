@@ -34,8 +34,26 @@
     }
 }
 
+.has-colors-darkblue {
+    h1,
+    h2 {
+        color: $primary-invert;
+    }
+}
+
+.has-colors-red-light,
+.has-colors-darkblue-light,
+.has-colors-beige,
+.has-colors-beige-light,
+.has-colors-lightblue,
+.has-colors-lightblue-light {
+    h1,
+    h2 {
+        color: $secondary-invert;
+    }
+}
+
 main {
-    .has-colors-white,
     .has-background-secondary,
     .has-colors-secondary {
         border: 1px solid $secondary-invert;

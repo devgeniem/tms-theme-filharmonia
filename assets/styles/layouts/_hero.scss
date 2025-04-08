@@ -1,3 +1,19 @@
+@mixin hero-height-smaller {
+    height: 14rem !important;
+
+    @include from($desktop) {
+        height: 26rem !important;
+    }
+
+    @include from($fullhd) {
+        height: 35rem !important;
+    }
+}
+
+.hero {
+    @include hero-height-smaller;
+}
+
 .filharmonia-hero {
     h1 {
         @include from($tablet) {

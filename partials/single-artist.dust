@@ -7,18 +7,18 @@
                 <div class="container">
                     <article class="columns is-multiline">
                         <div class="column is-12-tablet is-6-desktop is-offset-1-desktop pr-10-desktop">
-                            <h1 class="mt-0 mb-6 is-uppercase">
+                            <h1 class="mt-0 mb-6">
                                 {@title /}
                             </h1>
 
                             {?content.fields.title}
                                 <div>
-                                    {content.fields.title|s}
+                                    {content.fields.title|html}
                                 </div>
                             {/content.fields.title}
                             {?content.fields.short_description}
                             <p>
-                                {content.fields.short_description|s}
+                                {content.fields.short_description|kses}
                             </p>
                             {/content.fields.short_description}
 
@@ -35,7 +35,7 @@
 
                         {?content.fields.description}
                             <div class="column is-8-desktop is-offset-1-desktop entry__content keep-vertical-spacing">
-                                {content.fields.description|s}
+                                {content.fields.description|kses}
                             </div>
                         {/content.fields.description}
 
@@ -46,7 +46,7 @@
                             {?share_links}
                                 <div class="entry__share-links has-text-right">
                                     <h2 class="h6 mt-6 mb-6 has-text-secondary-invert">
-                                        {Strings.s.share.share_to_social_media|s}
+                                        {Strings.s.share.share_to_social_media|html}
                                     </h2>
 
                                     {>"ui/share-links" ul_class="is-justify-content-flex-end" li_class="ml-4" /}
