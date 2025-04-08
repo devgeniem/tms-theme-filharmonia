@@ -1,12 +1,7 @@
- <div class="navbar-dropdown is-hidden-touch has-background-secondary has-text-black" id="js-navbar-menu-item-dropdown-{$idx}">
+ <div class="navbar-dropdown is-hidden-touch has-background-secondary has-text-black" id="js-navbar-menu-item-dropdown-{$idx|attr}">
     <div class="container">
         <div class="columns">
             <div class="column">
-                <a href="{url}" class="navbar-dropdown__parent-link is-inline-block mb-2 has-text-large">
-                    {title|s}
-                    {>"ui/icon" icon="chevron-right" class="icon--medium ml-2" /}
-                </a>
-
                 <div class="navbar-dropdown-items">
                     <ul class="navbar-grid">
                         {#sub_menu}
