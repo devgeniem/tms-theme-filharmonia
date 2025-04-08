@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.16.0] - 2025-04-09
+
 - TMS-1129: Remove menu dropdown parent link
 - TMS-1093:
     - Remove hyphens & uppercase from headings, change heading & link colors
