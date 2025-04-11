@@ -7,7 +7,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
-- TMS-1092: Move page heading from over hero image to content area & remove hero overlay
+- TMS-1137: Change hero-museum heading color
+
+## [1.16.0] - 2025-04-09
+
+- TMS-1129: Remove menu dropdown parent link
 - TMS-1093:
     - Remove hyphens & uppercase from headings, change heading & link colors
     - Change quote-block styles, add "author_title" field
@@ -17,6 +21,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
     - Add graphics for dynamic event main images
 - TMS-1113: Remove top-padding for first component in page
 - TMS-1129: Remove menu dropdown parent link
+- TMS-1092: Move page heading from over hero image to content area & remove hero overlay
 
 ## [1.15.2] - 2025-02-24
 
