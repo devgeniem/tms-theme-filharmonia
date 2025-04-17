@@ -8,6 +8,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 - TMS-1137: Change hero-museum heading color
+- TMS-1141: Remove page block-section bottom-padding and add padding for last block
 
 ## [1.16.0] - 2025-04-09
 
