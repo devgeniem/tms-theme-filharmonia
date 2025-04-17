@@ -1,0 +1,5 @@
+<li class="menu-item-secondary is-uppercase">
+    <a class="menu-item-secondary__link" href="{url|url}">
+        {title|html}
+    </a>
+</li>
