@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- TMS-1140: Change dynamic event hero layout
+
 ## [1.16.1] - 2025-04-23
 
 - TMS-1142: Change top-menu fonts
