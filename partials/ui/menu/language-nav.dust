@@ -1,0 +1,16 @@
+{?links.all}
+    <nav aria-label="{Strings.s.header.language_navigation|attr}">
+        <ul id="{id|attr}"
+            class="lang-nav--horizontal ml-6-desktop is-flex is-unstyled is-uppercase has-text-weight-semibold">
+            {#links.all}
+                <li class="ml-2-desktop">
+                    <a class="is-inline-flex is-justify-content-center is-align-items-center {Header.colors.lang_nav.link} {^current_lang}{Header.colors.lang_nav.link__default}{/current_lang} {?current_lang}{Header.colors.lang_nav.link__active|attr}{/current_lang}"
+                       href="{url|url}"
+                       {?current_lang} aria-current="true"{/current_lang}>
+                        {slug|html}
+                    </a>
+                </li>
+            {/links.all}
+        </ul>
+    </nav>
+{/links.all}
