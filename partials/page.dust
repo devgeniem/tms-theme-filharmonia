@@ -18,12 +18,12 @@
             </div>
         {/Header.breadcrumbs}
 
-        <section class="section {?Header.hero_image}pt-7{:else}{?Header.breadcrumbs}pt-0{:else}pt-10{/Header.breadcrumbs}{/Header.hero_image}">
+        <section class="section pb-0 {?Header.hero_image}pt-7{:else}{?Header.breadcrumbs}pt-0{:else}pt-10{/Header.breadcrumbs}{/Header.hero_image}">
             <div class="container">
                 <div class="columns">
                     <div class="column is-12">
                         <article class="entry">
-                             {>"ui/entry-title" class="mt-0 has-text-centered" hero_image=Page.hero_image /}
+                            {>"ui/entry-title" class="mt-0 has-text-centered mb-7-desktop" hero_image=Page.hero_image /}
                             <div class="entry__content is-content-grid keep-vertical-spacing">
                                 {@content /}
                             </div>
