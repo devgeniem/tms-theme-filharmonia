@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- TMS-1153: Decrease event-page content margins
+
 ## [1.16.2] - 2025-04-30
 
 - TMS-1141: Remove page block-section bottom-padding and add padding for last block
