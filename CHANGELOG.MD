@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - TMS-1140: Change dynamic event hero layout
 - TMS-1144: Change aria-attribute for menu-item
+- TMS-1153: Decrease event-page content margins
 
 ## [1.16.2] - 2025-04-30
 
