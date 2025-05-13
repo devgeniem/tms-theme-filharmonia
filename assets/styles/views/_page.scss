@@ -8,4 +8,12 @@
             height: 26rem;
         }
     }
+
+    .entry {
+        &__content {
+            > *:last-child {
+                padding-bottom: $theme-spacing-three;
+            }
+        }
+    }
 }

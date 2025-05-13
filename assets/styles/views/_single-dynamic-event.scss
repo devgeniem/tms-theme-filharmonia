@@ -10,3 +10,11 @@
         }
     }
 }
+
+// Decrease text margins
+.page-template-page-event,
+.single-dynamic-event-cpt {
+    .column.keep-vertical-spacing p {
+        margin: $theme-spacing-half 0;
+    }
+}
