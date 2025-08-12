@@ -51,5 +51,10 @@
 
     }
 
+    .lang-nav--horizontal {
+        a {
+            outline-color: $black !important;
+        }
+    }
 }
 
