@@ -4,7 +4,7 @@
     .navbar-item > a {
         font-family: $family-tertiary;
         color: $black !important;
-        
+
         @include from($desktop) {
             font-size: 1.235rem;
             letter-spacing: .05em;
@@ -31,6 +31,9 @@
         } 
     }
 
+    .dropdown-toggler {
+        outline-color: $black !important;
+    }
 
     &--dropdown {
         .navbar-dropdown {
