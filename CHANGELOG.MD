@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- TMS-1163: Search item accessibility fixes
+
 ## [1.16.5] - 2025-08-13
 
 - TMS-1160: Fix elements focus outline thickness
