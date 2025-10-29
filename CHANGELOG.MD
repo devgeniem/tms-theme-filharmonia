@@ -8,6 +8,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 - TMS-1144: Change aria-attribute for menu-item
+- TMS-1204: Add expand-icon for image gallery item if it is expandable
+
+## [1.16.6] - 2025-09-08
+
 - TMS-1163: Search item accessibility fixes
 
 ## [1.16.5] - 2025-08-13
