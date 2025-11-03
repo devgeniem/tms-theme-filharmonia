@@ -27,11 +27,17 @@
                             {/content.fields.additional_information}
                         </div>
 
-                        {?content.image}
-                            <div class="column is-12-tablet is-5-desktop pt-6-desktop pl-10-desktop">
-                                {@image id=content.image.id size="large" /}
+                        {?content.fields.artist_image}
+                            <div class="single-artist__image column is-12-tablet is-5-desktop pt-6-desktop pl-10-desktop">
+                                {@image id=content.fields.artist_image size="large" /}
                             </div>
-                        {/content.image}
+                        {:else}
+                            {?content.image}
+                                <div class="single-artist__image column is-12-tablet is-5-desktop pt-6-desktop pl-10-desktop">
+                                    {@image id=content.image.id size="large" /}
+                                </div>
+                            {/content.image}
+                        {/content.fields.artist_image}
 
                         {?content.fields.description}
                             <div class="column is-8-desktop is-offset-1-desktop entry__content keep-vertical-spacing">

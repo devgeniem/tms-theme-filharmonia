@@ -132,40 +132,44 @@ class ArtistGroup {
                 'title'        => 'Järjestysnumero',
                 'instructions' => 'Orkesterisivun tulokset järjestetään pienimmästä suurimpaan. Oletusarvo: 100.',
             ],
+            'artist_image'           => [
+                'title'        => 'Artistikuva',
+                'instructions' => 'Valitse kuva, joka näytetään artistin sivulla. Tyhjäksi jätettynä artistin sivulla näytetään artikkelin pääkuva.',
+            ],
         ];
 
         $tab = ( new Field\Tab( $strings['tab'] ) )
             ->set_placement( 'left' );
 
         $first_name_field = ( new Field\Text( $strings['first_name']['title'] ) )
-            ->set_key( "${key}_first_name" )
+            ->set_key( "{$key}_first_name" )
             ->set_name( 'first_name' )
             ->redipress_include_search()
             ->set_wrapper_width( 50 )
             ->set_instructions( $strings['first_name']['instructions'] );
 
         $last_name_field = ( new Field\Text( $strings['last_name']['title'] ) )
-            ->set_key( "${key}_last_name" )
+            ->set_key( "{$key}_last_name" )
             ->set_name( 'last_name' )
             ->redipress_include_search()
             ->set_wrapper_width( 50 )
             ->set_instructions( $strings['last_name']['instructions'] );
 
         $title_field = ( new Field\Text( $strings['title']['title'] ) )
-            ->set_key( "${key}_title" )
+            ->set_key( "{$key}_title" )
             ->set_name( 'title' )
             ->redipress_include_search()
             ->set_instructions( $strings['title']['instructions'] );
 
         $short_description_field = ( new TextEditor( $strings['short_description']['title'] ) )
-            ->set_key( "${key}_short_description" )
+            ->set_key( "{$key}_short_description" )
             ->set_name( 'short_description' )
             ->redipress_include_search()
             ->set_wrapper_width( 50 )
             ->set_instructions( $strings['short_description']['instructions'] );
 
         $description_field = ( new TextEditor( $strings['description']['title'] ) )
-            ->set_key( "${key}_description" )
+            ->set_key( "{$key}_description" )
             ->set_name( 'description' )
             ->redipress_include_search()
             ->set_instructions( $strings['description']['instructions'] );
@@ -173,19 +177,19 @@ class ArtistGroup {
         $additional_info_repeater = ( new Field\Repeater(
             $strings['additional_information']['title']
         ) )
-            ->set_key( "${key}_additional_information" )
+            ->set_key( "{$key}_additional_information" )
             ->set_name( 'additional_information' )
             ->set_layout( 'block' )
             ->set_button_label( $strings['additional_information']['button'] );
 
         $additional_info_title = ( new Field\Text( $strings['additional_information']['item']['label']['title'] ) )
-            ->set_key( "${key}_additional_information_title" )
+            ->set_key( "{$key}_additional_information_title" )
             ->set_name( 'additional_information_title' )
             ->set_wrapper_width( 50 )
             ->set_instructions( $strings['additional_information']['item']['label']['instructions'] );
 
         $additional_info_text = ( new Field\Text( $strings['additional_information']['item']['value']['title'] ) )
-            ->set_key( "${key}_additional_information_text" )
+            ->set_key( "{$key}_additional_information_text" )
             ->set_name( 'additional_information_text' )
             ->set_wrapper_width( 50 )
             ->set_instructions( $strings['additional_information']['item']['value']['instructions'] );
@@ -196,25 +200,32 @@ class ArtistGroup {
         ] );
 
         $is_concertmaster_field = ( new Field\TrueFalse( $strings['is_concertmaster']['title'] ) )
-            ->set_key( "${key}_is_concertmaster" )
+            ->set_key( "{$key}_is_concertmaster" )
             ->set_name( 'is_concertmaster' )
             ->use_ui()
             ->set_wrapper_width( 50 )
             ->set_instructions( $strings['is_concertmaster']['instructions'] );
 
         $is_principal_field = ( new Field\TrueFalse( $strings['is_principal']['title'] ) )
-            ->set_key( "${key}_is_principal" )
+            ->set_key( "{$key}_is_principal" )
             ->set_name( 'is_principal' )
             ->use_ui()
             ->set_wrapper_width( 50 )
             ->set_instructions( $strings['is_principal']['instructions'] );
 
         $menu_order_field = ( new Field\Number( $strings['menu_order']['title'] ) )
-            ->set_key( "${key}_menu_order" )
+            ->set_key( "{$key}_menu_order" )
             ->set_name( 'menu_order' )
             ->set_wrapper_width( 50 )
             ->set_default_value( 100 )
             ->set_instructions( $strings['menu_order']['instructions'] );
+
+        $image_field = ( new Field\Image( $strings['artist_image']['title'] ) )
+            ->set_key( "{$key}_artist_image" )
+            ->set_name( 'artist_image' )
+            ->set_return_format( 'id' )
+            ->set_wrapper_width( 50 )
+            ->set_instructions( $strings['artist_image']['instructions'] );
 
         $tab->add_fields( [
             $first_name_field,
@@ -226,6 +237,7 @@ class ArtistGroup {
             $is_concertmaster_field,
             $is_principal_field,
             $menu_order_field,
+            $image_field,
         ] );
 
         return $tab;

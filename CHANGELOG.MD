@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - TMS-1144: Change aria-attribute for menu-item
 - TMS-1204: Add expand-icon for image gallery item if it is expandable
+- TMS-1198: Add new image for single artist page
 
 ## [1.16.6] - 2025-09-08
 
