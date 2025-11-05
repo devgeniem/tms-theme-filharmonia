@@ -1,5 +1,8 @@
 .single-artist {
     &__image {
-        max-height: 700px;
+        img {
+            max-height: 700px;
+            object-fit: contain;
+        }
     }
 }
