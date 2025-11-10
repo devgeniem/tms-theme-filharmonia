@@ -9,6 +9,10 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - TMS-1198: Add new image for single artist page
 
+## [1.16.7] - 2025-11-05
+
+- TMS-1204: Add expand-icon for image gallery item if it is expandable
+
 ## [1.16.6] - 2025-09-08
 
 - TMS-1163: Search item accessibility fixes
