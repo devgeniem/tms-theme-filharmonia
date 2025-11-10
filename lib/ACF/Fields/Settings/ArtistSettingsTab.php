@@ -66,12 +66,12 @@ class ArtistSettingsTab extends Tab {
 
         try {
             $info_repeater_field = ( new Field\Repeater( $strings['artist_additional_info']['title'] ) )
-                ->set_key( "${key}_artist_additional_info" )
+                ->set_key( "{$key}_artist_additional_info" )
                 ->set_name( 'artist_additional_info' )
                 ->set_instructions( $strings['artist_additional_info']['instructions'] );
 
             $text_field = ( new Field\Text( $strings['artist_additional_info_text']['title'] ) )
-                ->set_key( "${key}_artist_additional_info_text" )
+                ->set_key( "{$key}_artist_additional_info_text" )
                 ->set_name( 'artist_additional_info_text' )
                 ->set_instructions( $strings['artist_additional_info_text']['instructions'] );
 
