@@ -11,15 +11,6 @@
             color: $white !important;
             background-color: $primary !important;
             border-color: $primary !important;
-
-            &.is-hovered,
-            &:hover,
-            &.is-focused,
-            &:focus {
-                color: $primary !important;
-                background-color: $primary-invert !important;
-                border-color: $primary !important;
-            }
         }
 
         &.has-colors-primary {
@@ -56,15 +47,6 @@
                     color: $primary-invert !important;
                     background-color: transparent !important;
                     border-color: $primary-invert !important;
-
-                    &.is-hovered,
-                    &:hover,
-                    &.is-focused,
-                    &:focus {
-                        color: $primary !important;
-                        background-color: $primary-invert !important;
-                        border-color: $primary !important;
-                    }
                 }
             }
         }
