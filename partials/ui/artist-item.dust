@@ -1,5 +1,5 @@
 {?artist}
-    <div class="column is-6-tablet is-3-desktop mb-6-desktop is-relative has-text-centered">
+    <div class="column is-6-tablet is-3-desktop mb-6 is-relative has-text-centered">
         {?image}
             <div class="artist-list__image-container image is-3by1 has-width-100 pr-6 pl-6 mb-4">
                 <div
