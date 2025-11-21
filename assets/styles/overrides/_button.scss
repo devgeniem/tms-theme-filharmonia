@@ -13,6 +13,14 @@
                 fill: $secondary-invert !important;
             }
         }
+
+        &.is-outlined {
+            color: $primary !important;
+
+            .icon {
+                fill: $primary !important;
+            }
+        }
     }
 
     &.is-secondary {
