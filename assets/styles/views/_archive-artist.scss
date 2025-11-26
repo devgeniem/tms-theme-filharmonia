@@ -1,6 +1,7 @@
 .artist-list {
     &__text-grid {
         display: grid;
+        grid-template-rows: 2rem 1fr;
     }
 
     &__name {
