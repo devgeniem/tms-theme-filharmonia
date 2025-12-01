@@ -1,22 +1,36 @@
 .button {
     &.is-primary {
-        color: $primary-invert !important;
+        background-color: $color-blue-light;
+        color: $color-black !important;
 
         .icon {
-            fill: $primary-invert !important;
+            fill: $color-black !important;
         }
 
         &.is-inverted {
             color: $secondary-invert !important;
+            background-color: $primary-invert !important;
+            border-color: $primary-invert !important;
 
             .icon {
                 fill: $secondary-invert !important;
             }
         }
 
+        &.is-outlined {
+            background-color: transparent !important;
+            border-color: $primary !important;
+
+            &:hover,
+            &:focus {
+                background-color: transparent !important;
+                border-color: $primary !important;
+            }
+        }
+
         &:hover,
         &:focus {
-            border-color: $primary !important;
+            border-color: $color-blue-light !important;
         }
     }
 
@@ -29,13 +43,12 @@
         &.is-outlined {
             &.is-hovered,
             &:hover {
-                color: $primary !important;
+                color: $color-black !important;
                 background-color: $primary-invert !important;
-                border-color: $primary !important;
                 text-decoration: underline !important;
 
                 .icon {
-                    fill: $primary !important;
+                    fill: $color-black !important;
                 }
             }
 
@@ -52,14 +65,15 @@
                 }
             }
         }
-        &.is-inverted{
+        &.is-inverted {
             &:hover,
             &:focus {
-                color: $primary-invert !important;
-                background-color: $primary !important;
-                border-color: $primary !important;
+                color: $secondary-invert !important;
+                background-color: $primary-invert !important;
+                border-color: $primary-invert !important;
+
                 .icon {
-                    fill: $primary-invert !important;
+                    fill: $secondary-invert !important;
                 }
             }
         }
