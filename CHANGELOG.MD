@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- TMS-1224: Remove extra breadcrumbs pseudo-element
+
 ## [1.17.0] - 2025-11-10
 
 - TMS-1198: Add new image for single artist page
