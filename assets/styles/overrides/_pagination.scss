@@ -4,11 +4,6 @@
             &:not(.hellip) {
                 border: 1px solid $primary;
             }
-
-            &:focus,
-            &:hover {
-                text-decoration: none;
-            }
         }
 
         &.is-current {
