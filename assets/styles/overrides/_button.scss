@@ -1,6 +1,11 @@
 .button {
+    background-color: $color-blue-light;
+    border-color: $color-blue-light;
+    color: $color-black;
+
     &.is-primary {
         background-color: $color-blue-light;
+        border-color: $color-blue-light;
         color: $color-black !important;
 
         .icon {
@@ -30,12 +35,8 @@
 
         &:hover,
         &:focus {
-            border-color: $color-blue-light !important;
+            border-color: $color-blue-light;
         }
-    }
-
-    &.is-secondary {
-        color: $secondary !important;
     }
 
     &.is-primary,
@@ -57,8 +58,6 @@
             &.is-focused,
             &:focus {
                 color: $secondary-invert !important;
-                background-color: $tertiary !important;
-                border-color: $tertiary !important;
 
                 .icon {
                     fill: $secondary-invert !important;

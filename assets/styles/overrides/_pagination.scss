@@ -16,6 +16,14 @@
                 border-color: $secondary-invert;
             }
         }
+
+        &:not(.is-current) {
+            .pagination-item__link {
+                &:hover {
+                    color: $color-black !important;
+                }
+            }
+        }
     }
 
     .unavailable {

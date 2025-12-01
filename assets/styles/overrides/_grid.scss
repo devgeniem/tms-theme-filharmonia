@@ -7,35 +7,12 @@
         color: $secondary-invert !important;
         border: 1px solid $secondary-invert;
 
-        .button {
-            color: $white !important;
-            background-color: $primary !important;
-            border-color: $primary !important;
-
-            &.is-hovered,
-            &:hover,
-            &.is-focused,
-            &:focus {
-                color: $primary !important;
-                background-color: $primary-invert !important;
-                border-color: $primary !important;
-            }
-        }
-
         &.has-colors-primary {
             background-color: $white !important;
-
-            .button {
-                border-color: $white !important;
-            }
         }
 
         &.has-colors-secondary {
             background-color: $color-darkblue !important;
-
-            .button {
-                border-color: $white !important;
-            }
         }
 
         &:not(.grid__item--featured).has-colors-primary {
@@ -53,8 +30,6 @@
         &--featured {
             a {
                 &.button {
-                    color: $primary-invert !important;
-                    background-color: transparent !important;
                     border-color: $primary-invert !important;
 
                     &.is-hovered,
