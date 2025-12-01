@@ -10,6 +10,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - TMS-1144: Change aria-attribute for menu-item
 - TMS-1164: Remove color changing for button hover-styles
 - TMS-1218: Change artist-archive image height & margin
+- TMS-1224: Remove extra breadcrumbs pseudo-element
 
 ## [1.17.0] - 2025-11-10
 
