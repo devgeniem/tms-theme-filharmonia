@@ -1,7 +1,15 @@
 .button {
-    background-color: $color-blue-light;
-    border-color: $color-blue-light;
-    color: $color-black;
+    &,
+    &:active,
+    &:focus {
+        background-color: $color-blue-light;
+        border-color: $color-blue-light;
+        color: $color-black;
+
+        .icon {
+            fill: $color-black;
+        }
+    }
 
     &.is-primary {
         background-color: $color-blue-light;
