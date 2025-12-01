@@ -2,4 +2,17 @@
     &__row {
         border-color: #b0b0b0 !important;
     }
+
+    &__title-icon {
+        .icon {
+            height: 1rem !important;
+            width: 1rem !important;
+        }
+    }
+
+    &__icon-text {
+        font-family: $family-secondary;
+        font-size: 1.125rem;
+        font-weight: $weight-bold;
+    }
 }
