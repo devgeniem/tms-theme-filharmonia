@@ -1,13 +1,23 @@
 .button {
-    &,
-    &:active,
-    &:focus {
-        background-color: $color-blue-light;
-        border-color: $color-blue-light;
-        color: $color-black;
+    background-color: $color-blue-light;
+    border-color: $color-blue-light;
+    color: $color-black !important;
 
-        .icon {
-            fill: $color-black;
+    .icon {
+        fill: $color-black !important;
+    }
+
+    &.is-inverted {
+        &,
+        &:hover,
+        &:focus {
+            color: $secondary-invert !important;
+            background-color: $primary-invert !important;
+            border-color: $primary !important;
+
+            .icon {
+                fill: $secondary-invert !important;
+            }
         }
     }
 
@@ -21,12 +31,16 @@
         }
 
         &.is-inverted {
-            color: $secondary-invert !important;
-            background-color: $primary-invert !important;
-            border-color: $primary-invert !important;
+            &,
+            &:hover,
+            &:focus {
+                color: $secondary-invert !important;
+                background-color: $primary-invert !important;
+                border-color: $primary-invert !important;
 
-            .icon {
-                fill: $secondary-invert !important;
+                .icon {
+                    fill: $secondary-invert !important;
+                }
             }
         }
 
@@ -65,10 +79,10 @@
             &:active,
             &.is-focused,
             &:focus {
-                color: $secondary-invert !important;
+                color: $color-black !important;
 
                 .icon {
-                    fill: $secondary-invert !important;
+                    fill: $color-black !important;
                 }
             }
         }

@@ -3,10 +3,9 @@
  */
 
 @mixin pill-hover-focus {
-    background-color: lighten($primary, 3%) !important;
+    background-color: $color-blue-light !important;
     color: $black !important;
-    border-color: $primary !important;
-    border-radius: .25rem;
+    border-color: $black !important;
 }
 
 .pill {

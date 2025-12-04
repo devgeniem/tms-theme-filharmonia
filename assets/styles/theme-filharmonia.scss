@@ -8,7 +8,7 @@ $primary: $color-red;
 $primary-invert: $color-white;
 $primary-light: bulmaLighten($primary, 15);
 $primary-light-invert: $color-white;
-$primary-dark: bulmaDarken($primary, 15);
+$primary-dark: $color-black;
 $primary-dark-invert: $color-white;
 
 $secondary: $color-white;
@@ -61,12 +61,19 @@ $colors: (
 );
 
 $button-colors: (
-    "primary": ($primary, $color-white, $primary, $secondary-invert),
-    "secondary": ($primary, $color-white, $primary, $secondary-invert),
+    "primary": ($color-blue-light, $secondary-invert, $color-blue-light, $secondary-invert),
+    "secondary": ($color-blue-light, $secondary-invert, $color-blue-light, $secondary-invert),
 );
 
 $color-background-primary-light--opaque-light: $secondary;
 $button-font-weight: $weight-bold;
+
+$button-primary: $color-blue-light !default;
+$button-primary-invert: $color-black !default;
+
+$button-text-primary: $button-primary-invert !default;
+$button-border-primary: $button-primary-invert !default;
+$button-background-primary: $button-primary !default;
 
 @import "color_overrides";
 @import "../../../tms-theme-base/assets/styles/main";
