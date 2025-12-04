@@ -12,6 +12,7 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 - TMS-1218: Change artist-archive image height & margin
 - TMS-1224: Remove extra breadcrumbs pseudo-element
 - TMS-1225: Accessibility fixes for color contrasts
+- TMS-1226: Change focus order on events-search form
 
 ## [1.17.0] - 2025-11-10
 
