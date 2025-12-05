@@ -1,4 +1,9 @@
-.breadcrumb{
+.breadcrumb {
+    li + li {
+        &::before {
+            display: none !important;
+        }
+    }
 
     &.has-succeeds-separator li + li::before {
         content: none;
