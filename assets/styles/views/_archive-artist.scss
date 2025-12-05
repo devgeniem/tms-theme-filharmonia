@@ -17,11 +17,11 @@
         height: 21.176rem;
 
         @include from($desktop) {
-            height: 28.235rem;
+            height: 24.235rem;
         }
 
         @include from($fullhd) {
-            height: 41.765rem;
+            height: 28.765rem;
         }
     }
 
