@@ -46,12 +46,12 @@
 
         &.is-outlined {
             background-color: transparent !important;
-            border-color: $primary !important;
+            border-color: $color-black !important;
 
             &:hover,
             &:focus {
                 background-color: transparent !important;
-                border-color: $primary !important;
+                border-color: $color-black !important;
             }
         }
 
@@ -64,8 +64,13 @@
     &.is-primary,
     &.is-secondary {
         &.is-outlined {
+            &,
             &.is-hovered,
-            &:hover {
+            &:hover,
+            &.is-focused,
+            &:focus,
+            &.is-active,
+            &:active {
                 color: $color-black !important;
                 background-color: $primary-invert !important;
                 text-decoration: underline !important;
@@ -74,18 +79,8 @@
                     fill: $color-black !important;
                 }
             }
-
-            &.is-active,
-            &:active,
-            &.is-focused,
-            &:focus {
-                color: $color-black !important;
-
-                .icon {
-                    fill: $color-black !important;
-                }
-            }
         }
+
         &.is-inverted {
             &:hover,
             &:focus {
@@ -97,6 +92,16 @@
                     fill: $secondary-invert !important;
                 }
             }
+        }
+    }
+
+    &.is-primary-invert {
+        background-color: $color-blue-light;
+        border-color: $color-blue-light;
+        color: $color-black !important;
+
+        .icon {
+            fill: $color-black !important;
         }
     }
 
