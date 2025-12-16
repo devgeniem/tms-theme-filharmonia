@@ -6,10 +6,18 @@
 
     a {
         &.button.is-primary {
-            color: $secondary-invert !important;
+            &,
+            &.is-hovered,
+            &:hover,
+            &.is-focused,
+            &:focus {
+                background-color: $color-blue-light;
+                border-color: $color-blue-light;
+                color: $secondary-invert !important;
 
-            .icon {
-                fill: $secondary-invert !important;
+                .icon {
+                    fill: $secondary-invert !important;
+                }
             }
         }
     }
