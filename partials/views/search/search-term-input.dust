@@ -4,17 +4,17 @@
             <div class="column is-10 is-offset-1">
                 <div class="search-input-container mb-4 has-text-centered">
                     <label for="search-input" class="is-block h6 mb-4">
-                        {Strings.s.header.search}
+                        {Strings.s.header.search|html}
                     </label>
 
-                    <input type="text" name="s" id="search-input" value="{form.search_term|s}"
+                    <input type="text" name="s" id="search-input" value="{form.search_term|attr}"
                            class="search__term mr-auto ml-auto has-text-small"
                            autocomplete="off">
 
                     <div class="has-text-centered mt-5">
-                        <button type="submit" class="search-form__button button button--icon ml-2 {template_classes.search_form_button|s}">
-                            {Strings.s.header.search|s}
-                            {>"ui/icon" icon="search" class="icon--medium"  /}
+                        <button type="submit" class="search-form__button button button--icon ml-2 {template_classes.search_form_button|attr}">
+                            {Strings.s.header.search|html}
+                            {>"ui/icon" icon="search" class="icon--large"  /}
                         </button>
                     </div>
                 </div>

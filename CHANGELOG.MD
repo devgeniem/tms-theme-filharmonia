@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+- TMS-1226: Change focus order on events-search form
+
 ## [1.18.0] - 2025-11-09
 
 - TMS-1224: Remove extra breadcrumbs pseudo-element
