@@ -9,6 +9,11 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - TMS-1226: Change focus order on events-search form
 
+## [1.18.0] - 2025-11-09
+
+- TMS-1224: Remove extra breadcrumbs pseudo-element
+- TMS-1218: Change artist-archive image height & margin
+
 ## [1.17.0] - 2025-11-10
 
 - TMS-1198: Add new image for single artist page
