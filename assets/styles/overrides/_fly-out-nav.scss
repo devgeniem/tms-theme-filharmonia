@@ -40,12 +40,6 @@
         }
 
     }
-    a {
-        &:hover,
-        &:focus {
-            color: $primary;
-        }
-    }
 
     .secondary-menu {
         border-color: $black;
