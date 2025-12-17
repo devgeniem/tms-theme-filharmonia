@@ -96,12 +96,20 @@
     }
 
     &.is-primary-invert {
-        background-color: $color-blue-light;
-        border-color: $color-blue-light;
-        color: $color-black !important;
+        &,
+        &.is-hovered,
+        &:hover,
+        &.is-focused,
+        &:focus,
+        &.is-active,
+        &:active {
+            background-color: $color-blue-light !important;
+            border-color: $color-blue-light !important;
+            color: $color-black !important;
 
-        .icon {
-            fill: $color-black !important;
+            .icon {
+                fill: $color-black !important;
+            }
         }
     }
 
