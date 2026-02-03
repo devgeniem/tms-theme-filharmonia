@@ -94,3 +94,13 @@ $table-row-background-color-even: $color-white;
 $table-row-background-color-odd: $secondary;
 $table-row-background-color-even-hover: $color-vaalean-harmaa;
 $table-row-background-color-odd-hover: $secondary-dark;
+
+/*--------------------------------------------------------------
+assets/styles/overrides/_breadcrumbs.scss
+--------------------------------------------------------------*/
+$tms-breadcrumb-item-color-hover: $color-darkblue;
+
+/*--------------------------------------------------------------
+assets/styles/views/_search.scss
+--------------------------------------------------------------*/
+$search-item-hover: $color-darkblue;
