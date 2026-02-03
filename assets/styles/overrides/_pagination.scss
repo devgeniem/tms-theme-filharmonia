@@ -4,16 +4,19 @@
             &:not(.hellip) {
                 border: 1px solid $primary;
             }
-
-            &:focus,
-            &:hover {
-                text-decoration: none;
-            }
         }
 
         &.is-current {
             .pagination-item__link {
                 border-color: $secondary-invert;
+            }
+        }
+
+        &:not(.is-current) {
+            .pagination-item__link {
+                &:hover {
+                    color: $color-black !important;
+                }
             }
         }
     }

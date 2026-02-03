@@ -1,30 +1,116 @@
 .button {
-    &.is-primary {
-        color: $primary-invert !important;
+    background-color: $color-blue-light;
+    border-color: $color-blue-light;
+    color: $color-black !important;
 
-        .icon {
-            fill: $primary-invert !important;
-        }
+    .icon {
+        fill: $color-black !important;
+    }
 
-        &.is-inverted {
+    &.is-inverted {
+        &,
+        &:hover,
+        &:focus {
             color: $secondary-invert !important;
+            background-color: $primary-invert !important;
+            border-color: $primary !important;
 
             .icon {
                 fill: $secondary-invert !important;
             }
         }
+    }
+
+    &.is-primary {
+        background-color: $color-blue-light;
+        border-color: $color-blue-light;
+        color: $color-black !important;
+
+        .icon {
+            fill: $color-black !important;
+        }
+
+        &.is-inverted {
+            &,
+            &:hover,
+            &:focus {
+                color: $secondary-invert !important;
+                background-color: $primary-invert !important;
+                border-color: $primary-invert !important;
+
+                .icon {
+                    fill: $secondary-invert !important;
+                }
+            }
+        }
 
         &.is-outlined {
-            color: $primary !important;
+            background-color: transparent !important;
+            border-color: $color-black !important;
 
-            .icon {
-                fill: $primary !important;
+            &:hover,
+            &:focus {
+                background-color: transparent !important;
+                border-color: $color-black !important;
+            }
+        }
+
+        &:hover,
+        &:focus {
+            border-color: $color-blue-light;
+        }
+    }
+
+    &.is-primary,
+    &.is-secondary {
+        &.is-outlined {
+            &,
+            &.is-hovered,
+            &:hover,
+            &.is-focused,
+            &:focus,
+            &.is-active,
+            &:active {
+                color: $color-black !important;
+                background-color: $primary-invert !important;
+                text-decoration: underline !important;
+
+                .icon {
+                    fill: $color-black !important;
+                }
+            }
+        }
+
+        &.is-inverted {
+            &:hover,
+            &:focus {
+                color: $secondary-invert !important;
+                background-color: $primary-invert !important;
+                border-color: $primary-invert !important;
+
+                .icon {
+                    fill: $secondary-invert !important;
+                }
             }
         }
     }
 
-    &.is-secondary {
-        color: $secondary !important;
+    &.is-primary-invert {
+        &,
+        &.is-hovered,
+        &:hover,
+        &.is-focused,
+        &:focus,
+        &.is-active,
+        &:active {
+            background-color: $color-blue-light !important;
+            border-color: $color-blue-light !important;
+            color: $color-black !important;
+
+            .icon {
+                fill: $color-black !important;
+            }
+        }
     }
 
     &.is-secondary-invert {

@@ -1,5 +1,6 @@
 .primary-nav {
     flex-wrap: wrap;
+
     .navbar-item > .navbar-dropdown-control > a,
     .navbar-item > a {
         font-family: $family-tertiary;
@@ -16,7 +17,7 @@
         &:focus,
         &:hover {
             > div > .navbar-link {
-                color: $primary !important;
+                color: $black !important;
             }
         }
     }
@@ -25,10 +26,10 @@
     .navbar-dropdown__parent-link {
         color: $black !important;
         &:hover {
-            > a, & { 
-                color: $primary !important;
+            > a, & {
+                color: $black !important;
             }
-        } 
+        }
     }
 
     .dropdown-toggler {
@@ -38,14 +39,15 @@
     &--dropdown {
         .navbar-dropdown {
             padding-bottom: 3rem;
-            .icon{
-                fill: $primary;
+            .icon {
+                fill: $black;
             }
         }
 
         .navbar-grid {
             overflow: hidden;
             padding: 0.2rem;
+
             .navbar-item {
                 &.current-menu-item,
                 &.current-menu-parent {
