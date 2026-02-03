@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.20.0] - 2026-02-03
+
 - TMS-1225: Accessibility fixes for color contrasts
 - TMS-1164: Remove color changing for button hover-styles
 
