@@ -121,19 +121,6 @@
             .icon {
                 fill: $secondary-invert !important;
             }
-
-
-            &.is-hovered,
-            &:hover {
-                color: $secondary-invert !important;
-                background-color: $tertiary !important;
-                border-color: $secondary-invert !important;
-                text-decoration: underline !important;
-
-                .icon {
-                    fill: $secondary-invert !important;
-                }
-            }
         }
     }
 

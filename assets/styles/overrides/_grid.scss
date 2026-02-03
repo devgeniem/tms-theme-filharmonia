@@ -31,15 +31,6 @@
             a {
                 &.button {
                     border-color: $primary-invert !important;
-
-                    &.is-hovered,
-                    &:hover,
-                    &.is-focused,
-                    &:focus {
-                        color: $primary !important;
-                        background-color: $primary-invert !important;
-                        border-color: $primary !important;
-                    }
                 }
             }
         }

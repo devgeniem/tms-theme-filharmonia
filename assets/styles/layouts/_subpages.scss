@@ -11,17 +11,6 @@
             h3 {
                 color: $white;
             }
-
-            &:focus,
-            &:hover {
-                h3 {
-                    color: $heading;
-                }
-
-                svg.icon {
-                    fill: $heading !important;
-                }
-            }
         }
 
         &.has-background-primary {
