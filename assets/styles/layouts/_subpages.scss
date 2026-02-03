@@ -11,24 +11,13 @@
             h3 {
                 color: $white;
             }
-
-            &:focus,
-            &:hover {
-                h3 {
-                    color: $heading;
-                }
-
-                svg.icon {
-                    fill: $heading !important;
-                }
-            }
         }
 
         &:not(.has-background-image) {
             &:hover,
             &:focus {
-                background-color: $primary-invert !important;
-                color: $color-black !important;
+                background-color: $primary !important;
+                color: $color-white !important;
                 border-color: $primary !important;
             }
         }

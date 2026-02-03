@@ -11,18 +11,6 @@
             .icon {
                 fill: $secondary-invert !important;
             }
-
-            &.is-hovered,
-            &:hover,
-            &.is-focused,
-            &:focus {
-                color: $primary !important;
-                border-color: $primary !important;
-
-                .icon {
-                    fill: $primary !important;
-                }
-            }
         }
     }
 }

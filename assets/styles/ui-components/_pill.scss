@@ -15,42 +15,16 @@
     border-color: $black !important;
     text-transform: uppercase;
 
-    &:hover,
-    &:focus {
-        @include pill-hover-focus;
-    }
-
     &.is-primary-invert {
         color: $black !important;
         border-color: $black !important;
-
-        &:hover,
-        &:focus {
-            @include pill-hover-focus;
-        }
     }
 
     &.is-active {
         @include pill-hover-focus;
 
-        &:hover,
-        &:focus {
-            color: $black !important;
-        }
-
         .icon {
             fill: currentColor !important;
-        }
-
-        &:not(span) {
-            &:hover,
-            &:focus {
-                color: $black !important;
-
-                .icon {
-                    fill: currentColor !important;
-                }
-            }
         }
     }
 }
