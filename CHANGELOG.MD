@@ -8,11 +8,21 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 ## [Unreleased]
 
 - TMS-1144: Change aria-attribute for menu-item
-- TMS-1164: Remove color changing for button hover-styles
-- TMS-1218: Change artist-archive image height & margin
-- TMS-1224: Remove extra breadcrumbs pseudo-element
+- Update Node, webpack & dependency versions
+
+## [1.20.0] - 2026-02-03
+
 - TMS-1225: Accessibility fixes for color contrasts
+- TMS-1164: Remove color changing for button hover-styles
+
+## [1.19.0] - 2025-12-17
+
 - TMS-1226: Change focus order on events-search form
+
+## [1.18.0] - 2025-11-09
+
+- TMS-1224: Remove extra breadcrumbs pseudo-element
+- TMS-1218: Change artist-archive image height & margin
 
 ## [1.17.0] - 2025-11-10
 
