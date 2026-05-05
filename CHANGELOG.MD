@@ -7,6 +7,8 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 ## [Unreleased]
 
+## [1.20.1] - 2026-05-05
+
 - TMS-1144: Change aria-attribute for menu-item
 
 ## [1.20.0] - 2026-02-03
