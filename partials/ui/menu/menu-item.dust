@@ -5,7 +5,7 @@
 {?sub_menu}
     <li class="navbar-item has-dropdown {#classes}{.}{@sep} {/sep}{/classes}">
         <div class="navbar-dropdown-control">
-            <a class="navbar-link is-arrowless is-uppercase" href="{url|url}" {?classes.is_current}aria-page="current"{/classes.is_current}>
+            <a class="navbar-link is-arrowless is-uppercase" href="{url|url}" {?classes.is_current}aria-current="page"{/classes.is_current}>
                 {title|html}
             </a>
 
