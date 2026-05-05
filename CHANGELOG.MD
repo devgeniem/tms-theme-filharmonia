@@ -9,6 +9,44 @@ and this project adheres to [Semantic Versioning](http://semver.org/spec/v2.0.0.
 
 - TMS-1144: Change aria-attribute for menu-item
 
+## [1.20.0] - 2026-02-03
+
+- TMS-1225: Accessibility fixes for color contrasts
+- TMS-1164: Remove color changing for button hover-styles
+
+## [1.19.0] - 2025-12-17
+
+- TMS-1226: Change focus order on events-search form
+
+## [1.18.0] - 2025-11-09
+
+- TMS-1224: Remove extra breadcrumbs pseudo-element
+- TMS-1218: Change artist-archive image height & margin
+
+## [1.17.0] - 2025-11-10
+
+- TMS-1198: Add new image for single artist page
+
+## [1.16.7] - 2025-11-05
+
+- TMS-1204: Add expand-icon for image gallery item if it is expandable
+
+## [1.16.6] - 2025-09-08
+
+- TMS-1163: Search item accessibility fixes
+
+## [1.16.5] - 2025-08-13
+
+- TMS-1160: Fix elements focus outline thickness
+
+## [1.16.4] - 2025-05-14
+
+- TMS-1140: Change dynamic event hero layout
+
+## [1.16.3] - 2025-05-14
+
+- TMS-1153: Decrease event-page content margins
+
 ## [1.16.2] - 2025-04-30
 
 - TMS-1141: Remove page block-section bottom-padding and add padding for last block

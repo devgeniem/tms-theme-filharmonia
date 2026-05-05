@@ -115,6 +115,12 @@ class ThemeCustomizationController implements Controller {
 
         \add_filter( 'tms/acf/layout/image_carousel/data', [ $this, 'alter_image_carousel_data' ], 20 );
         \add_filter( 'tms/acf/block/image_carousel/data', [ $this, 'alter_image_carousel_data' ], 20 );
+
+        \add_filter( 'tms/theme/error404/search_link', function ( $data ) {
+            $data['classes'] = '';
+
+            return $data;
+        } );
     }
 
     /**

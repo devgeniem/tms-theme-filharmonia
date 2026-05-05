@@ -1,22 +1,25 @@
-<div class="image-gallery {align_class} gallery {column_class} js-image-gallery mt-8 mb-8 mt-11-desktop mb-11-desktop"
-     data-next="{translations.next}"
-     data-previous="{translations.previous}">
+<div class="image-gallery {align_class|attr} gallery {column_class|attr} js-image-gallery mt-8 mb-8 mt-11-desktop mb-11-desktop"
+     data-next="{translations.next|attr}"
+     data-previous="{translations.previous|attr}">
     {#rows}
 
         {?is_clickable}
-            <a href="{image.sizes.fullhd}"
-            data-preview="{image.sizes.medium}"
-            data-gallery="{gallery_id}"
+            <a href="{image.sizes.fullhd|url}"
+            data-preview="{image.sizes.medium|url}"
+            data-gallery="{gallery_id|attr}"
             data-modal-button
-            aria-controls="{gallery_id}"
-            data-caption="{caption}"
-            data-author="{author_name}"
-            data-image_title_and_artist="{image_title_and_artist}"
-            class="image-gallery__image image-gallery__link image is-square has-zoom-on-hover"
+            aria-controls="{gallery_id|attr}"
+            data-caption="{caption|html}"
+            data-author="{author_name|html}"
+            data-image_title_and_artist="{image_title_and_artist|html}"
+            class="image-gallery__image image-gallery__link image is-square has-zoom-on-hover is-relative"
             aria-expanded="false"
-            aria-label="{translations.open}"
+            aria-label="{translations.expand|attr}"
             >
                 {@image id=image.id size="large" alt=image.alt title=image.alt /}
+                <div class="icon-container is-absolute has-top-0 has-right-0 mr-2 mt-2 has-background-black">
+                    {>"ui/icon" icon="expand" class="icon--large is-white" /}
+                </div>
             </a>
 
         {:else}
@@ -29,10 +32,10 @@
     {/rows}
 
     <!-- Markup of the modal -->
-    <div role="dialog" id="{gallery_id}" class="modal" aria-modal="true" aria-labelledby="{gallery_id}">
+    <div role="dialog" id="{gallery_id|attr}" class="modal" aria-modal="true" aria-labelledby="{gallery_id|attr}">
         <div class="modal-background"></div>
-        <button class="button button--icon is-white is-outlined modal-close-button" aria-controls="{gallery_id}">
-            {translations.close}
+        <button class="button button--icon is-white is-outlined modal-close-button" aria-controls="{gallery_id|attr}">
+            {translations.close|html}
             {>"ui/icon" icon="close" class="icon--medium" /}
         </button>
         <div class="modal-content"></div>

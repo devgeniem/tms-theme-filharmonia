@@ -3,10 +3,9 @@
  */
 
 @mixin pill-hover-focus {
-    background-color: lighten($primary, 3%) !important;
+    background-color: $color-blue-light !important;
     color: $black !important;
-    border-color: $primary !important;
-    border-radius: .25rem;
+    border-color: $black !important;
 }
 
 .pill {
@@ -15,42 +14,16 @@
     border-color: $black !important;
     text-transform: uppercase;
 
-    &:hover,
-    &:focus {
-        @include pill-hover-focus;
-    }
-
     &.is-primary-invert {
         color: $black !important;
         border-color: $black !important;
-
-        &:hover,
-        &:focus {
-            @include pill-hover-focus;
-        }
     }
 
     &.is-active {
         @include pill-hover-focus;
 
-        &:hover,
-        &:focus {
-            color: $black !important;
-        }
-
         .icon {
             fill: currentColor !important;
-        }
-
-        &:not(span) {
-            &:hover,
-            &:focus {
-                color: $black !important;
-
-                .icon {
-                    fill: currentColor !important;
-                }
-            }
         }
     }
 }

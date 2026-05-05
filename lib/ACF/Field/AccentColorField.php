@@ -30,7 +30,7 @@ class AccentColorField {
 
         try {
             $field = ( new Field\Select( $strings['accent_color']['label'] ) )
-                ->set_key( "${key}_accent_color" )
+                ->set_key( "{$key}_accent_color" )
                 ->set_name( 'accent_color' )
                 ->use_ui()
                 ->set_choices( apply_filters( 'tms/theme/accent_colors', [] ) )
